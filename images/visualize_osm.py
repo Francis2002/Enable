@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Path to the PBF file
-pbf_path = "portugal-latest.osm.pbf"
+pbf_path = "../data/portugal-latest.osm.pbf"
 output_plot = "lisbon_preview.png"
 
 print(f"Loading data from {pbf_path}...")

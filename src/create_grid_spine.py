@@ -5,7 +5,7 @@ import duckdb
 from pyproj import Transformer
 import os
 
-db_path = "osm_analysis.db"
+db_path = "../data/osm_analysis.db"
 
 # 1. Define Mainland Portugal Bounding Box (Approx)
 # Longitude: -9.5 to -6.2, Latitude: 36.9 to 42.2

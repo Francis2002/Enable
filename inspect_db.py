@@ -2,7 +2,7 @@ import duckdb
 import pandas as pd
 import sys
 
-db_path = "osm_analysis.db"
+db_path = "data/osm_analysis.db"
 
 def inspect():
     try:

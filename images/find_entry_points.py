@@ -4,7 +4,7 @@ import duckdb
 from shapely.geometry import MultiPoint, Point
 import os
 
-db_path = "osm_analysis.db"
+db_path = "../data/osm_analysis.db"
 
 print("Connecting to DuckDB...")
 con = duckdb.connect(db_path)
@@ -13,7 +13,7 @@ con.execute("LOAD spatial;")
 # Load grid and roads (from the previous run or re-load)
 # Actually, I'll re-extract roads for the Lisbon area to be sure
 from pyrosm import OSM
-pbf_path = "portugal-latest.osm.pbf"
+pbf_path = "../data/portugal-latest.osm.pbf"
 min_lon, min_lat, max_lon, max_lat = -9.25, 38.65, -9.05, 38.80
 osm = OSM(pbf_path, bounding_box=[min_lon, min_lat, max_lon, max_lat])
 roads = osm.get_network(network_type="driving")

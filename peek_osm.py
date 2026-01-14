@@ -2,7 +2,7 @@ from pyrosm import OSM
 import os
 
 # Path to the PBF file
-pbf_path = "portugal-latest.osm.pbf"
+pbf_path = "data/portugal-latest.osm.pbf"
 
 if not os.path.exists(pbf_path):
     print(f"Error: {pbf_path} not found.")

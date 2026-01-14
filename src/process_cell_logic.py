@@ -26,14 +26,14 @@ def analyze_single_cell(cell_info, roads_in_block, pois_in_block, landuse_in_blo
         return None # RULE: Ignore cells with no roads
 
     roads_cell['length_m'] = roads_cell.geometry.length
-    road_agg = roads_cell.groupby('highway')['length_m'].sum()
+    road_agg = roads_cell.groupby('highway')['length_m'].sum().fillna(0)
     total_len = road_agg.sum()
     
     road_data = road_agg.to_dict()
     road_data['total_road_len'] = total_len
     road_data['cell_id'] = cell_id
     # Add shares
-    shares = {f"{k}_share": v/total_len for k, v in road_agg.items()}
+    shares = {f"{k}_share": (v/total_len if total_len > 0 else 0.0) for k, v in road_agg.items()}
     road_data.update(shares)
 
     # 2. POIs (Counts)
@@ -88,7 +88,8 @@ def analyze_single_cell(cell_info, roads_in_block, pois_in_block, landuse_in_blo
         coords = (round(p.x, 1), round(p.y, 1))
         if coords not in unique_check:
             lon, lat = transformer.transform(p.x, p.y)
-            origins.append({'cell_id': cell_id, 'lon': lon, 'lat': lat, 'highway': hway})
+            prio = priority_map.get(hway, 99)
+            origins.append({'cell_id': cell_id, 'lon': lon, 'lat': lat, 'highway': hway, 'priority': float(prio)})
             unique_check.add(coords)
             if len(origins) >= 3: break
     

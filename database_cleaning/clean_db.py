@@ -1,6 +1,6 @@
 import duckdb
 
-db_path = "osm_analysis.db"
+db_path = "../data/osm_analysis.db"
 con = duckdb.connect(db_path)
 tables = con.execute("SHOW TABLES").df()
 for t in tables['name']:

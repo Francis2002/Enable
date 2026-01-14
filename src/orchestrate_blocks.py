@@ -6,8 +6,8 @@ from process_cell_logic import analyze_single_cell
 import os
 import numpy as np
 
-db_path = "osm_analysis.db"
-pbf_path = "portugal-latest.osm.pbf"
+db_path = "../data/osm_analysis.db"
+pbf_path = "../data/portugal-latest.osm.pbf"
 
 def orchestrate():
     con = duckdb.connect(db_path)
@@ -98,6 +98,7 @@ def orchestrate():
 
 def save_to_db(con, table_name, df):
     # Flexible column handling
+    df = df.fillna(0.0)
     con.register("tmp_block", df)
     if con.execute(f"SELECT count(*) FROM information_schema.tables WHERE table_name = '{table_name}'").fetchone()[0] == 0:
         con.execute(f"CREATE TABLE {table_name} AS SELECT * FROM tmp_block")
