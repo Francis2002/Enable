@@ -20,6 +20,10 @@ def inspect():
 
         for table in tables['name']:
             print(f"--- Table: {table} ---")
+            # Get row count
+            count = con.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
+            print(f"Total Rows: {count}")
+            
             # Get column info
             cols = con.execute(f"DESCRIBE {table}").df()
             print("Columns:")

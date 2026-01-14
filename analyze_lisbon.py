@@ -6,7 +6,7 @@ import duckdb
 import os
 
 pbf_path = "portugal-latest.osm.pbf"
-db_path = "osm_analysis.db"
+db_path = "osm_analysis2.db"
 
 # LISBON AREA
 min_lon, min_lat, max_lon, max_lat = -9.25, 38.65, -9.05, 38.80
