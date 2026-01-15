@@ -1,7 +1,13 @@
-osm_analysis.db
-portugal-latest.osm.pbf
-C2021_FSINTESE_VARIAVEIS.csv
-GRID1K21_CONT.gpkg
-data/ocm_pt_export
-data/chargers.db
-data/ocm_portugal_raw.json
+# System files
+.DS_Store
+
+# Data and large files
+data/
+*.db
+*.pbf
+*.gpkg
+*.csv
+
+# Environment
+venv/
+.env
