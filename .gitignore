@@ -3,10 +3,6 @@
 
 # Data and large files
 data/
-*.db
-*.pbf
-*.gpkg
-*.csv
 
 # Environment
 venv/

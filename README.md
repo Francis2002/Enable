@@ -18,7 +18,7 @@ Ensure you have Python 3.9+ installed. It is recommended to use a virtual enviro
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install pyrosm duckdb geopandas matplotlib pyproj shapely
+pip install pyrosm duckdb geopandas matplotlib pyproj shapely requests
 ```
 
 ### 2. Data Acquisition
@@ -43,18 +43,57 @@ python3 process_census.py
 ```
 
 #### Step C: Process OSM Infrastructure
-Extracts road networks, POIs, and land use features block-by-block (10x10km) to manage memory.
+Extracts road networks, POIs, and land use features block-by-block (10x10km).
 ```bash
 python3 orchestrate_blocks.py
 ```
 
-## 📊 Viewing Results
-From the root directory, run the inspection utility to verify table counts and previews:
+#### Step D: Valhalla Routing (Phase 6)
+To calculate real-world travel times, we use the Valhalla routing engine.
+
+**1. Setup Valhalla (Docker)**
+Ensure Docker is installed and running, then execute:
 ```bash
-python3 inspect_db.py
+# 1. Prepare directory
+mkdir -p ../data/valhalla_data/valhalla_tiles
+
+# 2. Get Config
+docker run --rm ghcr.io/valhalla/valhalla:latest valhalla_build_config --mjolnir-tile-dir /data/valhalla_data/valhalla_tiles --mjolnir-traffic-extract /data/valhalla_data/traffic.tar --mjolnir-admin-extract /data/valhalla_data/admin.sqlite > ../data/valhalla_data/valhalla.json
+
+# 3. Build Tiles (This takes a few minutes)
+docker run --rm -v "$(pwd)/../data:/data" ghcr.io/valhalla/valhalla:latest valhalla_build_tiles -c /data/valhalla_data/valhalla.json /data/portugal-latest.osm.pbf
+
+# 4. Start Server
+docker run -d --name valhalla -p 8002:8002 -v "$(pwd)/../data:/data" ghcr.io/valhalla/valhalla:latest valhalla_service /data/valhalla_data/valhalla.json 1
+```
+
+**2. Prepare Origins**
+If you already ran Step C, update your database with internal centroids:
+```bash
+python3 backfill_internal_origins.py
+```
+
+**3. Calculate Travel Matrix**
+Computes entries for `data/travel_matrix.db` (filtered to < 60km Euclidean, < 30min Travel).
+```bash
+python3 calculate_travel_matrix.py
+```
+
+## 📊 Viewing Results
+From the `src` directory, run the inspection utilities:
+
+**General Database Check:**
+```bash
+python3 ../inspect_db.py
+```
+
+**Travel Matrix & Coverage Check:**
+```bash
+python3 inspect_matrix.py
 ```
 
 ## 🛠️ Internal Logic
 - **Decoupled Architecture**: Data from different sources is stored in separate tables joinable by a unique `cell_id`.
-- **EEA Standard**: Grid cells are mathematically aligned to the official European reference (RES1000m).
-- **Auto-Sanitization**: Scripts automatically exclude inaccessible cells (no roads) and default missing values to `0.0`.
+- **EEA Standard**: Grid cells are aligned to EPSG:3035.
+- **Valhalla Integration**: Uses a local Dockerized instance for high-performance routing without external API costs.
+- **Multi-Origin Strategy**: Routes from both boundary entry points and internal centroids for maximum accuracy.
