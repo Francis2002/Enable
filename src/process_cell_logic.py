@@ -93,6 +93,24 @@ def analyze_single_cell(cell_info, roads_in_block, pois_in_block, landuse_in_blo
             unique_check.add(coords)
             if len(origins) >= 3: break
     
+    # Internal Origin: Point on road closest to centroid
+    if not roads_cell.empty:
+        centroid = cell_poly.centroid
+        all_roads_geom = roads_cell.geometry.unary_union
+        # Fix possible geometry issues
+        if not all_roads_geom.is_valid:
+            all_roads_geom = all_roads_geom.buffer(0)
+            
+        nearest_pt = all_roads_geom.interpolate(all_roads_geom.project(centroid))
+        lon_int, lat_int = transformer.transform(nearest_pt.x, nearest_pt.y)
+        origins.append({
+            'cell_id': cell_id, 
+            'lon': lon_int, 
+            'lat': lat_int, 
+            'highway': 'internal', 
+            'priority': 0.0
+        })
+
     return {
         'road_stats': road_data,
         'poi_stats': poi_data,
