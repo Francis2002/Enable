@@ -6,9 +6,10 @@ import numpy as np
 import os
 import time
 
-OSM_DB = "../data/osm_analysis.db"
-CHARGERS_DB = "../data/chargers.db"
-MATRIX_DB = "../data/travel_matrix.db"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OSM_DB = os.path.join(BASE_DIR, "../data/osm_analysis.db")
+MOBIE_DB = os.path.join(BASE_DIR, "../data/mobie_data.db")
+MATRIX_DB = os.path.join(BASE_DIR, "../data/travel_matrix.db")
 VALHALLA_URL = "http://localhost:8002/sources_to_targets"
 
 # Optimization Thresholds
@@ -26,37 +27,46 @@ def haversine(lon1, lat1, lon2, lat2):
     return 2 * R * np.arctan2(np.sqrt(a), np.sqrt(1 - a))
 
 def calculate_matrix():
-    if not os.path.exists(OSM_DB) or not os.path.exists(CHARGERS_DB):
-        print("Missing required databases.")
+    if not os.path.exists(OSM_DB) or not os.path.exists(MOBIE_DB):
+        print(f"Missing required databases. Checked:\n{OSM_DB}\n{MOBIE_DB}")
         return
 
     # 1. Load Data
-    print("Loading origins and chargers...")
+    print("Loading origins (MICRO-TEST LIMIT 20) and Mobi.E chargers...")
     conn_osm = duckdb.connect(OSM_DB)
-    origins = conn_osm.execute("SELECT cell_id, lon, lat FROM cell_origins").df()
+    # LIMIT 20 for a very small test as requested (and due to disk space constraints)
+    origins = conn_osm.execute("SELECT cell_id, lon, lat FROM cell_origins LIMIT 20").df()
     conn_osm.close()
 
-    conn_chg = duckdb.connect(CHARGERS_DB)
-    chargers = conn_chg.execute("SELECT station_id, longitude as lon, latitude as lat FROM chargers").df()
-    conn_chg.close()
+    conn_mobie = duckdb.connect(MOBIE_DB)
+    chargers = conn_mobie.execute("SELECT ID as station_id, LONGITUDE as lon, LATITUDE as lat FROM stations").df()
+    conn_mobie.close()
 
     print(f"Loaded {len(origins)} origins and {len(chargers)} chargers.")
 
     # 2. Setup Travel Matrix DB
+    if os.path.exists(MATRIX_DB):
+        print(f"Deleting existing {MATRIX_DB} to ensure clean state...")
+        os.remove(MATRIX_DB) 
+        
     conn_matrix = duckdb.connect(MATRIX_DB)
-    conn_matrix.execute("CREATE TABLE IF NOT EXISTS travel_times (cell_id VARCHAR, station_id BIGINT, time_min DOUBLE, distance_km DOUBLE)")
+    conn_matrix.execute("CREATE TABLE travel_times (cell_id VARCHAR, station_id VARCHAR, time_min DOUBLE, distance_km DOUBLE)")
 
     # 3. Process in Batches
-    TARGET_CHUNK_SIZE = 200 # Process targets in smaller groups to prevent OOM
+    TARGET_CHUNK_SIZE = 250
     
     start_time = time.time()
     total_processed = 0
     total_saved = 0
 
+    print("\n--- Starting Batch Processing ---")
     for idx, origin in origins.iterrows():
+        b_start = time.time()
         # Calculate Euclidean distances to all chargers
         dists = haversine(origin['lon'], origin['lat'], chargers['lon'], chargers['lat'])
         candidate_chargers = chargers[dists < EUCLIDEAN_FILTER_KM]
+        
+        print(f"Cell {origin['cell_id']} ({total_processed+1}/{len(origins)}): {len(candidate_chargers)} candidates in {EUCLIDEAN_FILTER_KM}km radius")
         
         if candidate_chargers.empty:
             total_processed += 1
@@ -73,45 +83,44 @@ def calculate_matrix():
             }
             
             try:
-                response = requests.post(VALHALLA_URL, json=payload, timeout=30)
+                response = requests.post(VALHALLA_URL, json=payload, timeout=60)
                 response.raise_for_status()
                 result = response.json()
                 
-                if 'sources_to_targets' not in result:
-                    continue
-                
-                valid_edges = []
-                for k, target_result in enumerate(result['sources_to_targets'][0]):
-                    t_sec = target_result.get('time')
-                    d_km = target_result.get('distance')
+                if 'sources_to_targets' in result:
+                    valid_edges = []
+                    for k, target_result in enumerate(result['sources_to_targets'][0]):
+                        t_sec = target_result.get('time')
+                        if t_sec is not None and t_sec <= TIME_THRESHOLD_SEC:
+                            valid_edges.append({
+                                'cell_id': origin['cell_id'],
+                                'station_id': chunk.iloc[k]['station_id'],
+                                'time_min': float(t_sec / 60.0),
+                                'distance_km': float(target_result.get('distance'))
+                            })
                     
-                    if t_sec is not None and t_sec <= TIME_THRESHOLD_SEC:
-                        valid_edges.append({
-                            'cell_id': origin['cell_id'],
-                            'station_id': chunk.iloc[k]['station_id'],
-                            'time_min': t_sec / 60.0,
-                            'distance_km': d_km
-                        })
-                
-                if valid_edges:
-                    df_edges = pd.DataFrame(valid_edges)
-                    conn_matrix.execute("INSERT INTO travel_times SELECT * FROM df_edges")
-                    total_saved += len(valid_edges)
-                
-                # Small pause to prevent overloading the local server
-                time.sleep(0.1)
+                    if valid_edges:
+                        df_edges = pd.DataFrame(valid_edges)
+                        conn_matrix.execute("INSERT INTO travel_times SELECT * FROM df_edges")
+                        total_saved += len(valid_edges)
                 
             except Exception as e:
-                print(f"Request failed for cell {origin['cell_id']} chunk {j}: {e}")
-                time.sleep(1) # Back off
+                print(f"  [ERROR] Chunk {j}-{j+len(chunk)}: {e}")
             
+        b_elapsed = time.time() - b_start
         total_processed += 1
-        if total_processed % 10 == 0:
-            elapsed = time.time() - start_time
-            print(f"Processed {total_processed}/{len(origins)} origins. Found {total_saved} edges. Elapsed: {elapsed:.1f}s")
+        print(f"  Done. Saved {total_saved - (total_saved - len(valid_edges) if 'valid_edges' in locals() else 0)} edges for this cell. ({b_elapsed:.2f}s)")
 
-    print(f"Calculation complete. Total edges saved: {total_saved}")
+    elapsed = time.time() - start_time
+    print(f"\n--- MICRO-TEST COMPLETE ---")
+    print(f"Total origins processed: {total_processed}")
+    print(f"Total reachable edges saved: {total_saved}")
+    print(f"Average time per origin: {elapsed/total_processed:.2f}s")
+    print(f"Database size: {os.path.getsize(MATRIX_DB)/1024:.1f} KB")
     conn_matrix.close()
+
+if __name__ == "__main__":
+    calculate_matrix()
 
 if __name__ == "__main__":
     calculate_matrix()
