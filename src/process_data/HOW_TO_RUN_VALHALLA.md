@@ -44,6 +44,12 @@ docker run -d --name valhalla -p 8002:8002 -v "$(pwd)/../data:/data" ghcr.io/val
 
 ---
 
+docker start valhalla
+
+docker stop valhalla
+
+Remove it entirely: docker rm -f valhalla (You would only do this if you wanted to change the configuration or update the OSM data).
+
 
 ## Troubleshooting
 *   **"Connection Refused"**: The Valhalla server hasn't finished starting or Step 1E failed. Check `docker logs valhalla`.
