@@ -58,7 +58,7 @@ Ensure Docker is installed and running, then execute:
 mkdir -p ../data/valhalla_data/valhalla_tiles
 
 # 2. Get Config
-docker run --rm ghcr.io/valhalla/valhalla:latest valhalla_build_config --mjolnir-tile-dir /data/valhalla_data/valhalla_tiles --mjolnir-traffic-extract /data/valhalla_data/traffic.tar --mjolnir-admin-extract /data/valhalla_data/admin.sqlite > ../data/valhalla_data/valhalla.json
+docker run --rm ghcr.io/valhalla/valhalla:latest valhalla_build_config --mjolnir-tile-dir /data/valhalla_data/valhalla_tiles --mjolnir-traffic-extract /data/valhalla_data/traffic.tar --mjolnir-admin /data/valhalla_data/admin.sqlite > ../data/valhalla_data/valhalla.json
 
 # 3. Build Tiles (This takes a few minutes)
 docker run --rm -v "$(pwd)/../data:/data" ghcr.io/valhalla/valhalla:latest valhalla_build_tiles -c /data/valhalla_data/valhalla.json /data/portugal-latest.osm.pbf
