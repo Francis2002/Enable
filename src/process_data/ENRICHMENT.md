@@ -40,4 +40,55 @@ Location: `data/pre_ml.db`
 > Distances are in **meters**. If no features are found within the threshold, `count` will be `0` and `dist` will be `-1`.
 
 ---
+
+## Phase 2: Station Price Enrichment
+**Script**: `enrich_station_prices.py`
+**Description**: Ingests station-level and socket-level tariff information from `MOBIE_Tarifas.csv`.
+
+### Output Table: `prices`
+Location: `data/pre_ml.db`
+
+| Column | Description |
+| :--- | :--- |
+| `station_ID` | Station identifier (matches CSV `ID`) |
+| `UID_TOMADA` | Unique socket identifier |
+| `TIPO_TARIFARIO` | Tariff model type |
+| `TIPO_TARIFA` | Type of fee (ENERGY, TIME, FLAT) |
+| `TARIFA` | Current value of the tariff |
+
+---
+
+## Phase 3: Station Indicator Enrichment
+**Script**: `enrich_station_indicators.py`
+**Description**: Maps each station to its corresponding 1km grid cell and extracts socioeconomic metrics (income, census, tourism).
+
+### Output Table: `indicators`
+Location: `data/pre_ml.db`
+
+| Column | Description |
+| :--- | :--- |
+| `station_id` | Station identifier (matches CSV `ID`) |
+| `indicator_name` | Name of the metric (e.g., `avg_income`, `tourism_pressure`, `pop_total`) |
+| `value` | Numerical value of the indicator |
+
+---
+
+## Phase 4: Station Configuration
+**Script**: `enrich_station_configuration.py`
+**Description**: Extracts hardware-specific configuration for each socket from the corrected MOBIe station list.
+
+### Output Table: `station_configuration`
+Location: `data/pre_ml.db`
+
+| Column | Description |
+| :--- | :--- |
+| `station_ID` | Station identifier (matches CSV `ID`) |
+| `UID DA TOMADA` | Unique socket identifier |
+| `TIPO DE CARREGAMENTO` | Charging speed category (e.g., Ultra-Rápido) |
+| `NIVEL DE TENSÃO` | Voltage level (e.g., BC, BT, MT) |
+| `TIPO DE TOMADA` | Physical connector type (e.g., CHAdeMO, Type 2) |
+| `FORMATO DE TOMADA` | Socket or tethered cable |
+| `POTÊNCIA DA TOMADA` | Maximum power output in kW |
+
+---
 *Future enrichment phases will be documented here.*
