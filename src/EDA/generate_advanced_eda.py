@@ -31,8 +31,8 @@ def create_advanced_eda_notebook():
 
     # Data Path Configuration
     cells.append(nbf.v4.new_code_cell("DATA_DIR = '../../data'\n"
-                                     "POSTOS_FILE = os.path.join(DATA_DIR, 'MOBIe_Lista_de_postos.csv')\n"
-                                     "TARIFAS_FILE = os.path.join(DATA_DIR, 'MOBIE_Tarifas.csv')\n"
+                                     "POSTOS_FILE = os.path.join(DATA_DIR, '01_raw/MOBIe_Lista_de_postos.csv')\n"
+                                     "TARIFAS_FILE = os.path.join(DATA_DIR, '01_raw/MOBIE_Tarifas.csv')\n"
                                      "MAP_PATH = os.path.join(DATA_DIR, 'GRID1K21_CONT.gpkg')\n"
                                      "OSM_DB_PATH = os.path.join(DATA_DIR, 'osm_analysis.db')"))
 

@@ -9,10 +9,10 @@ import shutil
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(BASE_DIR, "data")
-CORRECTIONS_FILE = os.path.join(DATA_DIR, "station_corrections.json")
-RAW_DATA_FILE = os.path.join(DATA_DIR, "MOBIe_Lista_de_postos.csv")
-BACKUP_DATA_FILE = os.path.join(DATA_DIR, "MOBIe_Lista_de_postos_downloaded.csv")
-OUTPUT_FILE = os.path.join(DATA_DIR, "MOBIe_Lista_de_postos_corrected.csv")
+CORRECTIONS_FILE = os.path.join(DATA_DIR, "02_reference/station_corrections.json")
+RAW_DATA_FILE = os.path.join(DATA_DIR, "01_raw/MOBIe_Lista_de_postos.csv")
+BACKUP_DATA_FILE = os.path.join(DATA_DIR, "01_raw/MOBIe_Lista_de_postos_downloaded.csv")
+OUTPUT_FILE = os.path.join(DATA_DIR, "03_interim/MOBIe_Lista_de_postos_corrected.csv")
 
 def load_corrections(json_path):
     if not os.path.exists(json_path):

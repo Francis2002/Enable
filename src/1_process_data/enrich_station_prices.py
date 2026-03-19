@@ -3,8 +3,8 @@ import pandas as pd
 import os
 
 # Configuration
-TARIFAS_CSV = "../../data/MOBIE_Tarifas.csv"
-PRE_ML_DB = "../../data/pre_ml.db"
+TARIFAS_CSV = "../../data/01_raw/MOBIE_Tarifas.csv"
+PRE_ML_DB = "../../data/04_processed/pre_ml.db"
 
 def enrich_prices():
     print("Starting Station Prices Enrichment...")

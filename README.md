@@ -16,9 +16,9 @@ A decoupled, high-resolution spatial data analysis pipeline for Portugal. This p
 Ensure you have Python 3.9+ installed. It is recommended to use a virtual environment:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install pyrosm duckdb geopandas matplotlib pyproj shapely requests
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ### 2. Data Acquisition
@@ -29,26 +29,24 @@ Due to file sizes, raw data is not included in the repository. You must place th
 ### 3. Execution Pipeline
 Run the scripts in the following order to build your database from scratch:
 
-#### Step A: Initialize the Grid
-Generates the official EEA 1km grid spine for mainland Portugal.
+#### Step A: Initialize the Grid & OSM Base DB
+Generates the official EEA 1km grid spine for mainland Portugal and processes OSM blocks.
 ```bash
-cd src
+cd src/0_generate_base_db
 python3 create_grid_spine.py
+python3 analyze_blocks.py
 ```
 
-#### Step B: Process Census Data
-Extracts high-resolution population and housing data from the INE GeoPackage.
+#### Step B: Process Data Pipeline
+Navigate to `1_process_data` to enrich the EV station information.
 ```bash
-python3 process_census.py
+cd ../1_process_data
+python3 mobie_station_data_correction.py
+python3 enrich_station_configuration.py
+python3 enrich_station_indicators.py
 ```
 
-#### Step C: Process OSM Infrastructure
-Extracts road networks, POIs, and land use features block-by-block (10x10km).
-```bash
-python3 orchestrate_blocks.py
-```
-
-#### Step D: Valhalla Routing (Phase 6)
+#### Step C: Valhalla Routing (Phase 6)
 To calculate real-world travel times, we use the Valhalla routing engine.
 
 **1. Setup Valhalla (Docker)**
@@ -67,29 +65,28 @@ docker run --rm -v "$(pwd)/../data:/data" ghcr.io/valhalla/valhalla:latest valha
 docker run -d --name valhalla -p 8002:8002 -v "$(pwd)/../data:/data" ghcr.io/valhalla/valhalla:latest valhalla_service /data/valhalla_data/valhalla.json 1
 ```
 
-**2. Prepare Origins**
-If you already ran Step C, update your database with internal centroids:
+#### Step D: Calculate Distances (Valhalla Required)
+With the Valhalla server running, execute:
 ```bash
-python3 backfill_internal_origins.py
-```
-
-**3. Calculate Travel Matrix**
-Computes entries for `data/travel_matrix.db` (filtered to < 60km Euclidean, < 30min Travel).
-```bash
-python3 calculate_travel_matrix.py
+python3 enrich_station_distances.py
+python3 clean_empty_features.py
+python3 analyze_pre_ml.py
 ```
 
 ## 📊 Viewing Results
-From the `src` directory, run the inspection utilities:
+To explore the generated data and analysis, you can utilize the EDA notebooks and analysis scripts provided:
 
-**General Database Check:**
+**Pre-Machine Learning Analysis:**
 ```bash
-python3 ../inspect_db.py
+cd src/3_eda_pre_ml
+jupyter notebook eda_features.ipynb
 ```
 
-**Travel Matrix & Coverage Check:**
+**General Exploratory Data Analysis (EDA):**
 ```bash
-python3 inspect_matrix.py
+cd src/EDA
+python3 generate_nb.py
+jupyter notebook eda_basic.ipynb
 ```
 
 ## 🛠️ Internal Logic

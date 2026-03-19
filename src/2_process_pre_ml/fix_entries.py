@@ -4,7 +4,7 @@ import os
 import sys
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(SCRIPT_DIR, "../../data/pre_ml.db")
+DB_PATH = os.path.join(SCRIPT_DIR, "../../data/04_processed/pre_ml.db")
 JSON_PATH = os.path.join(SCRIPT_DIR, "station_corrections.json")
 
 def get_station_id_column(con, table_name):

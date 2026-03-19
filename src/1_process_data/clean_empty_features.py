@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 # Configuration
-PRE_ML_DB = "../../data/pre_ml.db"
+PRE_ML_DB = "../../data/04_processed/pre_ml.db"
 
 def clean_empty_features():
     print(f"Cleaning empty features from {PRE_ML_DB}...")

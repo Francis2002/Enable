@@ -5,12 +5,12 @@ from shapely.geometry import Point
 import os
 
 # Configuration
-PRE_ML_DB = "../../data/pre_ml.db"
-GRID_GPKG = "../../data/GRID1K21_CONT.gpkg"
-CAOP_GPKG = "../../data/Continente_CAOP2024_1.gpkg"
-TOURISM_CSV = "../../data/Estabelecimentos_de_Alojamento_Local.csv"
-AGREGADOS_CSV = "../../data/Agregados_pub_2023.csv"
-PASSIVOS_CSV = "../../data/Sujeitos Passivos_pub_2023.csv"
+PRE_ML_DB = "../../data/04_processed/pre_ml.db"
+GRID_GPKG = "../../data/01_raw/GRID1K21_CONT.gpkg"
+CAOP_GPKG = "../../data/01_raw/Continente_CAOP2024_1.gpkg"
+TOURISM_CSV = "../../data/01_raw/Estabelecimentos_de_Alojamento_Local.csv"
+AGREGADOS_CSV = "../../data/01_raw/Agregados_pub_2023.csv"
+PASSIVOS_CSV = "../../data/01_raw/Sujeitos Passivos_pub_2023.csv"
 
 def clean_value(val):
     if pd.isna(val) or val == 'nan':

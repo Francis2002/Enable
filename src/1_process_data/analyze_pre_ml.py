@@ -4,8 +4,8 @@ import numpy as np
 import os
 
 # Configuration
-PRE_ML_DB = "../../data/pre_ml.db"
-OUTPUT_REPORT = "../../data/pre_ml_analysis_report.txt"
+PRE_ML_DB = "../../data/04_processed/pre_ml.db"
+OUTPUT_REPORT = "../../data/04_processed/pre_ml_analysis_report.txt"
 
 def analyze_pre_ml():
     print(f"Analyzing {PRE_ML_DB}...")

@@ -22,8 +22,8 @@ def create_eda_notebook():
 
     # Data Path Configuration
     cells.append(nbf.v4.new_code_cell("DATA_DIR = '../../data'\n"
-                                     "POSTOS_FILE = os.path.join(DATA_DIR, 'MOBIe_Lista_de_postos_corrected.csv')\n"
-                                     "TARIFAS_FILE = os.path.join(DATA_DIR, 'MOBIE_Tarifas.csv')"))
+                                     "POSTOS_FILE = os.path.join(DATA_DIR, '03_interim/MOBIe_Lista_de_postos_corrected.csv')\n"
+                                     "TARIFAS_FILE = os.path.join(DATA_DIR, '01_raw/MOBIE_Tarifas.csv')"))
 
     # Loading Datasets
     cells.append(nbf.v4.new_code_cell("# Load datasets\n"

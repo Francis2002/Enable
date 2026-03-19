@@ -3,8 +3,8 @@ import pandas as pd
 import os
 
 # Configuration
-STATIONS_CSV = "../../data/MOBIe_Lista_de_postos_corrected.csv"
-PRE_ML_DB = "../../data/pre_ml.db"
+STATIONS_CSV = "../../data/03_interim/MOBIe_Lista_de_postos_corrected.csv"
+PRE_ML_DB = "../../data/04_processed/pre_ml.db"
 
 def add_coordinates_table():
     print(f"Adding 'coordinates' table to {PRE_ML_DB}...")

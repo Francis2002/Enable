@@ -7,10 +7,10 @@ import os
 import numpy as np
 
 # Configuration
-STATIONS_CSV = "../../data/MOBIe_Lista_de_postos_corrected.csv"
-OSM_DB = "../../data/osm_analysis.db"
-PRE_ML_DB = "../../data/pre_ml.db"
-POI_LIST_TXT = "../../data/POI_FULL_LIST.txt"
+STATIONS_CSV = "../../data/03_interim/MOBIe_Lista_de_postos_corrected.csv"
+OSM_DB = "../../data/03_interim/osm_analysis.db"
+PRE_ML_DB = "../../data/04_processed/pre_ml.db"
+POI_LIST_TXT = "../../data/02_reference/POI_FULL_LIST.txt"
 VALHALLA_URL = "http://localhost:8002/sources_to_targets"
 
 # Road Group Definitions
