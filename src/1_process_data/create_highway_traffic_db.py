@@ -7,12 +7,13 @@ from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 import pandas as pd
 import warnings
+import pyogrio
 warnings.filterwarnings('ignore')
 
 from extract_highway import get_highway_geometry_from_pbf
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_JSON = os.path.join(SCRIPT_DIR, "../../data/01_raw/a1_traffic_data.json")
+INPUT_DIR = os.path.join(SCRIPT_DIR, "../../data/01_raw/highway_traffic")
 OUTPUT_GPKG = os.path.join(SCRIPT_DIR, "../../data/highway_traffic.gpkg")
 PBF_PATH = os.path.join(SCRIPT_DIR, "../../data/01_raw/portugal-latest.osm.pbf")
 
@@ -222,15 +223,29 @@ def process_traffic_data(input_json_path):
         print("❌ No segments were successfully processed. GeoPackage not created.")
 
 if __name__ == "__main__":
-    raw_dir = os.path.join(SCRIPT_DIR, "../../data/01_raw")
-    json_files = [f for f in os.listdir(raw_dir) if f.endswith('_traffic_data.json')]
+    json_files = [f for f in os.listdir(INPUT_DIR) if f.endswith('_traffic_data.json')]
     
-    # Delete the old database to prevent overlapping/duplicate lines (Fixing the "two lines" issue)
+    # Get already processed highways to avoid duplicates
+    processed_layers = []
     if os.path.exists(OUTPUT_GPKG):
-        print(f"🧹 Removing old database: {OUTPUT_GPKG} to prevent duplicates.")
-        os.remove(OUTPUT_GPKG)
+        try:
+            processed_layers = pyogrio.list_layers(OUTPUT_GPKG)[:, 0].tolist()
+        except Exception as e:
+            print(f"Could not read existing layers: {e}")
+            
+    print(f"📦 Existing layers in DB: {processed_layers}")
 
-    for jf in json_files:
-        json_path = os.path.join(raw_dir, jf)
+    for jf in sorted(json_files):
+        json_path = os.path.join(INPUT_DIR, jf)
+        
+        # Read just the highway name first
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            highway_ref = data.get("autoestrada")
+            
+        if highway_ref in processed_layers:
+            print(f"\n✅ {highway_ref} already processed (found in DB). Skipping {jf}...")
+            continue
+            
         print(f"\n🚀 Processing file: {jf}")
         process_traffic_data(json_path)
