@@ -224,6 +224,12 @@ def process_traffic_data(input_json_path):
 if __name__ == "__main__":
     raw_dir = os.path.join(SCRIPT_DIR, "../../data/01_raw")
     json_files = [f for f in os.listdir(raw_dir) if f.endswith('_traffic_data.json')]
+    
+    # Delete the old database to prevent overlapping/duplicate lines (Fixing the "two lines" issue)
+    if os.path.exists(OUTPUT_GPKG):
+        print(f"🧹 Removing old database: {OUTPUT_GPKG} to prevent duplicates.")
+        os.remove(OUTPUT_GPKG)
+
     for jf in json_files:
         json_path = os.path.join(raw_dir, jf)
         print(f"\n🚀 Processing file: {jf}")

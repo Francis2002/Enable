@@ -71,16 +71,35 @@ def get_highway_geometry_from_pbf(pbf_path, highway_ref):
     # to avoid random detached links, but sometimes highways have natural breaks.
     # We will return the full merged geometry and handle snapping globally.
     if isinstance(merged, MultiLineString):
+        print(f"⚠️ {highway_ref} is disconnected in OSM data. Attempting spatial stitching...")
         # We can extract the main backbone if there are many tiny disconnected ramps
         # Filter out very short segments (e.g. < 0.01 degrees)
         valid_geoms = [geom for geom in merged.geoms if geom.length > 0.005]
+        
         if len(valid_geoms) == 1:
             return valid_geoms[0]
         elif len(valid_geoms) > 1:
-            return MultiLineString(valid_geoms)
-        else:
-            # Fallback to longest
-            return max(list(merged.geoms), key=lambda x: x.length)
+            from shapely.geometry import Point
+            # Connect the end of each segment to the beginning of the next
+            # Sort geometries roughly by latitude or longitude depending on highway orientation
+            valid_geoms.sort(key=lambda g: list(g.coords)[0][1])
+            
+            stitched_coords = []
+            for i, geom in enumerate(valid_geoms):
+                coords = list(geom.coords)
+                
+                if stitched_coords:
+                    last_pt = Point(stitched_coords[-1])
+                    start_pt = Point(coords[0])
+                    end_pt = Point(coords[-1])
+                    
+                    if last_pt.distance(end_pt) < last_pt.distance(start_pt):
+                        coords = coords[::-1]
+                        
+                stitched_coords.extend(coords)
+                
+            print(f"✅ Stitched {len(valid_geoms)} chunks into a single continuous master line.")
+            return LineString(stitched_coords)
             
     return merged
 
