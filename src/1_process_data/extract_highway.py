@@ -111,7 +111,12 @@ def get_routing_path(pbf_path, ptA, ptB):
         print(f"Routing failed ({e}). Using straight line fallback.")
         return LineString([ptA, ptB])
 
+_GEOM_CACHE = {}
+
 def get_highway_geometry_from_pbf(pbf_path, highway_ref):
+    if highway_ref in _GEOM_CACHE:
+        return _GEOM_CACHE[highway_ref]
+
     print(f"📡 [1/2] Scanning PBF for ways matching ref='{highway_ref}'...")
     way_handler = HighwayWayHandler(highway_ref)
     way_handler.apply_file(pbf_path)
@@ -201,8 +206,11 @@ def get_highway_geometry_from_pbf(pbf_path, highway_ref):
                     master_coords = master_coords + list(bridge.coords)[1:-1] + coords
                     
             print(f"✅ Deep Routing stitched all chunks into a single continuous master line.")
-            return LineString(master_coords)
+            res = LineString(master_coords)
+            _GEOM_CACHE[highway_ref] = res
+            return res
             
+    _GEOM_CACHE[highway_ref] = merged
     return merged
 
 if __name__ == '__main__':
