@@ -141,15 +141,15 @@ def process_traffic_data(input_json_path):
     
     for item in all_sublancos:
         # The JSON uses an en-dash " – " (not a regular hyphen)
-        nodes = item['sublanco'].split(' – ')
-        if len(nodes) != 2:
-            print(f"  ⚠️ Could not parse sublanco: {item['sublanco']}")
-            fail_count += 1
-            continue
+        if ' – ' in item['sublanco']:
+            nodes = item['sublanco'].split(' – ')
+            start_node = nodes[0].strip()
+            end_node = nodes[1].strip()
+        else:
+            # Handle special cases like "Ponte 25 de Abril"
+            start_node = item['sublanco'] + " Norte"
+            end_node = item['sublanco'] + " Sul"
             
-        start_node = nodes[0].strip()
-        end_node = nodes[1].strip()
-        
         # Calculate Q1 Average for 2025
         jan = item['2025']['Jan']
         fev = item['2025']['Fev']
@@ -172,12 +172,11 @@ def process_traffic_data(input_json_path):
         
         # Prevent zero-length slices if geocoder failed and returned same points
         if abs(d0 - d1) < 0.0001:
-            print(f"  ⚠️ Warning: {start_node} and {end_node} snapped to same location.")
-            fail_count += 1
-            continue
-            
-        # 5. Slice geometry
-        segment_geom = slice_line(master_line, d0, d1)
+            print(f"  ⚠️ Warning: {start_node} and {end_node} snapped to same location. Using straight line fallback.")
+            segment_geom = LineString([(start_pt.x, start_pt.y), (end_pt.x, end_pt.y)])
+        else:
+            # 5. Slice geometry
+            segment_geom = slice_line(master_line, d0, d1)
         
         segments.append({
             "highway": highway_ref,
