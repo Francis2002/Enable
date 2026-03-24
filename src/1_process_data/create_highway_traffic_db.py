@@ -2,7 +2,7 @@ import json
 import os
 import geopandas as gpd
 from shapely.geometry import LineString, Point, MultiLineString
-from shapely.ops import linemerge
+from shapely.ops import linemerge, substring
 import pandas as pd
 import warnings
 import pyogrio
@@ -104,19 +104,7 @@ def get_highway_geometry(highway_ref="A1"):
 
 def slice_line(line, d0, d1):
     """Extract sub-linestring between two normalised distances."""
-    if d0 > d1:
-        d0, d1 = d1, d0
-        
-    coords = list(line.coords)
-    start_pt = line.interpolate(d0, normalized=True)
-    end_pt   = line.interpolate(d1, normalized=True)
-    
-    mid_pts  = [
-        Point(c) for c in coords
-        if d0 < line.project(Point(c), normalized=True) < d1
-    ]
-    all_pts = [start_pt] + mid_pts + [end_pt]
-    return LineString([(p.x, p.y) for p in all_pts])
+    return substring(line, d0, d1, normalized=True)
 
 def process_traffic_data(input_json_path):
     if not os.path.exists(input_json_path):
@@ -167,13 +155,13 @@ def process_traffic_data(input_json_path):
             continue
             
         # 4. Snap to master line
-        d0 = master_line.project(start_pt, normalized=True)
-        d1 = master_line.project(end_pt, normalized=True)
+        d0 = float(master_line.project(start_pt, normalized=True))
+        d1 = float(master_line.project(end_pt, normalized=True))
         
         # Prevent zero-length slices if geocoder failed and returned same points
         if abs(d0 - d1) < 0.0001:
             print(f"  ⚠️ Warning: {start_node} and {end_node} snapped to same location. Using straight line fallback.")
-            segment_geom = LineString([(start_pt.x, start_pt.y), (end_pt.x, end_pt.y)])
+            segment_geom = LineString([(float(start_pt.x), float(start_pt.y)), (float(end_pt.x), float(end_pt.y))])
         else:
             # 5. Slice geometry
             segment_geom = slice_line(master_line, d0, d1)
