@@ -3,14 +3,13 @@ import os
 import geopandas as gpd
 from shapely.geometry import LineString, Point, MultiLineString
 from shapely.ops import linemerge
-from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
 import pandas as pd
 import warnings
 import pyogrio
 warnings.filterwarnings('ignore')
 
 from extract_highway import get_highway_geometry_from_pbf
+from local_geocoder import geocode_junction
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 INPUT_DIR = os.path.join(SCRIPT_DIR, "../../data/01_raw/highway_traffic")
@@ -85,6 +84,12 @@ FALLBACK_COORDS = {
     "Arrábida":               (-8.6364, 41.1472),
 }
 
+try:
+    from extra_fallbacks import EXTRA_FALLBACKS
+    FALLBACK_COORDS.update(EXTRA_FALLBACKS)
+except ImportError:
+    pass
+
 def get_highway_geometry(highway_ref="A1"):
     print(f"📡 Extracting geometry dynamically from PBF for {highway_ref}...")
     geom = get_highway_geometry_from_pbf(PBF_PATH, highway_ref)
@@ -96,31 +101,6 @@ def get_highway_geometry(highway_ref="A1"):
         geom = max(list(geom.geoms), key=lambda x: x.length)
         
     return geom
-
-def geocode_junction(node_name, highway_ref="A1"):
-    """Uses Nominatim to find the latitude/longitude of the junction with fallback."""
-    # Check fallback first
-    if node_name in FALLBACK_COORDS:
-        lon, lat = FALLBACK_COORDS[node_name]
-        return Point(lon, lat)
-    
-    geolocator = Nominatim(user_agent="ev_mobility_mapper")
-    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
-    
-    # Try different query combinations
-    queries = [
-        f"{highway_ref} {node_name}, Portugal",
-        f"Nó {node_name} {highway_ref}, Portugal",
-        f"{node_name}, Portugal"
-    ]
-    
-    for query in queries:
-        location = geocode(query)
-        if location:
-            return Point(location.longitude, location.latitude)
-            
-    print(f"  ⚠️ Warning: Could not geocode '{node_name}'")
-    return None
 
 def slice_line(line, d0, d1):
     """Extract sub-linestring between two normalised distances."""
@@ -179,8 +159,8 @@ def process_traffic_data(input_json_path):
         print(f"📍 Geocoding: {start_node} -> {end_node}")
         
         # 3. Geocode junctions
-        start_pt = geocode_junction(start_node, highway_ref)
-        end_pt = geocode_junction(end_node, highway_ref)
+        start_pt = geocode_junction(start_node, highway_ref, fallback_dict=FALLBACK_COORDS)
+        end_pt = geocode_junction(end_node, highway_ref, fallback_dict=FALLBACK_COORDS)
         
         if not start_pt or not end_pt:
             fail_count += 1
@@ -242,10 +222,6 @@ if __name__ == "__main__":
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             highway_ref = data.get("autoestrada")
-            
-        if highway_ref in processed_layers:
-            print(f"\n✅ {highway_ref} already processed (found in DB). Skipping {jf}...")
-            continue
             
         print(f"\n🚀 Processing file: {jf}")
         process_traffic_data(json_path)
