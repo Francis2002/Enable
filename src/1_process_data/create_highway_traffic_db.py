@@ -8,7 +8,7 @@ import warnings
 import pyogrio
 warnings.filterwarnings('ignore')
 
-from extract_highway import get_highway_geometry_from_pbf
+from extract_highway import get_routing_path_for_segment
 from local_geocoder import geocode_junction
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -90,18 +90,6 @@ try:
 except ImportError:
     pass
 
-def get_highway_geometry(highway_ref="A1"):
-    print(f"📡 Extracting geometry dynamically from PBF for {highway_ref}...")
-    geom = get_highway_geometry_from_pbf(PBF_PATH, highway_ref)
-    if geom is None:
-        raise ValueError(f"Could not extract geometry for {highway_ref}")
-        
-    if isinstance(geom, MultiLineString):
-        # Force single LineString for easier slicing by taking the longest continuous segment
-        geom = max(list(geom.geoms), key=lambda x: x.length)
-        
-    return geom
-
 def slice_line(line, d0, d1):
     """Extract sub-linestring between two normalised distances."""
     return substring(line, d0, d1, normalized=True)
@@ -117,9 +105,6 @@ def process_traffic_data(input_json_path):
         
     highway_ref = data["autoestrada"] # "A1"
     all_sublancos = data.get("sublancosNorte", []) + data.get("sublancosNorte2", []) + data.get("sublancosSul", []) + data.get("sublancosCentro", []) + data.get("sublancos", [])
-    
-    # 2. Get the master line for the highway
-    master_line = get_highway_geometry(highway_ref)
     
     segments = []
     print(f"\n🗺️ Processing {len(all_sublancos)} segments for {highway_ref}...")
@@ -144,7 +129,7 @@ def process_traffic_data(input_json_path):
         mar = item['2025']['Mar']
         avg_q1_tmdm = (jan + fev + mar) / 3.0
         
-        print(f"📍 Geocoding: {start_node} -> {end_node}")
+        print(f"📍 Geocoding & Routing: {start_node} -> {end_node}")
         
         # 3. Geocode junctions
         start_pt = geocode_junction(start_node, highway_ref, fallback_dict=FALLBACK_COORDS)
@@ -154,17 +139,18 @@ def process_traffic_data(input_json_path):
             fail_count += 1
             continue
             
-        # 4. Snap to master line
-        d0 = float(master_line.project(start_pt, normalized=True))
-        d1 = float(master_line.project(end_pt, normalized=True))
-        
-        # Prevent zero-length slices if geocoder failed and returned same points
-        if abs(d0 - d1) < 0.0001:
-            print(f"  ⚠️ Warning: {start_node} and {end_node} snapped to same location. Using straight line fallback.")
-            segment_geom = LineString([(float(start_pt.x), float(start_pt.y)), (float(end_pt.x), float(end_pt.y))])
+        # 4. Generate direct route between the two nodes
+        # If coordinates are identical, use a tiny straight line fallback to avoid errors
+        if abs(start_pt.x - end_pt.x) < 0.0001 and abs(start_pt.y - end_pt.y) < 0.0001:
+            print(f"  ⚠️ Warning: {start_node} and {end_node} snapped to same location. Using fallback.")
+            segment_geom = LineString([(float(start_pt.x), float(start_pt.y)), (float(end_pt.x), float(end_pt.y) + 0.0001)])
         else:
-            # 5. Slice geometry
-            segment_geom = slice_line(master_line, d0, d1)
+            segment_geom = get_routing_path_for_segment(
+                PBF_PATH, 
+                (float(start_pt.x), float(start_pt.y)), 
+                (float(end_pt.x), float(end_pt.y)), 
+                highway_ref
+            )
         
         segments.append({
             "highway": highway_ref,
@@ -200,6 +186,11 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Could not read existing layers: {e}")
             
+    # Clean old layers if testing
+    if os.path.exists(OUTPUT_GPKG):
+        print("Removing old gpkg to regenerate...")
+        os.remove(OUTPUT_GPKG)
+        
     print(f"📦 Existing layers in DB: {processed_layers}")
 
     for jf in sorted(json_files):

@@ -143,79 +143,125 @@ def get_highway_geometry_from_pbf(pbf_path, highway_ref):
         
     merged = linemerge(lines)
     
-    if isinstance(merged, MultiLineString):
-        print(f"⚠️ {highway_ref} is disconnected in OSM data. Attempting Deep Routing stitching...")
-        
-        valid_geoms = [geom for geom in merged.geoms if geom.length > 0.005]
-        
-        if len(valid_geoms) == 1:
-            return valid_geoms[0]
-        elif len(valid_geoms) > 1:
-            # Greedy stitch: start with longest, append closest
-            valid_geoms.sort(key=lambda x: x.length, reverse=True)
-            
-            master_coords = list(valid_geoms.pop(0).coords)
-            
-            while valid_geoms:
-                master_start = master_coords[0]
-                master_end = master_coords[-1]
-                
-                best_dist = float('inf')
-                best_idx = -1
-                best_action = None # (attach_to, flip_geom)
-                
-                for i, geom in enumerate(valid_geoms):
-                    g_start = geom.coords[0]
-                    g_end = geom.coords[-1]
-                    
-                    d_ss = Point(master_start).distance(Point(g_start))
-                    d_se = Point(master_start).distance(Point(g_end))
-                    d_es = Point(master_end).distance(Point(g_start))
-                    d_ee = Point(master_end).distance(Point(g_end))
-                    
-                    min_d = min(d_ss, d_se, d_es, d_ee)
-                    if min_d < best_dist:
-                        best_dist = min_d
-                        best_idx = i
-                        if min_d == d_ss: best_action = ('start', True)
-                        elif min_d == d_se: best_action = ('start', False)
-                        elif min_d == d_es: best_action = ('end', False)
-                        elif min_d == d_ee: best_action = ('end', True)
-                        
-                next_geom = valid_geoms.pop(best_idx)
-                
-                # If the closest chunk is more than ~5km away, it's likely a mislabelled road in OSM!
-                # We skip it to avoid massive routing delays and incorrect geometries.
-                if best_dist > 0.05:
-                    print(f"  -> Gap is too large (~{best_dist*111:.2f} km). Ignoring this outlier chunk.")
-                    continue
-                    
-                coords = list(next_geom.coords)
-                if best_action[1]:
-                    coords = coords[::-1]
-                    
-                print(f"  -> Routing gap of ~{best_dist*111:.2f} km. {len(valid_geoms)} chunks remaining...")
-                
-                if best_action[0] == 'start':
-                    # Master start connects to coords end
-                    bridge = get_routing_path(pbf_path, coords[-1], master_start)
-                    master_coords = coords + list(bridge.coords)[1:-1] + master_coords
-                else:
-                    # Master end connects to coords start
-                    bridge = get_routing_path(pbf_path, master_end, coords[0])
-                    master_coords = master_coords + list(bridge.coords)[1:-1] + coords
-                    
-            print(f"✅ Deep Routing stitched all chunks into a single continuous master line.")
-            res = LineString(master_coords)
-            _GEOM_CACHE[highway_ref] = res
-            return res
-            
     _GEOM_CACHE[highway_ref] = merged
     return merged
 
-if __name__ == '__main__':
-    pbf = "../../data/01_raw/portugal-latest.osm.pbf"
-    geom = get_highway_geometry_from_pbf(pbf, "A1")
-    if geom:
-        print("Result Geometry Type:", geom.geom_type)
-        print("Length:", geom.length)
+class MotorwayHandler(osmium.SimpleHandler):
+    def __init__(self):
+        super(MotorwayHandler, self).__init__()
+        self.nodes_to_keep = set()
+        self.ways = []
+        
+    def way(self, w):
+        if 'highway' in w.tags and w.tags['highway'] in ['motorway', 'motorway_link', 'trunk', 'trunk_link']:
+            nodes = [n.ref for n in w.nodes]
+            if len(nodes) >= 2:
+                way_ref = w.tags.get('ref', '')
+                self.ways.append({
+                    'id': w.id,
+                    'nodes': nodes,
+                    'ref': way_ref
+                })
+                self.nodes_to_keep.update(nodes)
+
+class MotorwayNodeHandler(osmium.SimpleHandler):
+    def __init__(self, node_ids):
+        super(MotorwayNodeHandler, self).__init__()
+        self.node_ids = node_ids
+        self.nodes = {}
+
+    def node(self, n):
+        if n.id in self.node_ids:
+            self.nodes[n.id] = (n.location.lon, n.location.lat)
+
+# Global variables to cache the national graph
+_NATIONAL_GRAPH = None
+_NATIONAL_NODES = None
+_TREE = None
+_COORDS_LIST = None
+_NODE_IDS = None
+
+def build_national_highway_graph(pbf_path):
+    global _NATIONAL_GRAPH, _NATIONAL_NODES, _TREE, _COORDS_LIST, _NODE_IDS
+    if _NATIONAL_GRAPH is not None:
+        return _NATIONAL_GRAPH, _NATIONAL_NODES, _TREE, _COORDS_LIST, _NODE_IDS
+        
+    import time
+    print("📡 [1/2] Scanning PBF for all motorways/trunks...")
+    t0 = time.time()
+    way_handler = MotorwayHandler()
+    way_handler.apply_file(pbf_path)
+    
+    print("📡 [2/2] Extracting node coordinates...")
+    node_handler = MotorwayNodeHandler(way_handler.nodes_to_keep)
+    node_handler.apply_file(pbf_path)
+    
+    print("🕸️ Building National Highway NetworkX graph...")
+    import networkx as nx
+    from scipy.spatial import cKDTree
+    G = nx.Graph()
+    for way in way_handler.ways:
+        nodes = way['nodes']
+        ref = way['ref'].replace(' ', '')
+        
+        for i in range(len(nodes) - 1):
+            u = nodes[i]
+            v = nodes[i+1]
+            if u in node_handler.nodes and v in node_handler.nodes:
+                coord_u = node_handler.nodes[u]
+                coord_v = node_handler.nodes[v]
+                
+                # Approx distance
+                dx = coord_u[0] - coord_v[0]
+                dy = coord_u[1] - coord_v[1]
+                dist = (dx**2 + dy**2)**0.5
+                
+                G.add_edge(u, v, ref=ref, length=dist, coords=(coord_u, coord_v))
+                
+    # Build KDTree for quick nearest node lookup
+    coords_list = []
+    node_ids = []
+    for nid, coord in node_handler.nodes.items():
+        coords_list.append(coord)
+        node_ids.append(nid)
+        
+    tree = cKDTree(coords_list)
+    
+    _NATIONAL_GRAPH = G
+    _NATIONAL_NODES = node_handler.nodes
+    _TREE = tree
+    _COORDS_LIST = coords_list
+    _NODE_IDS = node_ids
+    
+    print(f"✅ National Graph built in {time.time()-t0:.2f}s! {G.number_of_nodes()} nodes, {G.number_of_edges()} edges.")
+    return _NATIONAL_GRAPH, _NATIONAL_NODES, _TREE, _COORDS_LIST, _NODE_IDS
+
+def get_routing_path_for_segment(pbf_path, ptA, ptB, highway_ref):
+    """Uses the cached national highway network to fast-route between A and B."""
+    try:
+        import networkx as nx
+        from shapely.geometry import LineString
+        G, nodes_dict, tree, coords_list, node_ids = build_national_highway_graph(pbf_path)
+        
+        # Determine target ref for weighting
+        target_ref_clean = highway_ref.replace(' ', '')
+        
+        # Calculate dynamic weights based on the requested highway
+        def weight_func(u, v, d):
+            if target_ref_clean in d.get('ref', ''):
+                return d['length'] * 1.0
+            else:
+                return d['length'] * 50.0
+                
+        _, idxA = tree.query(ptA)
+        _, idxB = tree.query(ptB)
+        
+        start_node = node_ids[idxA]
+        end_node = node_ids[idxB]
+        
+        path = nx.shortest_path(G, source=start_node, target=end_node, weight=weight_func)
+        path_coords = [nodes_dict[n] for n in path]
+        return LineString(path_coords)
+    except Exception as e:
+        print(f"Routing failed ({e}). Using straight line fallback.")
+        return LineString([ptA, ptB])
