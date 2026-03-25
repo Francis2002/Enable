@@ -1,0 +1,14 @@
+{
+    "corrections": [
+        {
+            "TABLE": "coordinates",
+            "station_id": "VIS-00081",
+            "old": {
+                "cidade": "Viseu"
+            },
+            "new": {      
+                "cidade": "Nelas"
+            }
+        }
+    ]
+}

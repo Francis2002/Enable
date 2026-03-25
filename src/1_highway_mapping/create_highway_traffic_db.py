@@ -1,0 +1,201 @@
+import json
+import os
+import geopandas as gpd
+from shapely.geometry import LineString, Point, MultiLineString
+from shapely.ops import linemerge, substring
+import pandas as pd
+import warnings
+import pyogrio
+warnings.filterwarnings('ignore')
+
+from extract_highway import get_routing_path_for_segment
+from local_geocoder import geocode_junction
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+INPUT_DIR = os.path.join(SCRIPT_DIR, "../../data/01_raw/highway_traffic")
+OUTPUT_GPKG = os.path.join(SCRIPT_DIR, "../../data/03_interim/highway_traffic.gpkg")
+PBF_PATH = os.path.join(SCRIPT_DIR, "../../data/01_raw/portugal-latest.osm.pbf")
+
+
+# Hardcoded A1 coordinates from your PoC script
+A1_CENTRELINE = [
+    (-9.1042, 38.7978), (-9.0850, 38.8125), (-9.0707, 38.8355), (-9.0580, 38.8470),
+    (-9.0540, 38.8561), (-9.0400, 38.8720), (-9.0276, 38.8917), (-9.0100, 38.9120),
+    (-8.9920, 38.9300), (-8.9880, 38.9401), (-8.9800, 38.9470), (-8.9760, 38.9530),
+    (-8.9700, 38.9710), (-8.9640, 38.9950), (-8.9700, 39.0100), (-8.9757, 39.0225),
+    (-8.9700, 39.0340), (-8.9680, 39.0458), (-8.9560, 39.0720), (-8.9475, 39.0968),
+    (-8.9200, 39.1200), (-8.8800, 39.1400), (-8.8300, 39.1550), (-8.7880, 39.1690),
+    (-8.7500, 39.1900), (-8.7100, 39.2150), (-8.6862, 39.2351), (-8.6600, 39.2650),
+    (-8.6400, 39.2950), (-8.6250, 39.3200), (-8.6042, 39.3461), (-8.5800, 39.3800),
+    (-8.5600, 39.4100), (-8.5400, 39.4450), (-8.5298, 39.4726), (-8.5450, 39.5050),
+    (-8.5800, 39.5400), (-8.6100, 39.5750), (-8.6300, 39.5980), (-8.6730, 39.6180),
+    (-8.6900, 39.6500), (-8.7100, 39.6800), (-8.7400, 39.7050), (-8.7700, 39.7200),
+    (-8.8055, 39.7420), (-8.7900, 39.7700), (-8.7600, 39.8050), (-8.7100, 39.8400),
+    (-8.6700, 39.8700), (-8.6400, 39.8950), (-8.6255, 39.9175), (-8.6200, 39.9500),
+    (-8.6180, 39.9900), (-8.6200, 40.0200), (-8.6228, 40.0568), (-8.5900, 40.0700),
+    (-8.5500, 40.0850), (-8.5200, 40.0920), (-8.5012, 40.0974), (-8.4800, 40.1100),
+    (-8.4600, 40.1400), (-8.4400, 40.1680), (-8.4245, 40.1875), (-8.4340, 40.2030),
+    (-8.4435, 40.2185), (-8.4480, 40.2500), (-8.4500, 40.2900), (-8.4520, 40.3300),
+    (-8.4535, 40.3768), (-8.4600, 40.4200), (-8.4800, 40.4700), (-8.5000, 40.5200),
+    (-8.5300, 40.5700), (-8.5640, 40.6215), (-8.5630, 40.9990)
+]
+
+FALLBACK_COORDS = {
+    "Stª Iria de Azóia (A1/IC2)": (-9.0540, 38.8561),
+    "Alverca (A1/A9)": (-9.0276, 38.8917),
+    "Carregado Sul (A1/A10)": (-8.9757, 39.0225),
+    "A1/A10": (-8.9757, 39.0225),
+    "Santarém - A1/A15": (-8.6862, 39.2351), # Using Santarem coords
+    "A1/A15 (Riachos)": (-8.6042, 39.3461),
+    "A1/A15": (-8.6042, 39.3461),
+    "Torres Novas (A1/A23)": (-8.5298, 39.4726),
+    "Coimbra Norte (A1/A14)": (-8.4435, 40.2185),
+    "Albergaria (A1/A25)": (-8.483, 40.697), # Approx
+    "Espinho (A1/A41)": (-8.563, 40.999), # Approx
+    "Vila Franca de Xira II": (-8.9880, 38.9401),
+    "Vila Franca de Xira I":  (-8.9760, 38.9530),
+    "Sacavém":                (-9.1042, 38.7978),
+    "S. João da Talha":       (-9.0707, 38.8355),
+    "Alverca":                (-9.0276, 38.8917),
+    "Castanheira do Ribatejo":(-8.9640, 38.9950),
+    "Carregado":              (-8.9680, 39.0458),
+    "Aveiras de Cima":        (-8.9475, 39.0968),
+    "Cartaxo":                (-8.7880, 39.1690),
+    "Santarém":               (-8.6862, 39.2351),
+    "Torres Novas":           (-8.5298, 39.4726),
+    "Fátima":                 (-8.6730, 39.6180),
+    "Leiria":                 (-8.8055, 39.7420),
+    "Pombal":                 (-8.6255, 39.9175),
+    "Soure":                  (-8.6228, 40.0568),
+    "Condeixa":               (-8.5012, 40.0974),
+    "Coimbra Sul":            (-8.4245, 40.1875),
+    "Coimbra Norte":          (-8.4435, 40.2185),
+    "Mealhada":               (-8.4535, 40.3768),
+    "Aveiro Sul":             (-8.5640, 40.6215),
+    "Feira":                  (-8.5445, 40.9258),
+    "Estarreja":              (-8.5721, 40.7516),
+    "Feiteira":               (-8.5312, 41.0267),
+    "Carvalhos":              (-8.5833, 41.0711),
+    "Jaca":                   (-8.6112, 41.1000),
+    "Santo Ovídio":           (-8.6047, 41.1147),
+    "Coimbrões":              (-8.6264, 41.1275),
+    "Canidelo":               (-8.6419, 41.1350),
+    "Afurada":                (-8.6472, 41.1417),
+    "Arrábida":               (-8.6364, 41.1472),
+}
+
+try:
+    from extra_fallbacks import EXTRA_FALLBACKS
+    FALLBACK_COORDS.update(EXTRA_FALLBACKS)
+except ImportError:
+    pass
+
+def slice_line(line, d0, d1):
+    """Extract sub-linestring between two normalised distances."""
+    return substring(line, d0, d1, normalized=True)
+
+def process_traffic_data(input_json_path):
+    if not os.path.exists(input_json_path):
+        print(f"❌ Could not find {input_json_path}")
+        return
+
+    # 1. Load JSON data
+    with open(input_json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+        
+    highway_ref = data["autoestrada"] # "A1"
+    all_sublancos = data.get("sublancosNorte", []) + data.get("sublancosNorte2", []) + data.get("sublancosSul", []) + data.get("sublancosCentro", []) + data.get("sublancos", [])
+    
+    segments = []
+    print(f"\n🗺️ Processing {len(all_sublancos)} segments for {highway_ref}...")
+    
+    success_count = 0
+    fail_count = 0
+    
+    for item in all_sublancos:
+        # The JSON uses an en-dash " – " (not a regular hyphen)
+        if ' – ' in item['sublanco']:
+            nodes = item['sublanco'].split(' – ')
+            start_node = nodes[0].strip()
+            end_node = nodes[1].strip()
+        else:
+            # Handle special cases like "Ponte 25 de Abril"
+            start_node = item['sublanco'] + " Norte"
+            end_node = item['sublanco'] + " Sul"
+            
+        # Calculate Q1 Average for 2025
+        jan = item['2025']['Jan']
+        fev = item['2025']['Fev']
+        mar = item['2025']['Mar']
+        months_2024 = item.get("2024", {})
+        avg_2024_tmdm = sum(months_2024.values()) / len(months_2024) if len(months_2024) > 0 else 0
+        
+        print(f"📍 Geocoding & Routing: {start_node} -> {end_node}")
+        
+        # 3. Geocode junctions
+        start_pt = geocode_junction(start_node, highway_ref, fallback_dict=FALLBACK_COORDS)
+        end_pt = geocode_junction(end_node, highway_ref, fallback_dict=FALLBACK_COORDS)
+        
+        if not start_pt or not end_pt:
+            fail_count += 1
+            continue
+            
+        # 4. Generate direct route between the two nodes
+        # If coordinates are identical, use a tiny straight line fallback to avoid errors
+        if abs(start_pt.x - end_pt.x) < 0.0001 and abs(start_pt.y - end_pt.y) < 0.0001:
+            print(f"  ⚠️ Warning: {start_node} and {end_node} snapped to same location. Using fallback.")
+            segment_geom = LineString([(float(start_pt.x), float(start_pt.y)), (float(end_pt.x), float(end_pt.y) + 0.0001)])
+        else:
+            segment_geom = get_routing_path_for_segment(
+                PBF_PATH, 
+                (float(start_pt.x), float(start_pt.y)), 
+                (float(end_pt.x), float(end_pt.y)), 
+                highway_ref
+            )
+        
+        segments.append({
+            "highway": highway_ref,
+            "sublanco": item['sublanco'],
+            "start_node": start_node,
+            "end_node": end_node,
+            "avg_tmdm_2024": round(avg_2024_tmdm),
+            "geometry": segment_geom
+        })
+        success_count += 1
+
+    # 6. Save to GeoPackage
+    print(f"\n💾 Saving {len(segments)} segments to GeoPackage...")
+    if len(segments) > 0:
+        gdf = gpd.GeoDataFrame(segments, geometry="geometry", crs="EPSG:4326")
+        
+        # Append to GPKG if it exists, otherwise create new
+        mode = 'a' if os.path.exists(OUTPUT_GPKG) else 'w'
+        
+        gdf.to_file(OUTPUT_GPKG, layer=highway_ref, driver="GPKG", mode=mode)
+        print(f"✅ Success! Saved {success_count} segments. ({fail_count} failed) to {OUTPUT_GPKG}")
+    else:
+        print("❌ No segments were successfully processed. GeoPackage not created.")
+
+if __name__ == "__main__":
+    json_files = [f for f in os.listdir(INPUT_DIR) if f.endswith('_traffic_data.json')]
+    
+    import sys
+    if len(sys.argv) > 1:
+        target_file = sys.argv[1]
+        json_path = os.path.join(INPUT_DIR, target_file)
+        if os.path.exists(json_path):
+            process_traffic_data(json_path)
+        sys.exit(0)
+            
+    if os.path.exists(OUTPUT_GPKG):
+        print("Removing old gpkg to regenerate...")
+        os.remove(OUTPUT_GPKG)
+        
+    for jf in sorted(json_files):
+        json_path = os.path.join(INPUT_DIR, jf)
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            highway_ref = data.get("autoestrada")
+            
+        print(f"\n🚀 Processing file: {jf}")
+        process_traffic_data(json_path)

@@ -7,7 +7,6 @@ A decoupled, high-resolution spatial data analysis pipeline for Portugal. This p
 - `data/`: (Not in git) Store your `.osm.pbf`, `.gpkg`, and the resulting `.db` here.
 - `src/`: Core analysis and processing scripts.
 - `database_cleaning/`: Database sanitization and schema refinement tools.
-- `images/`: Visualization scripts and analysis previews.
 - `inspect_db.py`: Quick utility to check database status and row counts.
 
 ## 🚀 Getting Started
@@ -37,35 +36,42 @@ python3 create_grid_spine.py
 python3 analyze_blocks.py
 ```
 
-#### Step B: Process Data Pipeline
-Navigate to `1_process_data` to enrich the EV station information.
+#### Step B: Highway Traffic Mapping (Phase 1)
+Extracts highway coordinates from OSM and maps them to traffic values from IMT.
 ```bash
-cd ../1_process_data
+cd src/1_highway_mapping
+./run_all_files.sh
+```
+
+#### Step C: Process Data Pipeline (Phase 2)
+Navigate to `2_station_enrichment` to enrich the EV station information.
+```bash
+cd ../2_station_enrichment
 python3 mobie_station_data_correction.py
 python3 enrich_station_configuration.py
 python3 enrich_station_indicators.py
 ```
 
-#### Step C: Valhalla Routing (Phase 6)
+#### Step D: Valhalla Routing (Phase 6)
 To calculate real-world travel times, we use the Valhalla routing engine.
 
 **1. Setup Valhalla (Docker)**
 Ensure Docker is installed and running, then execute:
 ```bash
 # 1. Prepare directory
-mkdir -p ../data/valhalla_data/valhalla_tiles
+mkdir -p ../../data/03_interim/valhalla_data/valhalla_tiles
 
 # 2. Get Config
-docker run --rm ghcr.io/valhalla/valhalla:latest valhalla_build_config --mjolnir-tile-dir /data/valhalla_data/valhalla_tiles --mjolnir-traffic-extract /data/valhalla_data/traffic.tar --mjolnir-admin /data/valhalla_data/admin.sqlite > ../data/valhalla_data/valhalla.json
+docker run --rm ghcr.io/valhalla/valhalla:latest valhalla_build_config --mjolnir-tile-dir /data/03_interim/valhalla_data/valhalla_tiles --mjolnir-traffic-extract /data/03_interim/valhalla_data/traffic.tar --mjolnir-admin /data/03_interim/valhalla_data/admin.sqlite > ../../data/03_interim/valhalla_data/valhalla.json
 
 # 3. Build Tiles (This takes a few minutes)
-docker run --rm -v "$(pwd)/../data:/data" ghcr.io/valhalla/valhalla:latest valhalla_build_tiles -c /data/valhalla_data/valhalla.json /data/portugal-latest.osm.pbf
+docker run --rm -v "$(pwd)/../../data:/data" ghcr.io/valhalla/valhalla:latest valhalla_build_tiles -c /data/03_interim/valhalla_data/valhalla.json /data/01_raw/portugal-latest.osm.pbf
 
 # 4. Start Server
-docker run -d --name valhalla -p 8002:8002 -v "$(pwd)/../data:/data" ghcr.io/valhalla/valhalla:latest valhalla_service /data/valhalla_data/valhalla.json 1
+docker run -d --name valhalla -p 8002:8002 -v "$(pwd)/../../data:/data" ghcr.io/valhalla/valhalla:latest valhalla_service /data/03_interim/valhalla_data/valhalla.json 1
 ```
 
-#### Step D: Calculate Distances (Valhalla Required)
+#### Step E: Calculate Distances (Valhalla Required)
 With the Valhalla server running, execute:
 ```bash
 python3 enrich_station_distances.py
@@ -78,7 +84,7 @@ To explore the generated data and analysis, you can utilize the EDA notebooks an
 
 **Pre-Machine Learning Analysis:**
 ```bash
-cd src/3_eda_pre_ml
+cd src/4_eda_pre_ml
 jupyter notebook eda_features.ipynb
 ```
 
