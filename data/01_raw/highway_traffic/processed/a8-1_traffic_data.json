@@ -1,0 +1,43 @@
+{
+  "autoestrada": "A8-1",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "A8/A8-1/Lig. A1 – VPL",
+      "2024": {
+        "Jan": 21413, "Fev": 21369, "Mar": 21201, "Abr": 22471,
+        "Mai": 23364, "Jun": 22155, "Jul": 23201, "Ago": 23155,
+        "Set": 23468, "Out": 23461, "Nov": 23064, "Dez": 23066
+      },
+      "2025": { "Jan": 22114, "Fev": 22467, "Mar": 22244 }
+    },
+    {
+      "sublanco": "A8-1/VPL – A8-1/EN350",
+      "2024": {
+        "Jan": 17003, "Fev": 17039, "Mar": 16913, "Abr": 17761,
+        "Mai": 18270, "Jun": 17435, "Jul": 18356, "Ago": 18090,
+        "Set": 18396, "Out": 18718, "Nov": 18120, "Dez": 17784
+      },
+      "2025": { "Jan": 17606, "Fev": 18104, "Mar": 17609 }
+    },
+    {
+      "sublanco": "A8-1/EN350 – A8-1/IC2",
+      "2024": {
+        "Jan": 17003, "Fev": 17039, "Mar": 16913, "Abr": 17761,
+        "Mai": 18270, "Jun": 17435, "Jul": 18356, "Ago": 18090,
+        "Set": 18396, "Out": 18718, "Nov": 18120, "Dez": 17784
+      },
+      "2025": { "Jan": 17606, "Fev": 18104, "Mar": 17609 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 18326, "Fev": 18338, "Mar": 18199, "Abr": 19174,
+      "Mai": 19798, "Jun": 18851, "Jul": 19810, "Ago": 19610,
+      "Set": 19918, "Out": 20141, "Nov": 19603, "Dez": 19369
+    },
+    "2025": { "Jan": 18958, "Fev": 19413, "Mar": 19000 }
+  }
+}

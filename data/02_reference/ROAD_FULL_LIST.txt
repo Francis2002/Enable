@@ -1,0 +1,10 @@
+--- HIGHWAY TYPES AND COUNTS ---
+primary: 46674
+primary_link: 4675
+secondary: 39663
+secondary_link: 1959
+motorway: 11215
+motorway_link: 7753
+trunk: 8049
+trunk_link: 4144
+

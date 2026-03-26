@@ -1,0 +1,115 @@
+{
+  "autoestrada": "A5",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Viaduto Duarte Pacheco – Cruz das Oliveiras",
+      "2024": {
+        "Jan": 128341, "Fev": 129626, "Mar": 128659, "Abr": 135100,
+        "Mai": 137709, "Jun": 132190, "Jul": 136074, "Ago": 122670,
+        "Set": 137804, "Out": 138084, "Nov": 135783, "Dez": 133400
+      },
+      "2025": { "Jan": 127004, "Fev": 133841, "Mar": 130110 }
+    },
+    {
+      "sublanco": "Cruz das Oliveiras – Monsanto",
+      "2024": {
+        "Jan": 127488, "Fev": 128756, "Mar": 127977, "Abr": 134231,
+        "Mai": 136837, "Jun": 131675, "Jul": 135480, "Ago": 121731,
+        "Set": 136438, "Out": 136599, "Nov": 133786, "Dez": 131397
+      },
+      "2025": { "Jan": 124894, "Fev": 132104, "Mar": 127705 }
+    },
+    {
+      "sublanco": "Monsanto – Miraflores (A5/IC17)",
+      "2024": {
+        "Jan": 83302, "Fev": 84709, "Mar": 84339, "Abr": 89064,
+        "Mai": 91063, "Jun": 85766, "Jul": 88105, "Ago": 75358,
+        "Set": 88422, "Out": 90579, "Nov": 87882, "Dez": 85161
+      },
+      "2025": { "Jan": 81643, "Fev": 86919, "Mar": 83488 }
+    },
+    {
+      "sublanco": "Miraflores (A5/IC17) – Linda-a-Velha",
+      "2024": {
+        "Jan": 146690, "Fev": 149987, "Mar": 149666, "Abr": 157457,
+        "Mai": 160872, "Jun": 152928, "Jul": 158099, "Ago": 139852,
+        "Set": 157529, "Out": 158995, "Nov": 155281, "Dez": 151030
+      },
+      "2025": { "Jan": 145056, "Fev": 153553, "Mar": 148452 }
+    },
+    {
+      "sublanco": "Linda-a-Velha – Estádio Nacional",
+      "2024": {
+        "Jan": 134310, "Fev": 137178, "Mar": 137136, "Abr": 144646,
+        "Mai": 147644, "Jun": 140907, "Jul": 145913, "Ago": 129160,
+        "Set": 144188, "Out": 145294, "Nov": 141978, "Dez": 137840
+      },
+      "2025": { "Jan": 132771, "Fev": 140652, "Mar": 136828 }
+    },
+    {
+      "sublanco": "Estádio Nacional – Oeiras",
+      "2024": {
+        "Jan": 126627, "Fev": 128703, "Mar": 129100, "Abr": 136676,
+        "Mai": 140058, "Jun": 134464, "Jul": 139856, "Ago": 123063,
+        "Set": 138692, "Out": 139219, "Nov": 136038, "Dez": 134221
+      },
+      "2025": { "Jan": 126720, "Fev": 133752, "Mar": 131357 }
+    },
+    {
+      "sublanco": "Oeiras – Carcavelos",
+      "2024": {
+        "Jan": 85586, "Fev": 87283, "Mar": 88126, "Abr": 94056,
+        "Mai": 96693, "Jun": 93362, "Jul": 97469, "Ago": 86611,
+        "Set": 95677, "Out": 95265, "Nov": 92870, "Dez": 92035
+      },
+      "2025": { "Jan": 85927, "Fev": 91144, "Mar": 89912 }
+    },
+    {
+      "sublanco": "Carcavelos – Estoril",
+      "2024": {
+        "Jan": 58898, "Fev": 59406, "Mar": 60089, "Abr": 63867,
+        "Mai": 66134, "Jun": 63565, "Jul": 65418, "Ago": 57699,
+        "Set": 65376, "Out": 66308, "Nov": 64081, "Dez": 62912
+      },
+      "2025": { "Jan": 58920, "Fev": 62846, "Mar": 61667 }
+    },
+    {
+      "sublanco": "Estoril – Alcabideche",
+      "2024": {
+        "Jan": 47244, "Fev": 47743, "Mar": 47792, "Abr": 50886,
+        "Mai": 52960, "Jun": 51184, "Jul": 52243, "Ago": 45761,
+        "Set": 52017, "Out": 53472, "Nov": 51370, "Dez": 50250
+      },
+      "2025": { "Jan": 47443, "Fev": 50677, "Mar": 48888 }
+    },
+    {
+      "sublanco": "Alcabideche – Alvide",
+      "2024": {
+        "Jan": 49595, "Fev": 50324, "Mar": 50099, "Abr": 53345,
+        "Mai": 55596, "Jun": 54102, "Jul": 54330, "Ago": 48264,
+        "Set": 53836, "Out": 54061, "Nov": 52392, "Dez": 49242
+      },
+      "2025": { "Jan": 46225, "Fev": 51648, "Mar": 49675 }
+    },
+    {
+      "sublanco": "Alvide – Cascais",
+      "2024": {
+        "Jan": 38457, "Fev": 39116, "Mar": 39260, "Abr": 41729,
+        "Mai": 43182, "Jun": 41907, "Jul": 42384, "Ago": 38571,
+        "Set": 42321, "Out": 41909, "Nov": 40635, "Dez": 39424
+      },
+      "2025": { "Jan": 37820, "Fev": 39713, "Mar": 38761 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 91406, "Fev": 92850, "Mar": 93013, "Abr": 98412,
+      "Mai": 100986, "Jun": 96905, "Jul": 100115, "Ago": 88665,
+      "Set": 99609, "Out": 100273, "Nov": 97721, "Dez": 95745
+    },
+    "2025": { "Jan": 90787, "Fev": 96276, "Mar": 93892 }
+  }
+}

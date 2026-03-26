@@ -1,0 +1,133 @@
+{
+  "autoestrada": "A6",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "A2/A6/A13 – Vendas Novas",
+      "2024": {
+        "Jan": 9189, "Fev": 9867, "Mar": 10691, "Abr": 10954,
+        "Mai": 11463, "Jun": 12006, "Jul": 12907, "Ago": 14204,
+        "Set": 12595, "Out": 11223, "Nov": 11103, "Dez": 11704
+      },
+      "2025": { "Jan": 9658, "Fev": 10292, "Mar": 10485 }
+    },
+    {
+      "sublanco": "Vendas Novas – Montemor-o-Novo Poente",
+      "2024": {
+        "Jan": 8430, "Fev": 9043, "Mar": 9865, "Abr": 10080,
+        "Mai": 10520, "Jun": 11012, "Jul": 11789, "Ago": 13065,
+        "Set": 11585, "Out": 10349, "Nov": 10231, "Dez": 10799
+      },
+      "2025": { "Jan": 8857, "Fev": 9417, "Mar": 9619 }
+    },
+    {
+      "sublanco": "Montemor-o-Novo Poente – Montemor-o-Novo Nascente",
+      "2024": {
+        "Jan": 7810, "Fev": 8365, "Mar": 9181, "Abr": 9358,
+        "Mai": 9767, "Jun": 10240, "Jul": 10957, "Ago": 12140,
+        "Set": 10751, "Out": 9606, "Nov": 9490, "Dez": 10048
+      },
+      "2025": { "Jan": 8232, "Fev": 8749, "Mar": 8911 }
+    },
+    {
+      "sublanco": "Montemor-o-Novo Nascente – Évora Poente",
+      "2024": {
+        "Jan": 6739, "Fev": 7224, "Mar": 7956, "Abr": 8067,
+        "Mai": 8472, "Jun": 8854, "Jul": 9546, "Ago": 10729,
+        "Set": 9281, "Out": 8308, "Nov": 8163, "Dez": 8642
+      },
+      "2025": { "Jan": 7112, "Fev": 7516, "Mar": 7706 }
+    },
+    {
+      "sublanco": "Évora Poente – Évora Nascente",
+      "2024": {
+        "Jan": 3224, "Fev": 3431, "Mar": 4004, "Abr": 3859,
+        "Mai": 4024, "Jun": 4278, "Jul": 5009, "Ago": 6008,
+        "Set": 4468, "Out": 3878, "Nov": 3776, "Dez": 4334
+      },
+      "2025": { "Jan": 3383, "Fev": 3468, "Mar": 3614 }
+    },
+    {
+      "sublanco": "Évora Nascente – Estremoz",
+      "2024": {
+        "Jan": 4215, "Fev": 4471, "Mar": 5131, "Abr": 5019,
+        "Mai": 5246, "Jun": 5452, "Jul": 6236, "Ago": 7380,
+        "Set": 5725, "Out": 5093, "Nov": 4952, "Dez": 5502
+      },
+      "2025": { "Jan": 4429, "Fev": 4575, "Mar": 4712 }
+    },
+    {
+      "sublanco": "Estremoz – Borba",
+      "2024": {
+        "Jan": 3148, "Fev": 3365, "Mar": 3861, "Abr": 3700,
+        "Mai": 3848, "Jun": 4107, "Jul": 4839, "Ago": 5860,
+        "Set": 4281, "Out": 3727, "Nov": 3577, "Dez": 4069
+      },
+      "2025": { "Jan": 3259, "Fev": 3320, "Mar": 3458 }
+    },
+    {
+      "sublanco": "Borba – Elvas Poente",
+      "2024": {
+        "Jan": 3116, "Fev": 3281, "Mar": 3792, "Abr": 3670,
+        "Mai": 3807, "Jun": 4063, "Jul": 4798, "Ago": 5808,
+        "Set": 4181, "Out": 3622, "Nov": 3514, "Dez": 4013
+      },
+      "2025": { "Jan": 3202, "Fev": 3273, "Mar": 3401 }
+    },
+    {
+      "sublanco": "Elvas Poente – EN246",
+      "2024": {
+        "Jan": 5125, "Fev": 5263, "Mar": 5831, "Abr": 5890,
+        "Mai": 5958, "Jun": 6124, "Jul": 6935, "Ago": 7884,
+        "Set": 6227, "Out": 5712, "Nov": 5590, "Dez": 5922
+      },
+      "2025": { "Jan": 5042, "Fev": 5196, "Mar": 5882 }
+    },
+    {
+      "sublanco": "EN246 – Elvas Central",
+      "2024": {
+        "Jan": 5996, "Fev": 6169, "Mar": 6761, "Abr": 6909,
+        "Mai": 6939, "Jun": 7173, "Jul": 8028, "Ago": 9115,
+        "Set": 7355, "Out": 6802, "Nov": 6695, "Dez": 6965
+      },
+      "2025": { "Jan": 5944, "Fev": 6266, "Mar": 6213 }
+    },
+    {
+      "sublanco": "Elvas Central – Elvas Nascente",
+      "2024": {
+        "Jan": 6067, "Fev": 6337, "Mar": 6900, "Abr": 7110,
+        "Mai": 7073, "Jun": 7363, "Jul": 8230, "Ago": 9271,
+        "Set": 7532, "Out": 6964, "Nov": 6820, "Dez": 7058
+      },
+      "2025": { "Jan": 6024, "Fev": 6313, "Mar": 5996 }
+    },
+    {
+      "sublanco": "Elvas Nascente – Caia",
+      "2024": {
+        "Jan": 10170, "Fev": 10485, "Mar": 11439, "Abr": 11624,
+        "Mai": 11566, "Jun": 11973, "Jul": 12678, "Ago": 13871,
+        "Set": 13070, "Out": 11364, "Nov": 11502, "Dez": 12220
+      },
+      "2025": { "Jan": 10254, "Fev": 10737, "Mar": 10509 }
+    },
+    {
+      "sublanco": "Caia – Fronteira do Caia",
+      "2024": {
+        "Jan": 9889, "Fev": 10277, "Mar": 11266, "Abr": 11463,
+        "Mai": 11457, "Jun": 11842, "Jul": 12511, "Ago": 13742,
+        "Set": 12734, "Out": 11203, "Nov": 11335, "Dez": 11958
+      },
+      "2025": { "Jan": 10069, "Fev": 10554, "Mar": 10342 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 5734, "Fev": 6094, "Mar": 6771, "Abr": 6799,
+      "Mai": 7057, "Jun": 7390, "Jul": 8161, "Ago": 9294,
+      "Set": 7748, "Out": 6884, "Nov": 6770, "Dez": 7298
+    },
+    "2025": { "Jan": 5970, "Fev": 6262, "Mar": 6407 }
+  }
+}

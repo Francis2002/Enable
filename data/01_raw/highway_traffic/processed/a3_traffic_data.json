@@ -1,0 +1,151 @@
+{
+  "autoestrada": "A3",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Porto (VCI) – EN 12",
+      "2024": {
+        "Jan": 101093, "Fev": 103840, "Mar": 105868, "Abr": 111171,
+        "Mai": 112625, "Jun": 110418, "Jul": 114907, "Ago": 113787,
+        "Set": 112721, "Out": 109136, "Nov": 109260, "Dez": 109210
+      },
+      "2025": { "Jan": 100500, "Fev": 106913, "Mar": 106770 }
+    },
+    {
+      "sublanco": "EN 12 – Águas Santas (A3/A4)",
+      "2024": {
+        "Jan": 130990, "Fev": 134417, "Mar": 136587, "Abr": 143151,
+        "Mai": 145189, "Jun": 139888, "Jul": 147117, "Ago": 142998,
+        "Set": 144968, "Out": 142972, "Nov": 142102, "Dez": 142330
+      },
+      "2025": { "Jan": 131673, "Fev": 139865, "Mar": 139278 }
+    },
+    {
+      "sublanco": "Águas Santas (A3/A4) – Maia",
+      "2024": {
+        "Jan": 73948, "Fev": 75824, "Mar": 76689, "Abr": 79755,
+        "Mai": 81423, "Jun": 78237, "Jul": 82854, "Ago": 80495,
+        "Set": 79798, "Out": 79647, "Nov": 78966, "Dez": 79451
+      },
+      "2025": { "Jan": 72168, "Fev": 77556, "Mar": 76794 }
+    },
+    {
+      "sublanco": "Maia – Santo Tirso",
+      "2024": {
+        "Jan": 60457, "Fev": 62177, "Mar": 63398, "Abr": 66092,
+        "Mai": 67792, "Jun": 65812, "Jul": 70237, "Ago": 70051,
+        "Set": 66930, "Out": 66056, "Nov": 64558, "Dez": 65735
+      },
+      "2025": { "Jan": 57894, "Fev": 61827, "Mar": 62088 }
+    },
+    {
+      "sublanco": "Santo Tirso – Famalicão",
+      "2024": {
+        "Jan": 52162, "Fev": 53749, "Mar": 54965, "Abr": 57373,
+        "Mai": 58862, "Jun": 57385, "Jul": 62553, "Ago": 64474,
+        "Set": 60301, "Out": 59095, "Nov": 57970, "Dez": 59406
+      },
+      "2025": { "Jan": 52532, "Fev": 56255, "Mar": 56580 }
+    },
+    {
+      "sublanco": "Famalicão – Cruz",
+      "2024": {
+        "Jan": 26574, "Fev": 27266, "Mar": 28409, "Abr": 29483,
+        "Mai": 30652, "Jun": 30516, "Jul": 33708, "Ago": 36760,
+        "Set": 32745, "Out": 30995, "Nov": 30283, "Dez": 31842
+      },
+      "2025": { "Jan": 26973, "Fev": 28709, "Mar": 29095 }
+    },
+    {
+      "sublanco": "Cruz – Braga Sul",
+      "2024": {
+        "Jan": 24928, "Fev": 25618, "Mar": 26779, "Abr": 27768,
+        "Mai": 28919, "Jun": 28763, "Jul": 31934, "Ago": 35239,
+        "Set": 31067, "Out": 29379, "Nov": 28772, "Dez": 30439
+      },
+      "2025": { "Jan": 25614, "Fev": 27277, "Mar": 27809 }
+    },
+    {
+      "sublanco": "Braga Sul – Braga Poente",
+      "2024": {
+        "Jan": 10507, "Fev": 10615, "Mar": 11621, "Abr": 11900,
+        "Mai": 12635, "Jun": 12967, "Jul": 15200, "Ago": 20201,
+        "Set": 14297, "Out": 12437, "Nov": 12643, "Dez": 14927
+      },
+      "2025": { "Jan": 10825, "Fev": 11336, "Mar": 11763 }
+    },
+    {
+      "sublanco": "Braga Poente – EN 201",
+      "2024": {
+        "Jan": 9403, "Fev": 9463, "Mar": 10626, "Abr": 10662,
+        "Mai": 11524, "Jun": 12010, "Jul": 14238, "Ago": 20773,
+        "Set": 13566, "Out": 11207, "Nov": 11470, "Dez": 14201
+      },
+      "2025": { "Jan": 9581, "Fev": 9894, "Mar": 10494 }
+    },
+    {
+      "sublanco": "EN 201 – Ponte de Lima Sul",
+      "2024": {
+        "Jan": 10132, "Fev": 10182, "Mar": 11391, "Abr": 11458,
+        "Mai": 12335, "Jun": 12860, "Jul": 15311, "Ago": 22050,
+        "Set": 14208, "Out": 11709, "Nov": 12110, "Dez": 14991
+      },
+      "2025": { "Jan": 10190, "Fev": 10543, "Mar": 11249 }
+    },
+    {
+      "sublanco": "Ponte de Lima Sul – Ponte de Lima Norte",
+      "2024": {
+        "Jan": 13162, "Fev": 13324, "Mar": 14688, "Abr": 14715,
+        "Mai": 15673, "Jun": 16141, "Jul": 18721, "Ago": 25919,
+        "Set": 17192, "Out": 15060, "Nov": 15365, "Dez": 18519
+      },
+      "2025": { "Jan": 13571, "Fev": 13961, "Mar": 14895 }
+    },
+    {
+      "sublanco": "Ponte de Lima Norte – EN 303",
+      "2024": {
+        "Jan": 7692, "Fev": 7668, "Mar": 8867, "Abr": 8715,
+        "Mai": 9645, "Jun": 10271, "Jul": 12428, "Ago": 17311,
+        "Set": 10846, "Out": 9193, "Nov": 9673, "Dez": 12231
+      },
+      "2025": { "Jan": 7935, "Fev": 8094, "Mar": 8685 }
+    },
+    {
+      "sublanco": "EN 303 – Valença (Sul)",
+      "2024": {
+        "Jan": 7503, "Fev": 7470, "Mar": 8643, "Abr": 8478,
+        "Mai": 9379, "Jun": 9890, "Jul": 12043, "Ago": 16284,
+        "Set": 10402, "Out": 8881, "Nov": 9402, "Dez": 11954
+      },
+      "2025": { "Jan": 7743, "Fev": 7850, "Mar": 8363 }
+    },
+    {
+      "sublanco": "Valença (Sul) – Valença",
+      "2024": {
+        "Jan": 11205, "Fev": 12410, "Mar": 14689, "Abr": 15919,
+        "Mai": 17376, "Jun": 18182, "Jul": 20484, "Ago": 24500,
+        "Set": 19000, "Out": 16406, "Nov": 13745, "Dez": 15066
+      },
+      "2025": { "Jan": 11305, "Fev": 12517, "Mar": 14813 }
+    },
+    {
+      "sublanco": "Valença – Fronteira",
+      "2024": {
+        "Jan": 12628, "Fev": 13987, "Mar": 16551, "Abr": 17939,
+        "Mai": 17581, "Jun": 20485, "Jul": 23080, "Ago": 27500,
+        "Set": 21000, "Out": 18485, "Nov": 15487, "Dez": 16979
+      },
+      "2025": { "Jan": 12818, "Fev": 14192, "Mar": 16795 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 25560, "Fev": 26183, "Mar": 27428, "Abr": 28360,
+      "Mai": 29498, "Jun": 29253, "Jul": 32245, "Ago": 35991,
+      "Set": 30672, "Out": 28918, "Nov": 28638, "Dez": 30677
+    },
+    "2025": { "Jan": 25404, "Fev": 26948, "Mar": 27464 }
+  }
+}

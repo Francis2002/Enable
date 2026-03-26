@@ -1,0 +1,448 @@
+{
+  "autoestrada": "A4",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Matosinhos – Sendim",
+      "2024": {
+        "Jan": 50872, "Fev": 52762, "Mar": 48292, "Abr": 50598,
+        "Mai": 54935, "Jun": 51548, "Jul": 55103, "Ago": 47201,
+        "Set": 53801, "Out": 56677, "Nov": 55665, "Dez": 54909
+      },
+      "2025": { "Jan": 52812, "Fev": 60513, "Mar": 51879 }
+    },
+    {
+      "sublanco": "Sendim – Guifões",
+      "2024": {
+        "Jan": 65598, "Fev": 67328, "Mar": 68014, "Abr": 72591,
+        "Mai": 77628, "Jun": 72435, "Jul": 75567, "Ago": 67737,
+        "Set": 73444, "Out": 76316, "Nov": 73704, "Dez": 73259
+      },
+      "2025": { "Jan": 68111, "Fev": 71629, "Mar": 73065 }
+    },
+    {
+      "sublanco": "Guifões – Custóias",
+      "2024": {
+        "Jan": 65598, "Fev": 67328, "Mar": 68014, "Abr": 72591,
+        "Mai": 77628, "Jun": 72435, "Jul": 75567, "Ago": 67737,
+        "Set": 73444, "Out": 76316, "Nov": 73704, "Dez": 73259
+      },
+      "2025": { "Jan": 68111, "Fev": 71393, "Mar": 72915 }
+    },
+    {
+      "sublanco": "Custóias – Via Norte",
+      "2024": {
+        "Jan": 58979, "Fev": 60468, "Mar": 62394, "Abr": 67919,
+        "Mai": 71799, "Jun": 67426, "Jul": 72987, "Ago": 66966,
+        "Set": 68919, "Out": 71469, "Nov": 68691, "Dez": 70362
+      },
+      "2025": { "Jan": 63068, "Fev": 67836, "Mar": 68236 }
+    },
+    {
+      "sublanco": "Via Norte – Ponte da Pedra",
+      "2024": {
+        "Jan": 57092, "Fev": 58696, "Mar": 60229, "Abr": 64963,
+        "Mai": 68333, "Jun": 64518, "Jul": 69834, "Ago": 63718,
+        "Set": 66065, "Out": 69287, "Nov": 66905, "Dez": 67343
+      },
+      "2025": { "Jan": 61577, "Fev": 67090, "Mar": 67069 }
+    },
+    {
+      "sublanco": "Ponte da Pedra – Águas Santas (A3/A4)",
+      "2024": {
+        "Jan": 64872, "Fev": 66645, "Mar": 67889, "Abr": 72738,
+        "Mai": 75846, "Jun": 71976, "Jul": 77496, "Ago": 70587,
+        "Set": 74193, "Out": 77126, "Nov": 74903, "Dez": 74838
+      },
+      "2025": { "Jan": 69234, "Fev": 74386, "Mar": 74336 }
+    },
+    {
+      "sublanco": "Águas Santas (A3/A4) – Ermesinde",
+      "2024": {
+        "Jan": 90020, "Fev": 92318, "Mar": 94329, "Abr": 99007,
+        "Mai": 101293, "Jun": 99137, "Jul": 105389, "Ago": 104329,
+        "Set": 101912, "Out": 101935, "Nov": 93583, "Dez": 94139
+      },
+      "2025": { "Jan": 86970, "Fev": 92445, "Mar": 92455 }
+    },
+    {
+      "sublanco": "Ermesinde – Valongo",
+      "2024": {
+        "Jan": 47766, "Fev": 48986, "Mar": 50056, "Abr": 52539,
+        "Mai": 53751, "Jun": 52606, "Jul": 55926, "Ago": 55364,
+        "Set": 54077, "Out": 54091, "Nov": 53554, "Dez": 53981
+      },
+      "2025": { "Jan": 48591, "Fev": 52192, "Mar": 52853 }
+    },
+    {
+      "sublanco": "Valongo – Campo",
+      "2024": {
+        "Jan": 43387, "Fev": 44374, "Mar": 45574, "Abr": 47863,
+        "Mai": 48868, "Jun": 48395, "Jul": 51938, "Ago": 52200,
+        "Set": 50363, "Out": 49691, "Nov": 49247, "Dez": 49456
+      },
+      "2025": { "Jan": 44405, "Fev": 47746, "Mar": 48533 }
+    },
+    {
+      "sublanco": "Campo – A4/A41",
+      "2024": {
+        "Jan": 41973, "Fev": 42781, "Mar": 43982, "Abr": 46451,
+        "Mai": 47564, "Jun": 47508, "Jul": 52030, "Ago": 55030,
+        "Set": 49331, "Out": 47852, "Nov": 47603, "Dez": 47782
+      },
+      "2025": { "Jan": 42405, "Fev": 45603, "Mar": 46453 }
+    },
+    {
+      "sublanco": "A4/A41 – Baltar",
+      "2024": {
+        "Jan": 41973, "Fev": 42781, "Mar": 43982, "Abr": 46451,
+        "Mai": 47564, "Jun": 47508, "Jul": 52030, "Ago": 55030,
+        "Set": 49331, "Out": 47852, "Nov": 47603, "Dez": 47782
+      },
+      "2025": { "Jan": 42405, "Fev": 45603, "Mar": 46453 }
+    },
+    {
+      "sublanco": "Baltar – Paredes",
+      "2024": {
+        "Jan": 35653, "Fev": 36437, "Mar": 37625, "Abr": 39822,
+        "Mai": 40799, "Jun": 41022, "Jul": 45118, "Ago": 48417,
+        "Set": 42737, "Out": 41078, "Nov": 41106, "Dez": 41112
+      },
+      "2025": { "Jan": 36238, "Fev": 39145, "Mar": 39969 }
+    },
+    {
+      "sublanco": "Paredes – Guilhufe",
+      "2024": {
+        "Jan": 31201, "Fev": 31945, "Mar": 33025, "Abr": 35023,
+        "Mai": 35944, "Jun": 36320, "Jul": 39960, "Ago": 43810,
+        "Set": 37955, "Out": 36166, "Nov": 36311, "Dez": 36206
+      },
+      "2025": { "Jan": 31846, "Fev": 34267, "Mar": 35062 }
+    },
+    {
+      "sublanco": "Guilhufe – Penafiel",
+      "2024": {
+        "Jan": 31645, "Fev": 32364, "Mar": 33435, "Abr": 35428,
+        "Mai": 36243, "Jun": 36652, "Jul": 40197, "Ago": 43401,
+        "Set": 37958, "Out": 36689, "Nov": 36898, "Dez": 36982
+      },
+      "2025": { "Jan": 32684, "Fev": 34901, "Mar": 35603 }
+    },
+    {
+      "sublanco": "Penafiel – Castelões (A4/A11)",
+      "2024": {
+        "Jan": 26031, "Fev": 26732, "Mar": 27784, "Abr": 29392,
+        "Mai": 30175, "Jun": 30682, "Jul": 33897, "Ago": 38053,
+        "Set": 32114, "Out": 30235, "Nov": 30108, "Dez": 30446
+      },
+      "2025": { "Jan": 26773, "Fev": 28780, "Mar": 29555 }
+    },
+    {
+      "sublanco": "Castelões (A4/A11) – Amarante Poente",
+      "2024": {
+        "Jan": 18781, "Fev": 19563, "Mar": 20827, "Abr": 22196,
+        "Mai": 22785, "Jun": 23361, "Jul": 26334, "Ago": 31358,
+        "Set": 24844, "Out": 22502, "Nov": 22323, "Dez": 22572
+      },
+      "2025": { "Jan": 19718, "Fev": 21581, "Mar": 22524 }
+    },
+    {
+      "sublanco": "Amarante Poente – Amarante (Margem Direita)",
+      "2024": {
+        "Jan": 23675, "Fev": 25020, "Mar": 25710, "Abr": 27032,
+        "Mai": 27493, "Jun": 27801, "Jul": 30094, "Ago": 35008,
+        "Set": 29175, "Out": 27354, "Nov": 27180, "Dez": 27384
+      },
+      "2025": { "Jan": 24249, "Fev": 26202, "Mar": 27246 }
+    },
+    {
+      "sublanco": "Amarante (Margem Esqª) – Geraldes",
+      "2024": {
+        "Jan": 22158, "Fev": 23214, "Mar": 24308, "Abr": 25831,
+        "Mai": 26270, "Jun": 26624, "Jul": 28924, "Ago": 33888,
+        "Set": 27957, "Out": 26250, "Nov": 25993, "Dez": 26158
+      },
+      "2025": { "Jan": 23159, "Fev": 25094, "Mar": 26002 }
+    },
+    {
+      "sublanco": "Geraldes – Padronelo",
+      "2024": {
+        "Jan": 22892, "Fev": 24388, "Mar": 26097, "Abr": 28364,
+        "Mai": 28910, "Jun": 29462, "Jul": 31324, "Ago": 38021,
+        "Set": 31372, "Out": 28635, "Nov": 27332, "Dez": 28804
+      },
+      "2025": { "Jan": 23063, "Fev": 24516, "Mar": 25946 }
+    },
+    {
+      "sublanco": "Padronelo – Ligação ao IP4",
+      "2024": {
+        "Jan": 17608, "Fev": 18199, "Mar": 19401, "Abr": 21080,
+        "Mai": 21487, "Jun": 21901, "Jul": 24099, "Ago": 28862,
+        "Set": 23776, "Out": 21793, "Nov": 21542, "Dez": 21729
+      },
+      "2025": { "Jan": 17743, "Fev": 19350, "Mar": 20449 }
+    },
+    {
+      "sublanco": "Ligação ao IP4 – Campeã",
+      "2024": {
+        "Jan": 13479, "Fev": 13726, "Mar": 14696, "Abr": 15990,
+        "Mai": 16287, "Jun": 16583, "Jul": 18095, "Ago": 21426,
+        "Set": 17912, "Out": 16462, "Nov": 16316, "Dez": 16480
+      },
+      "2025": { "Jan": 14021, "Fev": 15258, "Mar": 16104 }
+    },
+    {
+      "sublanco": "Campeã – Parada de Cunhos",
+      "2024": {
+        "Jan": 14000, "Fev": 13974, "Mar": 14822, "Abr": 15903,
+        "Mai": 16362, "Jun": 16773, "Jul": 18341, "Ago": 21594,
+        "Set": 18318, "Out": 17252, "Nov": 16896, "Dez": 17096
+      },
+      "2025": { "Jan": 14125, "Fev": 14741, "Mar": 16218 }
+    },
+    {
+      "sublanco": "Parada de Cunhos – Vila Real Sul",
+      "2024": {
+        "Jan": 10305, "Fev": 11108, "Mar": 11712, "Abr": 12589,
+        "Mai": 12976, "Jun": 13290, "Jul": 14901, "Ago": 18410,
+        "Set": 14686, "Out": 13317, "Nov": 12964, "Dez": 13023
+      },
+      "2025": { "Jan": 12091, "Fev": 13385, "Mar": 14033 }
+    },
+    {
+      "sublanco": "Vila Real Sul – A4/A24",
+      "2024": {
+        "Jan": 10601, "Fev": 11324, "Mar": 11126, "Abr": 12408,
+        "Mai": 13109, "Jun": 13378, "Jul": 15032, "Ago": 18877,
+        "Set": 14773, "Out": 13364, "Nov": 13069, "Dez": 13309
+      },
+      "2025": { "Jan": 11905, "Fev": 13165, "Mar": 13757 }
+    },
+    {
+      "sublanco": "A4/A24 – Vila Real Nascente",
+      "2024": {
+        "Jan": 8258, "Fev": 8949, "Mar": 9163, "Abr": 9594,
+        "Mai": 9528, "Jun": 9883, "Jul": 11088, "Ago": 14356,
+        "Set": 10645, "Out": 9864, "Nov": 9952, "Dez": 10219
+      },
+      "2025": { "Jan": 8637, "Fev": 9438, "Mar": 9820 }
+    },
+    {
+      "sublanco": "Vila Real Nascente – Lamares",
+      "2024": {
+        "Jan": 11792, "Fev": 12603, "Mar": 12715, "Abr": 13540,
+        "Mai": 13527, "Jun": 13626, "Jul": 15405, "Ago": 19328,
+        "Set": 14793, "Out": 13909, "Nov": 13967, "Dez": 14417
+      },
+      "2025": { "Jan": 12323, "Fev": 13379, "Mar": 13395 }
+    },
+    {
+      "sublanco": "Lamares – Justes",
+      "2024": {
+        "Jan": 10180, "Fev": 11027, "Mar": 11138, "Abr": 12057,
+        "Mai": 12573, "Jun": 12737, "Jul": 14249, "Ago": 18017,
+        "Set": 13776, "Out": 12803, "Nov": 13001, "Dez": 13379
+      },
+      "2025": { "Jan": 11366, "Fev": 12371, "Mar": 12644 }
+    },
+    {
+      "sublanco": "Justes – Pópulo",
+      "2024": {
+        "Jan": 10555, "Fev": 11369, "Mar": 11531, "Abr": 12069,
+        "Mai": 11961, "Jun": 12100, "Jul": 13487, "Ago": 17166,
+        "Set": 13065, "Out": 12293, "Nov": 12391, "Dez": 12709
+      },
+      "2025": { "Jan": 10835, "Fev": 11762, "Mar": 12108 }
+    },
+    {
+      "sublanco": "Pópulo – Murça",
+      "2024": {
+        "Jan": 7663, "Fev": 8219, "Mar": 8274, "Abr": 8698,
+        "Mai": 8616, "Jun": 8639, "Jul": 9930, "Ago": 12353,
+        "Set": 8646, "Out": 8288, "Nov": 8936, "Dez": 9118
+      },
+      "2025": { "Jan": 7902, "Fev": 8486, "Mar": 8822 }
+    },
+    {
+      "sublanco": "Murça – Palheiros",
+      "2024": {
+        "Jan": 6533, "Fev": 7099, "Mar": 7139, "Abr": 7445,
+        "Mai": 7380, "Jun": 7443, "Jul": 8618, "Ago": 10874,
+        "Set": 7997, "Out": 7485, "Nov": 7582, "Dez": 7802
+      },
+      "2025": { "Jan": 6708, "Fev": 7283, "Mar": 7622 }
+    },
+    {
+      "sublanco": "Palheiros – Franco",
+      "2024": {
+        "Jan": 6449, "Fev": 6990, "Mar": 6911, "Abr": 6979,
+        "Mai": 6852, "Jun": 7293, "Jul": 8514, "Ago": 10783,
+        "Set": 7912, "Out": 7382, "Nov": 7480, "Dez": 7699
+      },
+      "2025": { "Jan": 6603, "Fev": 7135, "Mar": 7448 }
+    },
+    {
+      "sublanco": "Franco – Lamas de Orelhão",
+      "2024": {
+        "Jan": 6554, "Fev": 7099, "Mar": 7146, "Abr": 7465,
+        "Mai": 7384, "Jun": 7478, "Jul": 8652, "Ago": 10974,
+        "Set": 8025, "Out": 7409, "Nov": 7550, "Dez": 7857
+      },
+      "2025": { "Jan": 6758, "Fev": 7289, "Mar": 7586 }
+    },
+    {
+      "sublanco": "Lamas de Orelhão – Mirandela Poente",
+      "2024": {
+        "Jan": 7004, "Fev": 7585, "Mar": 7653, "Abr": 7958,
+        "Mai": 7896, "Jun": 7944, "Jul": 9150, "Ago": 11523,
+        "Set": 8535, "Out": 8039, "Nov": 8121, "Dez": 8395
+      },
+      "2025": { "Jan": 7139, "Fev": 7795, "Mar": 8117 }
+    },
+    {
+      "sublanco": "Mirandela Poente – Mirandela Norte",
+      "2024": {
+        "Jan": 5405, "Fev": 5898, "Mar": 5774, "Abr": 6114,
+        "Mai": 5984, "Jun": 6110, "Jul": 7178, "Ago": 9309,
+        "Set": 6563, "Out": 6205, "Nov": 6219, "Dez": 6337
+      },
+      "2025": { "Jan": 5513, "Fev": 5942, "Mar": 6207 }
+    },
+    {
+      "sublanco": "Mirandela Norte – Romeu",
+      "2024": {
+        "Jan": 6008, "Fev": 6485, "Mar": 6333, "Abr": 6743,
+        "Mai": 6639, "Jun": 6734, "Jul": 7858, "Ago": 9803,
+        "Set": 7110, "Out": 6831, "Nov": 6800, "Dez": 6820
+      },
+      "2025": { "Jan": 6142, "Fev": 6468, "Mar": 6899 }
+    },
+    {
+      "sublanco": "Romeu – Amendoeira",
+      "2024": {
+        "Jan": 5917, "Fev": 6373, "Mar": 6253, "Abr": 6669,
+        "Mai": 6534, "Jun": 6648, "Jul": 7741, "Ago": 9688,
+        "Set": 6997, "Out": 6706, "Nov": 6688, "Dez": 6698
+      },
+      "2025": { "Jan": 6062, "Fev": 6382, "Mar": 6821 }
+    },
+    {
+      "sublanco": "Amendoeira – Lamas de Podence",
+      "2024": {
+        "Jan": 5642, "Fev": 6259, "Mar": 6042, "Abr": 6498,
+        "Mai": 6323, "Jun": 6514, "Jul": 7691, "Ago": 10008,
+        "Set": 6871, "Out": 6452, "Nov": 6448, "Dez": 6424
+      },
+      "2025": { "Jan": 5755, "Fev": 6117, "Mar": 6727 }
+    },
+    {
+      "sublanco": "Lamas de Podence – Azibo",
+      "2024": {
+        "Jan": 5769, "Fev": 6262, "Mar": 6186, "Abr": 6711,
+        "Mai": 6677, "Jun": 7147, "Jul": 8543, "Ago": 11043,
+        "Set": 7500, "Out": 6872, "Nov": 6874, "Dez": 6847
+      },
+      "2025": { "Jan": 6146, "Fev": 6481, "Mar": 6948 }
+    },
+    {
+      "sublanco": "Azibo – Quintela de Lampaças",
+      "2024": {
+        "Jan": 6007, "Fev": 6370, "Mar": 6394, "Abr": 6878,
+        "Mai": 6703, "Jun": 6791, "Jul": 7860, "Ago": 9934,
+        "Set": 7209, "Out": 6817, "Nov": 6839, "Dez": 6794
+      },
+      "2025": { "Jan": 6104, "Fev": 6440, "Mar": 6658 }
+    },
+    {
+      "sublanco": "Quintela de Lampaças – Vale de Nogueira",
+      "2024": {
+        "Jan": 5824, "Fev": 6169, "Mar": 6199, "Abr": 6666,
+        "Mai": 6505, "Jun": 6570, "Jul": 7610, "Ago": 9479,
+        "Set": 6985, "Out": 6592, "Nov": 6626, "Dez": 6567
+      },
+      "2025": { "Jan": 5920, "Fev": 6227, "Mar": 6447 }
+    },
+    {
+      "sublanco": "Vale de Nogueira – Santa Comba de Rossas",
+      "2024": {
+        "Jan": 6336, "Fev": 6651, "Mar": 6714, "Abr": 7210,
+        "Mai": 7046, "Jun": 7050, "Jul": 8128, "Ago": 10126,
+        "Set": 7545, "Out": 7096, "Nov": 7156, "Dez": 7140
+      },
+      "2025": { "Jan": 6421, "Fev": 6758, "Mar": 6954 }
+    },
+    {
+      "sublanco": "Santa Comba de Rossas – Mós",
+      "2024": {
+        "Jan": 6600, "Fev": 6906, "Mar": 6998, "Abr": 7483,
+        "Mai": 7323, "Jun": 7315, "Jul": 8437, "Ago": 10529,
+        "Set": 7824, "Out": 7402, "Nov": 7477, "Dez": 7425
+      },
+      "2025": { "Jan": 6687, "Fev": 7009, "Mar": 7194 }
+    },
+    {
+      "sublanco": "Mós – Bragança Poente",
+      "2024": {
+        "Jan": 7588, "Fev": 7882, "Mar": 8019, "Abr": 8398,
+        "Mai": 7634, "Jun": 8288, "Jul": 9572, "Ago": 11943,
+        "Set": 8821, "Out": 8519, "Nov": 8658, "Dez": 8552
+      },
+      "2025": { "Jan": 7557, "Fev": 8125, "Mar": 8231 }
+    },
+    {
+      "sublanco": "Bragança Poente – Bragança Sul",
+      "2024": {
+        "Jan": 1745, "Fev": 1810, "Mar": 1924, "Abr": 2062,
+        "Mai": 1967, "Jun": 2105, "Jul": 2923, "Ago": 3841,
+        "Set": 2412, "Out": 2038, "Nov": 2019, "Dez": 2055
+      },
+      "2025": { "Jan": 2160, "Fev": 2246, "Mar": 2404 }
+    },
+    {
+      "sublanco": "Bragança Sul – Bragança Nascente",
+      "2024": {
+        "Jan": 2314, "Fev": 2385, "Mar": 2550, "Abr": 2657,
+        "Mai": 2618, "Jun": 2691, "Jul": 3551, "Ago": 4685,
+        "Set": 3036, "Out": 2676, "Nov": 2659, "Dez": 2753
+      },
+      "2025": { "Jan": 2526, "Fev": 2585, "Mar": 2669 }
+    },
+    {
+      "sublanco": "Bragança Nascente – Rio Frio",
+      "2024": {
+        "Jan": 3490, "Fev": 3523, "Mar": 3793, "Abr": 3958,
+        "Mai": 4011, "Jun": 3962, "Jul": 4953, "Ago": 6763,
+        "Set": 4421, "Out": 4047, "Nov": 4016, "Dez": 4282
+      },
+      "2025": { "Jan": 3604, "Fev": 3655, "Mar": 3724 }
+    },
+    {
+      "sublanco": "Rio Frio – Quintanilha",
+      "2024": {
+        "Jan": 2364, "Fev": 2346, "Mar": 2592, "Abr": 2681,
+        "Mai": 2741, "Jun": 2721, "Jul": 3597, "Ago": 4581,
+        "Set": 3106, "Out": 2724, "Nov": 2667, "Dez": 2878
+      },
+      "2025": { "Jan": 2463, "Fev": 2424, "Mar": 2500 }
+    },
+    {
+      "sublanco": "Quintanilha – Quintanilha (Fronteira)",
+      "2024": {
+        "Jan": 2201, "Fev": 2184, "Mar": 2447, "Abr": 2543,
+        "Mai": 2523, "Jun": 2575, "Jul": 3412, "Ago": 4387,
+        "Set": 2969, "Out": 2570, "Nov": 2512, "Dez": 2712
+      },
+      "2025": { "Jan": 2312, "Fev": 2277, "Mar": 2356 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 16299, "Fev": 16895, "Mar": 17375, "Abr": 18462,
+      "Mai": 18840, "Jun": 18805, "Jul": 20745, "Ago": 23056,
+      "Set": 19774, "Out": 19037, "Nov": 18784, "Dez": 18970
+    },
+    "2025": { "Jan": 16783, "Fev": 18037, "Mar": 18524 }
+  }
+}

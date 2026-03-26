@@ -79,6 +79,28 @@ python3 clean_empty_features.py
 python3 analyze_pre_ml.py
 ```
 
+## 🔄 Database Synchronization (Supabase)
+
+To facilitate collaboration, the processed datasets (like `pre_ml.db`) can be pushed to and pulled from a centralized Supabase PostgreSQL database. This allows team members to share up-to-date data without committing large binary files to Git.
+
+**1. Setup Environment**
+Create a `.env` file in the root directory (you can copy `.env.example`) and add the Supabase connection string:
+```bash
+SUPABASE_POSTGRES_URL=postgresql://postgres:[YOUR-PASSWORD]@db.[YOUR-PROJECT-REF].supabase.co:5432/postgres
+```
+
+**2. Pull Data from Supabase**
+To download the latest tables from Supabase into your local `data/04_processed/pre_ml.db` file, run:
+```bash
+python3 src/5_db_sync/pull_from_supabase.py
+```
+
+**3. Push Data to Supabase**
+If you have made local computations and want to update the shared database, run:
+```bash
+python3 src/5_db_sync/push_to_supabase.py
+```
+
 ## 📊 Viewing Results
 To explore the generated data and analysis, you can utilize the EDA notebooks and analysis scripts provided:
 

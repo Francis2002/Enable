@@ -1,0 +1,88 @@
+{
+  "autoestrada": "A9",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Estádio Nacional (A5/A9) – Queluz",
+      "2024": {
+        "Jan": 34838, "Fev": 35542, "Mar": 35129, "Abr": 37487,
+        "Mai": 39075, "Jun": 36671, "Jul": 39683, "Ago": 31897,
+        "Set": 38394, "Out": 40390, "Nov": 39407, "Dez": 39141
+      },
+      "2025": { "Jan": 36940, "Fev": 39144, "Mar": 38021 }
+    },
+    {
+      "sublanco": "Queluz – A9/A16",
+      "2024": {
+        "Jan": 32003, "Fev": 32554, "Mar": 32412, "Abr": 34189,
+        "Mai": 35874, "Jun": 33502, "Jul": 35967, "Ago": 28596,
+        "Set": 35861, "Out": 38759, "Nov": 37375, "Dez": 36843
+      },
+      "2025": { "Jan": 34393, "Fev": 36275, "Mar": 35154 }
+    },
+    {
+      "sublanco": "A9/A16 – Radial da Pontinha",
+      "2024": {
+        "Jan": 44507, "Fev": 45181, "Mar": 45224, "Abr": 47658,
+        "Mai": 50062, "Jun": 46877, "Jul": 49508, "Ago": 40868,
+        "Set": 51031, "Out": 52264, "Nov": 52042, "Dez": 51583
+      },
+      "2025": { "Jan": 47423, "Fev": 50269, "Mar": 48915 }
+    },
+    {
+      "sublanco": "Radial da Pontinha – Radial de Odivelas",
+      "2024": {
+        "Jan": 32307, "Fev": 32481, "Mar": 33179, "Abr": 34690,
+        "Mai": 36866, "Jun": 34500, "Jul": 36514, "Ago": 30594,
+        "Set": 37016, "Out": 39922, "Nov": 38491, "Dez": 38329
+      },
+      "2025": { "Jan": 34790, "Fev": 36754, "Mar": 35796 }
+    },
+    {
+      "sublanco": "Radial de Odivelas – A8/A9",
+      "2024": {
+        "Jan": 32959, "Fev": 33459, "Mar": 34329, "Abr": 35708,
+        "Mai": 37969, "Jun": 35642, "Jul": 38171, "Ago": 32885,
+        "Set": 38452, "Out": 41450, "Nov": 40135, "Dez": 39677
+      },
+      "2025": { "Jan": 36205, "Fev": 38264, "Mar": 37509 }
+    },
+    {
+      "sublanco": "A8/A9 – Bucelas (Zambujal)",
+      "2024": {
+        "Jan": 29250, "Fev": 29839, "Mar": 30374, "Abr": 31723,
+        "Mai": 32892, "Jun": 31486, "Jul": 33400, "Ago": 29263,
+        "Set": 33574, "Out": 36233, "Nov": 35465, "Dez": 34985
+      },
+      "2025": { "Jan": 31976, "Fev": 34231, "Mar": 33421 }
+    },
+    {
+      "sublanco": "Bucelas (Zambujal) – A9/A10",
+      "2024": {
+        "Jan": 18303, "Fev": 18691, "Mar": 19583, "Abr": 20400,
+        "Mai": 21436, "Jun": 20898, "Jul": 22248, "Ago": 20469,
+        "Set": 22365, "Out": 23778, "Nov": 23606, "Dez": 23489
+      },
+      "2025": { "Jan": 20632, "Fev": 22479, "Mar": 21992 }
+    },
+    {
+      "sublanco": "A9/A10 – Alverca",
+      "2024": {
+        "Jan": 9733, "Fev": 9778, "Mar": 9983, "Abr": 10392,
+        "Mai": 10690, "Jun": 9896, "Jul": 9580, "Ago": 8415,
+        "Set": 10901, "Out": 12102, "Nov": 11779, "Dez": 11682
+      },
+      "2025": { "Jan": 10845, "Fev": 11394, "Mar": 11385 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 28048, "Fev": 28465, "Mar": 28929, "Abr": 30336,
+      "Mai": 31904, "Jun": 30137, "Jul": 32022, "Ago": 27205,
+      "Set": 32311, "Out": 34632, "Nov": 33656, "Dez": 33381
+    },
+    "2025": { "Jan": 30469, "Fev": 32416, "Mar": 31624 }
+  }
+}
