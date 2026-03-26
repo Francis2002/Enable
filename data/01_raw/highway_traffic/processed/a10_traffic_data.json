@@ -1,0 +1,52 @@
+{
+  "autoestrada": "A10",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "A9/A10 – Arruda dos Vinhos",
+      "2024": {
+        "Jan": 15312, "Fev": 15704, "Mar": 16358, "Abr": 17068,
+        "Mai": 18059, "Jun": 17829, "Jul": 19492, "Ago": 18110,
+        "Set": 18717, "Out": 19402, "Nov": 19384, "Dez": 19299
+      },
+      "2025": { "Jan": 17063, "Fev": 18914, "Mar": 18349 }
+    },
+    {
+      "sublanco": "Arruda dos Vinhos – Carregado (A1/A10)",
+      "2024": {
+        "Jan": 10687, "Fev": 11042, "Mar": 11763, "Abr": 12268,
+        "Mai": 13067, "Jun": 13177, "Jul": 14862, "Ago": 14300,
+        "Set": 13811, "Out": 14002, "Nov": 14165, "Dez": 14093
+      },
+      "2025": { "Jan": 12092, "Fev": 13564, "Mar": 13120 }
+    },
+    {
+      "sublanco": "Carregado (A1/A10) – Benavente",
+      "2024": {
+        "Jan": 7234, "Fev": 7715, "Mar": 8012, "Abr": 8386,
+        "Mai": 8843, "Jun": 9235, "Jul": 10427, "Ago": 11564,
+        "Set": 9814, "Out": 8848, "Nov": 8546, "Dez": 8666
+      },
+      "2025": { "Jan": 7949, "Fev": 8413, "Mar": 8610 }
+    },
+    {
+      "sublanco": "Benavente – A10/A13",
+      "2024": {
+        "Jan": 2827, "Fev": 3010, "Mar": 3341, "Abr": 3574,
+        "Mai": 3796, "Jun": 4404, "Jul": 5448, "Ago": 6885,
+        "Set": 4739, "Out": 3738, "Nov": 3508, "Dez": 3477
+      },
+      "2025": { "Jan": 3151, "Fev": 3250, "Mar": 3267 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 8769, "Fev": 9145, "Mar": 9627, "Abr": 10069,
+      "Mai": 10670, "Jun": 10916, "Jul": 12299, "Ago": 12587,
+      "Set": 11519, "Out": 11152, "Nov": 11041, "Dez": 11045
+    },
+    "2025": { "Jan": 9782, "Fev": 10697, "Mar": 10551 }
+  }
+}

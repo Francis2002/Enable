@@ -1,0 +1,277 @@
+{
+  "autoestrada": "A8",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "CRIL – Frielas",
+      "2024": {
+        "Jan": 55542, "Fev": 57308, "Mar": 56530, "Abr": 59882,
+        "Mai": 61614, "Jun": 59484, "Jul": 63672, "Ago": 58758,
+        "Set": 65103, "Out": 65042, "Nov": 65102, "Dez": 64904
+      },
+      "2025": { "Jan": 60275, "Fev": 63536, "Mar": 62007 }
+    },
+    {
+      "sublanco": "Frielas – Loures",
+      "2024": {
+        "Jan": 90262, "Fev": 92327, "Mar": 91337, "Abr": 82989,
+        "Mai": 96333, "Jun": 99049, "Jul": 99225, "Ago": 92688,
+        "Set": 97780, "Out": 96903, "Nov": 92987, "Dez": 87747
+      },
+      "2025": { "Jan": 86300, "Fev": 94161, "Mar": 93469 }
+    },
+    {
+      "sublanco": "Loures – CREL",
+      "2024": {
+        "Jan": 52860, "Fev": 54643, "Mar": 55112, "Abr": 57452,
+        "Mai": 59817, "Jun": 58387, "Jul": 60243, "Ago": 56571,
+        "Set": 59571, "Out": 58995, "Nov": 57845, "Dez": 58427
+      },
+      "2025": { "Jan": 53036, "Fev": 56421, "Mar": 56156 }
+    },
+    {
+      "sublanco": "CREL – Lousa",
+      "2024": {
+        "Jan": 59969, "Fev": 62054, "Mar": 62523, "Abr": 64913,
+        "Mai": 68133, "Jun": 66656, "Jul": 70429, "Ago": 67075,
+        "Set": 69593, "Out": 68599, "Nov": 67214, "Dez": 67905
+      },
+      "2025": { "Jan": 61721, "Fev": 65421, "Mar": 65615 }
+    },
+    {
+      "sublanco": "Lousa – A8/A21",
+      "2024": {
+        "Jan": 54343, "Fev": 56261, "Mar": 56825, "Abr": 59236,
+        "Mai": 62080, "Jun": 60996, "Jul": 64714, "Ago": 62411,
+        "Set": 63966, "Out": 62370, "Nov": 61159, "Dez": 61935
+      },
+      "2025": { "Jan": 55976, "Fev": 59408, "Mar": 59747 }
+    },
+    {
+      "sublanco": "A8/A21 – Enxara",
+      "2024": {
+        "Jan": 30844, "Fev": 32459, "Mar": 32825, "Abr": 34026,
+        "Mai": 35753, "Jun": 35722, "Jul": 38687, "Ago": 38568,
+        "Set": 37888, "Out": 36083, "Nov": 35333, "Dez": 36154
+      },
+      "2025": { "Jan": 31933, "Fev": 34113, "Mar": 35022 }
+    },
+    {
+      "sublanco": "Enxara – Torres Vedras Sul",
+      "2024": {
+        "Jan": 29133, "Fev": 30743, "Mar": 31005, "Abr": 32179,
+        "Mai": 33759, "Jun": 33831, "Jul": 36749, "Ago": 36873,
+        "Set": 35838, "Out": 34149, "Nov": 33360, "Dez": 34129
+      },
+      "2025": { "Jan": 30127, "Fev": 32234, "Mar": 33182 }
+    },
+    {
+      "sublanco": "Torres Vedras Sul – Torres Vedras Norte",
+      "2024": {
+        "Jan": 23629, "Fev": 24532, "Mar": 25420, "Abr": 26422,
+        "Mai": 27848, "Jun": 28111, "Jul": 30898, "Ago": 31700,
+        "Set": 30121, "Out": 28322, "Nov": 27538, "Dez": 28392
+      },
+      "2025": { "Jan": 24784, "Fev": 26477, "Mar": 26872 }
+    },
+    {
+      "sublanco": "Torres Vedras Norte – Ramalhal",
+      "2024": {
+        "Jan": 25910, "Fev": 26715, "Mar": 27718, "Abr": 28806,
+        "Mai": 30173, "Jun": 30585, "Jul": 33544, "Ago": 34602,
+        "Set": 32417, "Out": 30599, "Nov": 29893, "Dez": 30810
+      },
+      "2025": { "Jan": 26843, "Fev": 28553, "Mar": 28887 }
+    },
+    {
+      "sublanco": "Ramalhal – Campelos",
+      "2024": {
+        "Jan": 18808, "Fev": 19460, "Mar": 20505, "Abr": 21241,
+        "Mai": 22361, "Jun": 22886, "Jul": 25309, "Ago": 26665,
+        "Set": 24360, "Out": 22740, "Nov": 22191, "Dez": 22947
+      },
+      "2025": { "Jan": 19676, "Fev": 20929, "Mar": 21263 }
+    },
+    {
+      "sublanco": "Campelos – Bombarral",
+      "2024": {
+        "Jan": 18124, "Fev": 18798, "Mar": 19832, "Abr": 20514,
+        "Mai": 21580, "Jun": 22119, "Jul": 24505, "Ago": 25926,
+        "Set": 23599, "Out": 21974, "Nov": 21445, "Dez": 22143
+      },
+      "2025": { "Jan": 18944, "Fev": 20172, "Mar": 20535 }
+    },
+    {
+      "sublanco": "Bombarral – Delgada",
+      "2024": {
+        "Jan": 20307, "Fev": 21372, "Mar": 22517, "Abr": 23084,
+        "Mai": 24597, "Jun": 25050, "Jul": 27754, "Ago": 29389,
+        "Set": 26390, "Out": 24355, "Nov": 24167, "Dez": 24745
+      },
+      "2025": { "Jan": 21525, "Fev": 22743, "Mar": 23128 }
+    },
+    {
+      "sublanco": "Delgada – São Mamede",
+      "2024": {
+        "Jan": 23321, "Fev": 24084, "Mar": 25246, "Abr": 26218,
+        "Mai": 27474, "Jun": 27665, "Jul": 30625, "Ago": 32737,
+        "Set": 29621, "Out": 27739, "Nov": 27037, "Dez": 27350
+      },
+      "2025": { "Jan": 23672, "Fev": 25702, "Mar": 25974 }
+    },
+    {
+      "sublanco": "São Mamede – A8/IP6",
+      "2024": {
+        "Jan": 24398, "Fev": 25175, "Mar": 26302, "Abr": 27354,
+        "Mai": 28663, "Jun": 29134, "Jul": 32296, "Ago": 33833,
+        "Set": 30867, "Out": 29006, "Nov": 28256, "Dez": 28885
+      },
+      "2025": { "Jan": 25445, "Fev": 26935, "Mar": 27201 }
+    },
+    {
+      "sublanco": "A8/IP6 – Óbidos",
+      "2024": {
+        "Jan": 29250, "Fev": 30185, "Mar": 31770, "Abr": 33093,
+        "Mai": 34576, "Jun": 34971, "Jul": 39668, "Ago": 43226,
+        "Set": 37076, "Out": 34597, "Nov": 33710, "Dez": 34465
+      },
+      "2025": { "Jan": 30421, "Fev": 32299, "Mar": 32542 }
+    },
+    {
+      "sublanco": "Óbidos – Arnóia",
+      "2024": {
+        "Jan": 30479, "Fev": 31336, "Mar": 32764, "Abr": 34234,
+        "Mai": 35827, "Jun": 36184, "Jul": 40693, "Ago": 44205,
+        "Set": 38120, "Out": 35845, "Nov": 34937, "Dez": 35505
+      },
+      "2025": { "Jan": 31705, "Fev": 33653, "Mar": 33714 }
+    },
+    {
+      "sublanco": "Arnóia – Gaeiras",
+      "2024": {
+        "Jan": 29731, "Fev": 30618, "Mar": 31703, "Abr": 33179,
+        "Mai": 34760, "Jun": 34904, "Jul": 39034, "Ago": 42418,
+        "Set": 36961, "Out": 34952, "Nov": 33985, "Dez": 34565
+      },
+      "2025": { "Jan": 31052, "Fev": 32851, "Mar": 32809 }
+    },
+    {
+      "sublanco": "Gaeiras – Caldas da Rainha",
+      "2024": {
+        "Jan": 27247, "Fev": 28065, "Mar": 29098, "Abr": 30513,
+        "Mai": 31924, "Jun": 32284, "Jul": 36215, "Ago": 39438,
+        "Set": 34137, "Out": 32076, "Nov": 31060, "Dez": 31551
+      },
+      "2025": { "Jan": 28561, "Fev": 30208, "Mar": 30097 }
+    },
+    {
+      "sublanco": "Caldas da Rainha – Zona Industrial das Caldas da Rainha",
+      "2024": {
+        "Jan": 22857, "Fev": 23389, "Mar": 24570, "Abr": 25869,
+        "Mai": 26544, "Jun": 27565, "Jul": 30582, "Ago": 33590,
+        "Set": 29497, "Out": 27106, "Nov": 26111, "Dez": 26540
+      },
+      "2025": { "Jan": 23920, "Fev": 24732, "Mar": 25850 }
+    },
+    {
+      "sublanco": "Zona Industrial das Caldas da Rainha – Tornada",
+      "2024": {
+        "Jan": 18558, "Fev": 19356, "Mar": 20261, "Abr": 21388,
+        "Mai": 22955, "Jun": 23185, "Jul": 25870, "Ago": 29038,
+        "Set": 24500, "Out": 22369, "Nov": 21469, "Dez": 21971
+      },
+      "2025": { "Jan": 19550, "Fev": 21175, "Mar": 21395 }
+    },
+    {
+      "sublanco": "Tornada – Alfeizerão",
+      "2024": {
+        "Jan": 13785, "Fev": 14257, "Mar": 15148, "Abr": 15725,
+        "Mai": 16997, "Jun": 17255, "Jul": 19644, "Ago": 22699,
+        "Set": 18840, "Out": 16992, "Nov": 16497, "Dez": 16712
+      },
+      "2025": { "Jan": 14557, "Fev": 15523, "Mar": 15491 }
+    },
+    {
+      "sublanco": "Alfeizerão – Valado dos Frades",
+      "2024": {
+        "Jan": 13344, "Fev": 13769, "Mar": 14637, "Abr": 15141,
+        "Mai": 16359, "Jun": 16517, "Jul": 18786, "Ago": 21733,
+        "Set": 18090, "Out": 16347, "Nov": 15915, "Dez": 16075
+      },
+      "2025": { "Jan": 13971, "Fev": 14861, "Mar": 14822 }
+    },
+    {
+      "sublanco": "Valado dos Frades – Pataias",
+      "2024": {
+        "Jan": 12452, "Fev": 12903, "Mar": 13815, "Abr": 14396,
+        "Mai": 15606, "Jun": 15801, "Jul": 18119, "Ago": 21756,
+        "Set": 17353, "Out": 15443, "Nov": 15034, "Dez": 15301
+      },
+      "2025": { "Jan": 13116, "Fev": 14017, "Mar": 14143 }
+    },
+    {
+      "sublanco": "Pataias – Marinha Grande Sul",
+      "2024": {
+        "Jan": 12425, "Fev": 12851, "Mar": 13739, "Abr": 14334,
+        "Mai": 15470, "Jun": 15622, "Jul": 17968, "Ago": 21509,
+        "Set": 17202, "Out": 15402, "Nov": 14968, "Dez": 15288
+      },
+      "2025": { "Jan": 13105, "Fev": 13958, "Mar": 14081 }
+    },
+    {
+      "sublanco": "Marinha Grande Sul – A8/A17",
+      "2024": {
+        "Jan": 13661, "Fev": 14389, "Mar": 15132, "Abr": 15693,
+        "Mai": 16759, "Jun": 16838, "Jul": 19356, "Ago": 22676,
+        "Set": 18500, "Out": 16831, "Nov": 16287, "Dez": 16494
+      },
+      "2025": { "Jan": 14510, "Fev": 15375, "Mar": 15420 }
+    },
+    {
+      "sublanco": "A8/A17 – Marinha Grande Este",
+      "2024": {
+        "Jan": 9447, "Fev": 9846, "Mar": 10094, "Abr": 10472,
+        "Mai": 11091, "Jun": 10844, "Jul": 12390, "Ago": 13936,
+        "Set": 12014, "Out": 11281, "Nov": 11003, "Dez": 11109
+      },
+      "2025": { "Jan": 10301, "Fev": 10631, "Mar": 10600 }
+    },
+    {
+      "sublanco": "Marinha Grande Este – Leiria Sul (A8/A1)",
+      "2024": {
+        "Jan": 9611, "Fev": 10018, "Mar": 10751, "Abr": 10689,
+        "Mai": 11249, "Jun": 10967, "Jul": 12457, "Ago": 14015,
+        "Set": 12110, "Out": 11505, "Nov": 11275, "Dez": 11363
+      },
+      "2025": { "Jan": 10568, "Fev": 10914, "Mar": 10813 }
+    },
+    {
+      "sublanco": "Leiria Sul (A8/A19) – Cortes",
+      "2024": {
+        "Jan": 6705, "Fev": 6844, "Mar": 7231, "Abr": 7605,
+        "Mai": 7974, "Jun": 7984, "Jul": 9177, "Ago": 10889,
+        "Set": 9020, "Out": 8510, "Nov": 8266, "Dez": 8090
+      },
+      "2025": { "Jan": 7589, "Fev": 7930, "Mar": 7814 }
+    },
+    {
+      "sublanco": "Cortes – Pousos",
+      "2024": {
+        "Jan": 6068, "Fev": 6226, "Mar": 6549, "Abr": 6915,
+        "Mai": 7290, "Jun": 7329, "Jul": 8457, "Ago": 10216,
+        "Set": 8302, "Out": 7705, "Nov": 7494, "Dez": 7334
+      },
+      "2025": { "Jan": 6838, "Fev": 7146, "Mar": 7070 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 24463, "Fev": 25366, "Mar": 26109, "Abr": 26866,
+      "Mai": 28537, "Jun": 28639, "Jul": 31281, "Ago": 32608,
+      "Set": 30380, "Out": 28771, "Nov": 28064, "Dez": 28403
+    },
+    "2025": { "Jan": 25341, "Fev": 27009, "Mar": 27215 }
+  }
+}

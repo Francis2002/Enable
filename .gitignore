@@ -1,11 +1,39 @@
 # System files
 .DS_Store
-
-# Data and large files
-data/
+__pycache__/
+*.pyc
 
 # Environment
 .venv/
 venv/
 .env
-.env
+
+# Large File Formats globally ignored
+*.pbf
+*.db
+*.db-wal
+*.db-shm
+*.gpkg
+*.csv
+*.tar
+
+# ----------------------------------------------------
+# Data Folder Rules (Whitelist Approach)
+# ----------------------------------------------------
+# 1. Ignore everything inside data/ by default
+data/*
+
+# 2. Allow Git to track the subdirectories themselves
+!data/*/
+!data/*/*/
+
+# 3. Specific exceptions: Track small configuration & metadata files
+!data/README.md
+!data/02_reference/*.txt
+!data/02_reference/*.json
+!data/01_raw/highway_traffic/*.json
+!data/01_raw/highway_traffic/processed/*.json
+
+# 4. Explicitly block heavy intermediate outputs that might slip through
+data/03_interim/valhalla_data/valhalla_tiles/
+data/03_interim/geocoder_cache.json

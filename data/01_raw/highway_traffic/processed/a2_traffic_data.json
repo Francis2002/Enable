@@ -1,0 +1,151 @@
+{
+  "autoestrada": "A2",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Ponte 25 de Abril",
+      "2024": {
+        "Jan": 135052, "Fev": 137959, "Mar": 137986, "Abr": 146999,
+        "Mai": 152261, "Jun": 150417, "Jul": 155825, "Ago": 154825,
+        "Set": 152798, "Out": 145604, "Nov": 143043, "Dez": 142884
+      },
+      "2025": { "Jan": 134741, "Fev": 141335, "Mar": 139986 }
+    },
+    {
+      "sublanco": "Almada – Fogueteiro",
+      "2024": {
+        "Jan": 81456, "Fev": 83853, "Mar": 83735, "Abr": 87932,
+        "Mai": 89968, "Jun": 89502, "Jul": 90380, "Ago": 90775,
+        "Set": 90416, "Out": 88303, "Nov": 86388, "Dez": 87794
+      },
+      "2025": { "Jan": 81668, "Fev": 84019, "Mar": 83745 }
+    },
+    {
+      "sublanco": "Fogueteiro – Coina",
+      "2024": {
+        "Jan": 34884, "Fev": 36212, "Mar": 36645, "Abr": 38693,
+        "Mai": 39968, "Jun": 40448, "Jul": 41064, "Ago": 41774,
+        "Set": 41091, "Out": 39908, "Nov": 38660, "Dez": 39224
+      },
+      "2025": { "Jan": 35503, "Fev": 37353, "Mar": 37144 }
+    },
+    {
+      "sublanco": "Coina – Palmela",
+      "2024": {
+        "Jan": 30556, "Fev": 31820, "Mar": 32534, "Abr": 34733,
+        "Mai": 35799, "Jun": 37058, "Jul": 38621, "Ago": 39987,
+        "Set": 37760, "Out": 36040, "Nov": 34696, "Dez": 34300
+      },
+      "2025": { "Jan": 31621, "Fev": 33591, "Mar": 33332 }
+    },
+    {
+      "sublanco": "Palmela – A2/A12",
+      "2024": {
+        "Jan": 31760, "Fev": 32991, "Mar": 33820, "Abr": 35983,
+        "Mai": 37063, "Jun": 38431, "Jul": 40356, "Ago": 41436,
+        "Set": 38858, "Out": 37362, "Nov": 35940, "Dez": 35495
+      },
+      "2025": { "Jan": 32895, "Fev": 34906, "Mar": 34717 }
+    },
+    {
+      "sublanco": "A2/A12 – Marateca",
+      "2024": {
+        "Jan": 21932, "Fev": 23927, "Mar": 26090, "Abr": 28083,
+        "Mai": 29327, "Jun": 34196, "Jul": 38612, "Ago": 44020,
+        "Set": 34130, "Out": 27756, "Nov": 26206, "Dez": 27067
+      },
+      "2025": { "Jan": 22955, "Fev": 24840, "Mar": 25381 }
+    },
+    {
+      "sublanco": "Marateca – A2/A6/A13",
+      "2024": {
+        "Jan": 21041, "Fev": 22941, "Mar": 25123, "Abr": 27050,
+        "Mai": 28376, "Jun": 33241, "Jul": 37637, "Ago": 42993,
+        "Set": 33220, "Out": 26869, "Nov": 25395, "Dez": 26242
+      },
+      "2025": { "Jan": 22192, "Fev": 24014, "Mar": 24551 }
+    },
+    {
+      "sublanco": "A2/A6/A13 – Alcácer do Sal",
+      "2024": {
+        "Jan": 16196, "Fev": 17821, "Mar": 20166, "Abr": 22289,
+        "Mai": 23397, "Jun": 29690, "Jul": 36270, "Ago": 45909,
+        "Set": 30090, "Out": 21735, "Nov": 19826, "Dez": 20010
+      },
+      "2025": { "Jan": 17427, "Fev": 18862, "Mar": 19466 }
+    },
+    {
+      "sublanco": "Alcácer do Sal – Grândola Norte",
+      "2024": {
+        "Jan": 13998, "Fev": 15365, "Mar": 17615, "Abr": 19384,
+        "Mai": 20173, "Jun": 25965, "Jul": 31749, "Ago": 40768,
+        "Set": 26495, "Out": 18910, "Nov": 17211, "Dez": 17486
+      },
+      "2025": { "Jan": 15045, "Fev": 16232, "Mar": 16778 }
+    },
+    {
+      "sublanco": "Grândola Norte – Grândola Sul",
+      "2024": {
+        "Jan": 10248, "Fev": 11477, "Mar": 13263, "Abr": 14412,
+        "Mai": 15022, "Jun": 20269, "Jul": 24898, "Ago": 32833,
+        "Set": 20476, "Out": 14103, "Nov": 12632, "Dez": 12881
+      },
+      "2025": { "Jan": 11053, "Fev": 12004, "Mar": 12462 }
+    },
+    {
+      "sublanco": "Grândola Sul – Aljustrel",
+      "2024": {
+        "Jan": 7573, "Fev": 8573, "Mar": 10151, "Abr": 10973,
+        "Mai": 11345, "Jun": 16276, "Jul": 21003, "Ago": 28565,
+        "Set": 16706, "Out": 10764, "Nov": 9324, "Dez": 9559
+      },
+      "2025": { "Jan": 8267, "Fev": 8813, "Mar": 9407 }
+    },
+    {
+      "sublanco": "Aljustrel – Castro Verde",
+      "2024": {
+        "Jan": 7486, "Fev": 8451, "Mar": 10060, "Abr": 10869,
+        "Mai": 11256, "Jun": 16188, "Jul": 21005, "Ago": 28715,
+        "Set": 16652, "Out": 10678, "Nov": 9221, "Dez": 9458
+      },
+      "2025": { "Jan": 8183, "Fev": 8689, "Mar": 9321 }
+    },
+    {
+      "sublanco": "Castro Verde – Almodôvar",
+      "2024": {
+        "Jan": 8422, "Fev": 9441, "Mar": 11177, "Abr": 12062,
+        "Mai": 12634, "Jun": 17749, "Jul": 22964, "Ago": 30951,
+        "Set": 18318, "Out": 11975, "Nov": 10461, "Dez": 10821
+      },
+      "2025": { "Jan": 9328, "Fev": 9913, "Mar": 10554 }
+    },
+    {
+      "sublanco": "Almodôvar – S. B. Messines",
+      "2024": {
+        "Jan": 8727, "Fev": 9763, "Mar": 11518, "Abr": 12419,
+        "Mai": 13011, "Jun": 18175, "Jul": 23416, "Ago": 31502,
+        "Set": 18757, "Out": 12375, "Nov": 10857, "Dez": 11274
+      },
+      "2025": { "Jan": 9701, "Fev": 10317, "Mar": 10975 }
+    },
+    {
+      "sublanco": "S. B. Messines – Paderne (A22)",
+      "2024": {
+        "Jan": 8548, "Fev": 9595, "Mar": 11304, "Abr": 12286,
+        "Mai": 12873, "Jun": 17840, "Jul": 23020, "Ago": 30795,
+        "Set": 18458, "Out": 12262, "Nov": 10684, "Dez": 10986
+      },
+      "2025": { "Jan": 9659, "Fev": 10264, "Mar": 10948 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 19083, "Fev": 20411, "Mar": 22041, "Abr": 23685,
+      "Mai": 24576, "Jun": 29037, "Jul": 33697, "Ago": 40484,
+      "Set": 29551, "Out": 23575, "Nov": 21992, "Dez": 22328
+    },
+    "2025": { "Jan": 19949, "Fev": 21143, "Mar": 21582 }
+  }
+}

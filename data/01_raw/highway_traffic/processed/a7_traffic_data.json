@@ -1,0 +1,124 @@
+{
+  "autoestrada": "A7",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Póvoa de Varzim (A28) – EN206",
+      "2024": {
+        "Jan": 8627, "Fev": 8664, "Mar": 9070, "Abr": 10164,
+        "Mai": 9947, "Jun": 11128, "Jul": 14500, "Ago": 17440,
+        "Set": 10812, "Out": 9422, "Nov": 9768, "Dez": 10470
+      },
+      "2025": { "Jan": 8899, "Fev": 9587, "Mar": 10240 }
+    },
+    {
+      "sublanco": "EN206 – Famalicão",
+      "2024": {
+        "Jan": 8895, "Fev": 9266, "Mar": 9378, "Abr": 10539,
+        "Mai": 10242, "Jun": 11498, "Jul": 14500, "Ago": 17923,
+        "Set": 11171, "Out": 9722, "Nov": 10054, "Dez": 10795
+      },
+      "2025": { "Jan": 9166, "Fev": 9877, "Mar": 10555 }
+    },
+    {
+      "sublanco": "Famalicão – A3/A7",
+      "2024": {
+        "Jan": 22063, "Fev": 22886, "Mar": 22947, "Abr": 24379,
+        "Mai": 24475, "Jun": 24414, "Jul": 25404, "Ago": 27581,
+        "Set": 24528, "Out": 24355, "Nov": 24302, "Dez": 24721
+      },
+      "2025": { "Jan": 22468, "Fev": 24273, "Mar": 24404 }
+    },
+    {
+      "sublanco": "A3/A7 – Seide",
+      "2024": {
+        "Jan": 25568, "Fev": 26467, "Mar": 26735, "Abr": 28540,
+        "Mai": 28729, "Jun": 28581, "Jul": 30669, "Ago": 35247,
+        "Set": 29705, "Out": 28714, "Nov": 28605, "Dez": 29196
+      },
+      "2025": { "Jan": 26371, "Fev": 28443, "Mar": 28999 }
+    },
+    {
+      "sublanco": "Seide – Ave",
+      "2024": {
+        "Jan": 22111, "Fev": 22959, "Mar": 23296, "Abr": 24782,
+        "Mai": 24993, "Jun": 24774, "Jul": 27303, "Ago": 31215,
+        "Set": 25874, "Out": 25126, "Nov": 24966, "Dez": 25435
+      },
+      "2025": { "Jan": 22914, "Fev": 24696, "Mar": 25258 }
+    },
+    {
+      "sublanco": "Ave – Selho",
+      "2024": {
+        "Jan": 21987, "Fev": 22760, "Mar": 22929, "Abr": 23866,
+        "Mai": 24210, "Jun": 23617, "Jul": 26507, "Ago": 29092,
+        "Set": 24907, "Out": 24431, "Nov": 24204, "Dez": 24815
+      },
+      "2025": { "Jan": 22300, "Fev": 24027, "Mar": 24365 }
+    },
+    {
+      "sublanco": "Selho – Guimarães Sul",
+      "2024": {
+        "Jan": 12875, "Fev": 13158, "Mar": 13550, "Abr": 14135,
+        "Mai": 14749, "Jun": 14528, "Jul": 17473, "Ago": 23388,
+        "Set": 15903, "Out": 14947, "Nov": 14842, "Dez": 15956
+      },
+      "2025": { "Jan": 13661, "Fev": 14496, "Mar": 14801 }
+    },
+    {
+      "sublanco": "Guimarães Sul – Calvos",
+      "2024": {
+        "Jan": 13930, "Fev": 14298, "Mar": 14748, "Abr": 15304,
+        "Mai": 15947, "Jun": 15670, "Jul": 18680, "Ago": 25549,
+        "Set": 17158, "Out": 16250, "Nov": 16144, "Dez": 17202
+      },
+      "2025": { "Jan": 14812, "Fev": 15759, "Mar": 16007 }
+    },
+    {
+      "sublanco": "Calvos – Fafe Sul",
+      "2024": {
+        "Jan": 7619, "Fev": 7719, "Mar": 7958, "Abr": 8350,
+        "Mai": 8925, "Jun": 8288, "Jul": 11500, "Ago": 16060,
+        "Set": 9467, "Out": 8584, "Nov": 8492, "Dez": 9293
+      },
+      "2025": { "Jan": 7893, "Fev": 8164, "Mar": 8444 }
+    },
+    {
+      "sublanco": "Fafe Sul – Basto",
+      "2024": {
+        "Jan": 6207, "Fev": 6237, "Mar": 6490, "Abr": 6655,
+        "Mai": 6828, "Jun": 6635, "Jul": 9500, "Ago": 13694,
+        "Set": 7794, "Out": 6749, "Nov": 6764, "Dez": 7539
+      },
+      "2025": { "Jan": 6244, "Fev": 6388, "Mar": 6597 }
+    },
+    {
+      "sublanco": "Basto – Ribeira de Pena",
+      "2024": {
+        "Jan": 5020, "Fev": 4968, "Mar": 5133, "Abr": 5363,
+        "Mai": 5453, "Jun": 5323, "Jul": 8000, "Ago": 11797,
+        "Set": 6135, "Out": 5398, "Nov": 5329, "Dez": 5900
+      },
+      "2025": { "Jan": 4934, "Fev": 4991, "Mar": 5095 }
+    },
+    {
+      "sublanco": "Ribeira de Pena – Vila Pouca de Aguiar",
+      "2024": {
+        "Jan": 4475, "Fev": 4389, "Mar": 4581, "Abr": 4770,
+        "Mai": 4863, "Jun": 4712, "Jul": 7200, "Ago": 10792,
+        "Set": 5432, "Out": 4802, "Nov": 4750, "Dez": 5340
+      },
+      "2025": { "Jan": 4453, "Fev": 4453, "Mar": 4546 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 9894, "Fev": 10123, "Mar": 10351, "Abr": 10987,
+      "Mai": 11136, "Jun": 11176, "Jul": 13965, "Ago": 17988,
+      "Set": 11952, "Out": 11010, "Nov": 11018, "Dez": 11723
+    },
+    "2025": { "Jan": 10147, "Fev": 10731, "Mar": 11058 }
+  }
+}
