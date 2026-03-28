@@ -1,21 +1,24 @@
 import os
 import json
 
+def is_missing(v):
+    return v is None or v == "N/D" or v == ""
+
 def interpolate_nulls(vals):
     new_vals = list(vals)
     for i in range(len(vals)):
-        if vals[i] is None:
+        if is_missing(vals[i]):
             # Find nearest valid previous value
             prev_v = None
             for j in range(i - 1, -1, -1):
-                if vals[j] is not None:
+                if not is_missing(vals[j]):
                     prev_v = vals[j]
                     break
             
             # Find nearest valid next value
             next_v = None
             for j in range(i + 1, len(vals)):
-                if vals[j] is not None:
+                if not is_missing(vals[j]):
                     next_v = vals[j]
                     break
             
@@ -26,7 +29,7 @@ def interpolate_nulls(vals):
                 new_vals[i] = prev_v
             elif next_v is not None:
                 new_vals[i] = next_v
-            # If both are None, it remains None
+            # If both are None, it remains None/N/D
     return new_vals
 
 def process_file(filepath):
@@ -55,13 +58,13 @@ def process_file(filepath):
                     # Extract the array of values for this specific year and month
                     vals = [seg.get(year, {}).get(month) for seg in segments]
                     
-                    # If there's at least one None, attempt interpolation
-                    if None in vals and any(v is not None for v in vals):
+                    # If there's at least one missing value, attempt interpolation
+                    if any(is_missing(v) for v in vals) and any(not is_missing(v) for v in vals):
                         new_vals = interpolate_nulls(vals)
                         
                         # Apply interpolated values back to the segments
                         for i, new_v in enumerate(new_vals):
-                            if vals[i] is None and new_v is not None:
+                            if is_missing(vals[i]) and not is_missing(new_v):
                                 if year not in segments[i]:
                                     segments[i][year] = {}
                                 segments[i][year][month] = new_v
