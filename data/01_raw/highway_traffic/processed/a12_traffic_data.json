@@ -1,0 +1,61 @@
+{
+  "autoestrada": "A12",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Ponte Vasco da Gama",
+      "2024": {
+        "Jan": 65663, "Fev": 67385, "Mar": 69954, "Abr": 72953,
+        "Mai": 76119, "Jun": 76693, "Jul": 84191, "Ago": 81320,
+        "Set": 79238, "Out": 75039, "Nov": 73336, "Dez": 74026
+      },
+      "2025": { "Jan": 66928, "Fev": 71699, "Mar": 70863 }
+    },
+    {
+      "sublanco": "Montijo (A12/A33) – Pinhal Novo",
+      "2024": {
+        "Jan": 19585, "Fev": 20663, "Mar": 21992, "Abr": 23288,
+        "Mai": 24581, "Jun": 26603, "Jul": 30308, "Ago": 31680,
+        "Set": 27159, "Out": 23570, "Nov": 22804, "Dez": 23108
+      },
+      "2025": { "Jan": 20429, "Fev": 22013, "Mar": 22103 }
+    },
+    {
+      "sublanco": "Pinhal Novo – A2/A12",
+      "2024": {
+        "Jan": 19099, "Fev": 20099, "Mar": 21514, "Abr": 22843,
+        "Mai": 24071, "Jun": 26252, "Jul": 29957, "Ago": 31479,
+        "Set": 26573, "Out": 22936, "Nov": 22169, "Dez": 22398
+      },
+      "2025": { "Jan": 19838, "Fev": 21337, "Mar": 21441 }
+    },
+    {
+      "sublanco": "A2/A12 – A12/Lig. Alto da Guerra",
+      "2024": {
+        "Jan": 25912, "Fev": 26446, "Mar": 26919, "Abr": 28212,
+        "Mai": 29225, "Jun": 28523, "Jul": 30172, "Ago": 28894,
+        "Set": 29240, "Out": 29436, "Nov": 28916, "Dez": 28401
+      },
+      "2025": { "Jan": 26808, "Fev": 28419, "Mar": 28040 }
+    },
+    {
+      "sublanco": "A12/Lig. Alto da Guerra – Setúbal",
+      "2024": {
+        "Jan": 25912, "Fev": 26446, "Mar": 26919, "Abr": 28212,
+        "Mai": 29225, "Jun": 28523, "Jul": 30172, "Ago": 28894,
+        "Set": 29240, "Out": 29436, "Nov": 28916, "Dez": 28401
+      },
+      "2025": { "Jan": 26808, "Fev": 28419, "Mar": 28040 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 39626, "Fev": 40891, "Mar": 42657, "Abr": 44676,
+      "Mai": 46708, "Jun": 47825, "Jul": 52875, "Ago": 52174,
+      "Set": 49186, "Out": 45789, "Nov": 44659, "Dez": 45009
+    },
+    "2025": { "Jan": 40630, "Fev": 43539, "Mar": 43185 }
+  }
+}

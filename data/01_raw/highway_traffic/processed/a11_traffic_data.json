@@ -1,0 +1,133 @@
+{
+  "autoestrada": "A11",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Apúlia (A28) – EN205",
+      "2024": {
+        "Jan": 11305, "Fev": 11733, "Mar": 11876, "Abr": 13428,
+        "Mai": 13121, "Jun": 13769, "Jul": 17381, "Ago": 22061,
+        "Set": 14212, "Out": 12578, "Nov": 12800, "Dez": 13482
+      },
+      "2025": { "Jan": 12009, "Fev": 12858, "Mar": 13705 }
+    },
+    {
+      "sublanco": "EN205 – Barcelos",
+      "2024": {
+        "Jan": 10532, "Fev": 10972, "Mar": 11123, "Abr": 12615,
+        "Mai": 12320, "Jun": 12946, "Jul": 16406, "Ago": 21037,
+        "Set": 13342, "Out": 11740, "Nov": 11949, "Dez": 12640
+      },
+      "2025": { "Jan": 11175, "Fev": 11963, "Mar": 12786 }
+    },
+    {
+      "sublanco": "Barcelos – Braga Oeste (A3/A11)",
+      "2024": {
+        "Jan": 14319, "Fev": 14705, "Mar": 14856, "Abr": 16396,
+        "Mai": 16249, "Jun": 16388, "Jul": 19852, "Ago": 23772,
+        "Set": 17207, "Out": 16063, "Nov": 16217, "Dez": 17089
+      },
+      "2025": { "Jan": 15170, "Fev": 16242, "Mar": 16762 }
+    },
+    {
+      "sublanco": "Braga Oeste (A3/A11) – Braga (Ferreiros)",
+      "2024": {
+        "Jan": 13841, "Fev": 14232, "Mar": 14491, "Abr": 15871,
+        "Mai": 15852, "Jun": 15980, "Jul": 19355, "Ago": 23785,
+        "Set": 16980, "Out": 15811, "Nov": 15921, "Dez": 16680
+      },
+      "2025": { "Jan": 14730, "Fev": 15782, "Mar": 16329 }
+    },
+    {
+      "sublanco": "Braga (Ferreiros) – Celeirós",
+      "2024": {
+        "Jan": 32428, "Fev": 33359, "Mar": 33767, "Abr": 35413,
+        "Mai": 36728, "Jun": 35263, "Jul": 38561, "Ago": 40593,
+        "Set": 38410, "Out": 38176, "Nov": 37068, "Dez": 37053
+      },
+      "2025": { "Jan": 33651, "Fev": 36149, "Mar": 36114 }
+    },
+    {
+      "sublanco": "Celeirós – Guimarães Oeste",
+      "2024": {
+        "Jan": 16854, "Fev": 17180, "Mar": 17324, "Abr": 18153,
+        "Mai": 18966, "Jun": 17956, "Jul": 20075, "Ago": 23778,
+        "Set": 19917, "Out": 19711, "Nov": 19431, "Dez": 19788
+      },
+      "2025": { "Jan": 17686, "Fev": 18996, "Mar": 18905 }
+    },
+    {
+      "sublanco": "Guimarães Oeste – Selho",
+      "2024": {
+        "Jan": 22877, "Fev": 23428, "Mar": 23718, "Abr": 24785,
+        "Mai": 25246, "Jun": 24684, "Jul": 27904, "Ago": 31475,
+        "Set": 26337, "Out": 25821, "Nov": 25566, "Dez": 26553
+      },
+      "2025": { "Jan": 23593, "Fev": 25254, "Mar": 25563 }
+    },
+    {
+      "sublanco": "Calvos – Vizela",
+      "2024": {
+        "Jan": 10000, "Fev": 10352, "Mar": 10623, "Abr": 11061,
+        "Mai": 11628, "Jun": 11372, "Jul": 12952, "Ago": 15232,
+        "Set": 12147, "Out": 11908, "Nov": 11815, "Dez": 12352
+      },
+      "2025": { "Jan": 10850, "Fev": 11633, "Mar": 11723 }
+    },
+    {
+      "sublanco": "Vizela – Felgueiras",
+      "2024": {
+        "Jan": 10527, "Fev": 10887, "Mar": 11091, "Abr": 11661,
+        "Mai": 12169, "Jun": 11951, "Jul": 13569, "Ago": 15672,
+        "Set": 12811, "Out": 12633, "Nov": 12516, "Dez": 12922
+      },
+      "2025": { "Jan": 11486, "Fev": 12316, "Mar": 12400 }
+    },
+    {
+      "sublanco": "Felgueiras – Lousada",
+      "2024": {
+        "Jan": 13655, "Fev": 14118, "Mar": 14391, "Abr": 15077,
+        "Mai": 15626, "Jun": 15211, "Jul": 16949, "Ago": 18513,
+        "Set": 16131, "Out": 16311, "Nov": 16116, "Dez": 16205
+      },
+      "2025": { "Jan": 14824, "Fev": 16040, "Mar": 16037 }
+    },
+    {
+      "sublanco": "Lousada – EN15",
+      "2024": {
+        "Jan": 8857, "Fev": 9200, "Mar": 9453, "Abr": 9753,
+        "Mai": 10105, "Jun": 10124, "Jul": 11349, "Ago": 12965,
+        "Set": 10534, "Out": 10576, "Nov": 10720, "Dez": 10691
+      },
+      "2025": { "Jan": 9823, "Fev": 10677, "Mar": 10663 }
+    },
+    {
+      "sublanco": "EN15 – EN211",
+      "2024": {
+        "Jan": 9391, "Fev": 9707, "Mar": 9923, "Abr": 10288,
+        "Mai": 10695, "Jun": 10697, "Jul": 11903, "Ago": 13580,
+        "Set": 11137, "Out": 11095, "Nov": 11186, "Dez": 11161
+      },
+      "2025": { "Jan": 10181, "Fev": 11008, "Mar": 11080 }
+    },
+    {
+      "sublanco": "EN211 – Castelões (A4/A11)",
+      "2024": {
+        "Jan": 16859, "Fev": 17249, "Mar": 17495, "Abr": 18150,
+        "Mai": 18666, "Jun": 18765, "Jul": 20486, "Ago": 22291,
+        "Set": 19411, "Out": 19185, "Nov": 19310, "Dez": 19443
+      },
+      "2025": { "Jan": 17736, "Fev": 18912, "Mar": 18960 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 13979, "Fev": 14391, "Mar": 14600, "Abr": 15612,
+      "Mai": 15937, "Jun": 15737, "Jul": 18252, "Ago": 21469,
+      "Set": 16803, "Out": 16191, "Nov": 16129, "Dez": 16596
+    },
+    "2025": { "Jan": 14848, "Fev": 15947, "Mar": 16210 }
+  }
+}

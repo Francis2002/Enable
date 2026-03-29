@@ -1,0 +1,70 @@
+{
+  "autoestrada": "A15",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Arnóia – A-dos-Negros",
+      "2024": {
+        "Jan": 6475, "Fev": 6718, "Mar": 6916, "Abr": 7418,
+        "Mai": 7699, "Jun": 8166, "Jul": 9931, "Ago": 11549,
+        "Set": 8356, "Out": 7590, "Nov": 7327, "Dez": 7745
+      },
+      "2025": { "Jan": 6998, "Fev": 7398, "Mar": 7089 }
+    },
+    {
+      "sublanco": "A-dos-Negros – A-dos-Francos",
+      "2024": {
+        "Jan": 5308, "Fev": 5512, "Mar": 5720, "Abr": 6181,
+        "Mai": 6409, "Jun": 6904, "Jul": 8340, "Ago": 9863,
+        "Set": 7169, "Out": 6317, "Nov": 6286, "Dez": 6532
+      },
+      "2025": { "Jan": 5688, "Fev": 6029, "Mar": 6158 }
+    },
+    {
+      "sublanco": "A-dos-Francos – Rio Maior Oeste",
+      "2024": {
+        "Jan": 4236, "Fev": 4430, "Mar": 4609, "Abr": 5007,
+        "Mai": 5184, "Jun": 5651, "Jul": 6820, "Ago": 8227,
+        "Set": 5872, "Out": 5156, "Nov": 5105, "Dez": 5277
+      },
+      "2025": { "Jan": 4639, "Fev": 4874, "Mar": 4948 }
+    },
+    {
+      "sublanco": "Rio Maior Oeste – Rio Maior Este",
+      "2024": {
+        "Jan": 3922, "Fev": 4036, "Mar": 4182, "Abr": 4546,
+        "Mai": 4638, "Jun": 5091, "Jul": 6013, "Ago": 7113,
+        "Set": 5263, "Out": 4734, "Nov": 4811, "Dez": 4781
+      },
+      "2025": { "Jan": 4228, "Fev": 4517, "Mar": 4549 }
+    },
+    {
+      "sublanco": "Rio Maior Este – Malaqueijo",
+      "2024": {
+        "Jan": 5273, "Fev": 5396, "Mar": 5591, "Abr": 5941,
+        "Mai": 6065, "Jun": 6516, "Jul": 7256, "Ago": 8176,
+        "Set": 6553, "Out": 6034, "Nov": 6056, "Dez": 6020
+      },
+      "2025": { "Jan": 5403, "Fev": 5832, "Mar": 5896 }
+    },
+    {
+      "sublanco": "Malaqueijo – Santarém (A1/A15)",
+      "2024": {
+        "Jan": 5262, "Fev": 5383, "Mar": 5600, "Abr": 5939,
+        "Mai": 6091, "Jun": 6563, "Jul": 7263, "Ago": 8185,
+        "Set": 6604, "Out": 6086, "Nov": 6132, "Dez": 6101
+      },
+      "2025": { "Jan": 5433, "Fev": 5877, "Mar": 5941 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 5139, "Fev": 5301, "Mar": 5499, "Abr": 5894,
+      "Mai": 6069, "Jun": 6539, "Jul": 7600, "Ago": 8808,
+      "Set": 6680, "Out": 6034, "Nov": 6017, "Dez": 6120
+    },
+    "2025": { "Jan": 5428, "Fev": 5800, "Mar": 5840 }
+  }
+}

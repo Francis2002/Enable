@@ -133,8 +133,8 @@ def process_traffic_data(input_json_path):
         print(f"📍 Geocoding & Routing: {start_node} -> {end_node}")
         
         # 3. Geocode junctions
-        start_pt = geocode_junction(start_node, highway_ref, fallback_dict=FALLBACK_COORDS)
-        end_pt = geocode_junction(end_node, highway_ref, fallback_dict=FALLBACK_COORDS)
+        start_pt = geocode_junction(f'{start_node} ({highway_ref})' if start_node in ['CREL', 'AKI', 'Centro Comercial'] else start_node, highway_ref, fallback_dict=FALLBACK_COORDS)
+        end_pt = geocode_junction(f'{end_node} ({highway_ref})' if end_node in ['CREL', 'AKI', 'Centro Comercial'] else end_node, highway_ref, fallback_dict=FALLBACK_COORDS)
         
         if not start_pt or not end_pt:
             fail_count += 1
@@ -143,8 +143,9 @@ def process_traffic_data(input_json_path):
         # 4. Generate direct route between the two nodes
         # If coordinates are identical, use a tiny straight line fallback to avoid errors
         if abs(start_pt.x - end_pt.x) < 0.0001 and abs(start_pt.y - end_pt.y) < 0.0001:
-            print(f"  ⚠️ Warning: {start_node} and {end_node} snapped to same location. Using fallback.")
-            segment_geom = LineString([(float(start_pt.x), float(start_pt.y)), (float(end_pt.x), float(end_pt.y) + 0.0001)])
+            print(f"  ❌ Error: '{start_node}' and '{end_node}' geocoded to the exact same location. Skipping segment. Please provide accurate fallback coordinates in extra_fallbacks.py.")
+            fail_count += 1
+            continue
         else:
             segment_geom = get_routing_path_for_segment(
                 PBF_PATH, 

@@ -78,6 +78,12 @@ def get_geometric_intersection(hw1, hw2):
 
 def geocode_junction(node_name, highway_ref, fallback_dict={}):
     """Main geocoding logic."""
+    # 1. Try highway-scoped fallback for precise overriding
+    if (highway_ref, node_name) in fallback_dict:
+        lon, lat = fallback_dict[(highway_ref, node_name)]
+        return Point(lon, lat)
+        
+    # 2. Try global flat fallback
     if node_name in fallback_dict:
         lon, lat = fallback_dict[node_name]
         return Point(lon, lat)

@@ -19,7 +19,10 @@ class HighwayWayHandler(osmium.SimpleHandler):
         self.ways = []
 
     def way(self, w):
-        if 'highway' in w.tags and w.tags['highway'] in ['motorway', 'trunk', 'motorway_link', 'trunk_link']:
+        # By excluding 'motorway_link' and 'trunk_link', we force snapping and routing 
+        # to strictly use the mainline highway, preventing V-shaped artifacts.
+        # Any small gaps created at interchanges will be bridged by build_isolated_highway_graph.
+        if 'highway' in w.tags and w.tags['highway'] in ['motorway', 'trunk']:
             if 'ref' in w.tags:
                 raw_refs = w.tags['ref'].split(';')
                 norm_refs = [r.replace(' ', '').strip() for r in raw_refs]

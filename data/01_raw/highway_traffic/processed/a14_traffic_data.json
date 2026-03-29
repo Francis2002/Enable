@@ -1,0 +1,97 @@
+{
+  "autoestrada": "A14",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Figueira da Foz – Zona Portuária",
+      "2024": {
+        "Jan": 14499, "Fev": 14681, "Mar": 14613, "Abr": 16255,
+        "Mai": 16263, "Jun": 16648, "Jul": 20346, "Ago": 23047,
+        "Set": 17214, "Out": 15364, "Nov": 15196, "Dez": 15620
+      },
+      "2025": { "Jan": 14550, "Fev": 15422, "Mar": 15505 }
+    },
+    {
+      "sublanco": "Zona Portuária – Vila Verde",
+      "2024": {
+        "Jan": 14499, "Fev": 14681, "Mar": 14613, "Abr": 16255,
+        "Mai": 16263, "Jun": 16648, "Jul": 20346, "Ago": 23047,
+        "Set": 17214, "Out": 15364, "Nov": 15196, "Dez": 15620
+      },
+      "2025": { "Jan": 14550, "Fev": 15422, "Mar": 15505 }
+    },
+    {
+      "sublanco": "Vila Verde – A14/A17",
+      "2024": {
+        "Jan": 14081, "Fev": 14506, "Mar": 14482, "Abr": 16203,
+        "Mai": 16189, "Jun": 16615, "Jul": 20305, "Ago": 22974,
+        "Set": 17126, "Out": 15350, "Nov": 15140, "Dez": 15506
+      },
+      "2025": { "Jan": 14415, "Fev": 15255, "Mar": 15386 }
+    },
+    {
+      "sublanco": "A14/A17 – Santa Eulália",
+      "2024": {
+        "Jan": 12527, "Fev": 12766, "Mar": 12732, "Abr": 13821,
+        "Mai": 13836, "Jun": 14209, "Jul": 17066, "Ago": 19197,
+        "Set": 14755, "Out": 13142, "Nov": 13160, "Dez": 13620
+      },
+      "2025": { "Jan": 12479, "Fev": 13153, "Mar": 13380 }
+    },
+    {
+      "sublanco": "Santa Eulália – Montemor-o-Velho",
+      "2024": {
+        "Jan": 3914, "Fev": 4019, "Mar": 3992, "Abr": 4479,
+        "Mai": 4554, "Jun": 4734, "Jul": 6159, "Ago": 7395,
+        "Set": 4832, "Out": 4235, "Nov": 4208, "Dez": 4382
+      },
+      "2025": { "Jan": 4001, "Fev": 4196, "Mar": 4368 }
+    },
+    {
+      "sublanco": "Montemor-o-Velho – EN 335",
+      "2024": {
+        "Jan": 4161, "Fev": 4282, "Mar": 4306, "Abr": 4760,
+        "Mai": 4818, "Jun": 5026, "Jul": 6430, "Ago": 7583,
+        "Set": 5217, "Out": 4541, "Nov": 4529, "Dez": 4803
+      },
+      "2025": { "Jan": 4280, "Fev": 4513, "Mar": 4712 }
+    },
+    {
+      "sublanco": "EN 335 – Ançã",
+      "2024": {
+        "Jan": 4618, "Fev": 4722, "Mar": 4757, "Abr": 5250,
+        "Mai": 5351, "Jun": 5608, "Jul": 6910, "Ago": 8175,
+        "Set": 5731, "Out": 5097, "Nov": 5067, "Dez": 5345
+      },
+      "2025": { "Jan": 4783, "Fev": 4994, "Mar": 5214 }
+    },
+    {
+      "sublanco": "Ançã – Coimbra Norte",
+      "2024": {
+        "Jan": 8368, "Fev": 8538, "Mar": 8548, "Abr": 9376,
+        "Mai": 9675, "Jun": 9756, "Jul": 11654, "Ago": 13086,
+        "Set": 10212, "Out": 9580, "Nov": 9590, "Dez": 9818
+      },
+      "2025": { "Jan": 9055, "Fev": 9530, "Mar": 9672 }
+    },
+    {
+      "sublanco": "Coimbra Norte – Zombaria",
+      "2024": {
+        "Jan": 17236, "Fev": 17798, "Mar": 18432, "Abr": 19537,
+        "Mai": 20588, "Jun": 20539, "Jul": 23023, "Ago": 26799,
+        "Set": 21893, "Out": 20582, "Nov": 21342, "Dez": 21092
+      },
+      "2025": { "Jan": 18102, "Fev": 19237, "Mar": 19473 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 7802, "Fev": 7973, "Mar": 7989, "Abr": 8776,
+      "Mai": 8886, "Jun": 9134, "Jul": 11138, "Ago": 12793,
+      "Set": 9466, "Out": 8489, "Nov": 8480, "Dez": 8773
+    },
+    "2025": { "Jan": 7985, "Fev": 8415, "Mar": 8603 }
+  }
+}

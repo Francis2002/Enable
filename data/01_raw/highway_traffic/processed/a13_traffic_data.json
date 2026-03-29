@@ -1,0 +1,187 @@
+{
+  "autoestrada": "A13",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Marateca (A2/A6/A13) – Pegões",
+      "2024": {
+        "Jan": 4729, "Fev": 5100, "Mar": 5975, "Abr": 6453,
+        "Mai": 6784, "Jun": 8710, "Jul": 11387, "Ago": 16626,
+        "Set": 9779, "Out": 6529, "Nov": 6110, "Dez": 5984
+      },
+      "2025": { "Jan": 5370, "Fev": 5677, "Mar": 5823 }
+    },
+    {
+      "sublanco": "Pegões – Stº. Estevão",
+      "2024": {
+        "Jan": 4741, "Fev": 5107, "Mar": 5975, "Abr": 6456,
+        "Mai": 6792, "Jun": 8691, "Jul": 11371, "Ago": 16645,
+        "Set": 9782, "Out": 6564, "Nov": 6121, "Dez": 5985
+      },
+      "2025": { "Jan": 5394, "Fev": 5710, "Mar": 5855 }
+    },
+    {
+      "sublanco": "Stº. Estevão – A10/A13",
+      "2024": {
+        "Jan": 5338, "Fev": 5763, "Mar": 6614, "Abr": 7168,
+        "Mai": 7577, "Jun": 9499, "Jul": 12192, "Ago": 17379,
+        "Set": 10581, "Out": 7436, "Nov": 7106, "Dez": 6871
+      },
+      "2025": { "Jan": 6213, "Fev": 6590, "Mar": 6753 }
+    },
+    {
+      "sublanco": "A10/A13 – Salvaterra Magos",
+      "2024": {
+        "Jan": 3724, "Fev": 4007, "Mar": 4604, "Abr": 4916,
+        "Mai": 5151, "Jun": 6651, "Jul": 8165, "Ago": 11959,
+        "Set": 7274, "Out": 5110, "Nov": 5079, "Dez": 4823
+      },
+      "2025": { "Jan": 4435, "Fev": 4755, "Mar": 4909 }
+    },
+    {
+      "sublanco": "Salvaterra Magos – Almeirim (IC10)",
+      "2024": {
+        "Jan": 3551, "Fev": 3824, "Mar": 4363, "Abr": 4701,
+        "Mai": 4932, "Jun": 6393, "Jul": 7852, "Ago": 11616,
+        "Set": 7026, "Out": 4863, "Nov": 4823, "Dez": 4562
+      },
+      "2025": { "Jan": 4198, "Fev": 4533, "Mar": 4634 }
+    },
+    {
+      "sublanco": "Atalaia (A13/A23) – Atalaia (EN110)",
+      "2024": {
+        "Jan": 8941, "Fev": 9359, "Mar": 9751, "Abr": 10233,
+        "Mai": 10729, "Jun": 10980, "Jul": 11789, "Ago": 13004,
+        "Set": 11795, "Out": 11523, "Nov": 12052, "Dez": 11311
+      },
+      "2025": { "Jan": 13749, "Fev": 15220, "Mar": 15414 }
+    },
+    {
+      "sublanco": "Atalaia (EN110) – Asseiceira",
+      "2024": {
+        "Jan": 7130, "Fev": 7561, "Mar": 7944, "Abr": 8367,
+        "Mai": 8834, "Jun": 9194, "Jul": 9938, "Ago": 11329,
+        "Set": 9964, "Out": 9601, "Nov": 10127, "Dez": 9544
+      },
+      "2025": { "Jan": 12766, "Fev": 14245, "Mar": 14416 }
+    },
+    {
+      "sublanco": "Asseiceira – Santa Cita (EN110)",
+      "2024": {
+        "Jan": 7416, "Fev": 7844, "Mar": 8198, "Abr": 8647,
+        "Mai": 9099, "Jun": 9409, "Jul": 10165, "Ago": 11502,
+        "Set": 10185, "Out": 9856, "Nov": 10378, "Dez": 9742
+      },
+      "2025": { "Jan": 12520, "Fev": 13928, "Mar": 14056 }
+    },
+    {
+      "sublanco": "Santa Cita (EN110) – Vale Donas",
+      "2024": {
+        "Jan": 6816, "Fev": 7184, "Mar": 7410, "Abr": 7830,
+        "Mai": 8198, "Jun": 8498, "Jul": 9235, "Ago": 10439,
+        "Set": 9035, "Out": 8679, "Nov": 9138, "Dez": 8614
+      },
+      "2025": { "Jan": 9965, "Fev": 11040, "Mar": 11155 }
+    },
+    {
+      "sublanco": "Vale Donas – A13/IC9",
+      "2024": {
+        "Jan": 5522, "Fev": 5816, "Mar": 6044, "Abr": 6436,
+        "Mai": 6749, "Jun": 7090, "Jul": 7790, "Ago": 9061,
+        "Set": 7545, "Out": 7087, "Nov": 7517, "Dez": 7072
+      },
+      "2025": { "Jan": 8289, "Fev": 9200, "Mar": 9292 }
+    },
+    {
+      "sublanco": "A13/IC9 – Alviobeira",
+      "2024": {
+        "Jan": 4702, "Fev": 4962, "Mar": 5255, "Abr": 5640,
+        "Mai": 6001, "Jun": 6309, "Jul": 6857, "Ago": 8274,
+        "Set": 6787, "Out": 6381, "Nov": 6642, "Dez": 6285
+      },
+      "2025": { "Jan": 7387, "Fev": 8246, "Mar": 8375 }
+    },
+    {
+      "sublanco": "Alviobeira – Pias",
+      "2024": {
+        "Jan": 3356, "Fev": 3562, "Mar": 3834, "Abr": 4126,
+        "Mai": 4450, "Jun": 4701, "Jul": 5061, "Ago": 6209,
+        "Set": 5113, "Out": 4735, "Nov": 5021, "Dez": 4720
+      },
+      "2025": { "Jan": 5582, "Fev": 6246, "Mar": 6399 }
+    },
+    {
+      "sublanco": "Pias – Cabaços",
+      "2024": {
+        "Jan": 3400, "Fev": 3610, "Mar": 3872, "Abr": 4152,
+        "Mai": 4488, "Jun": 4728, "Jul": 5099, "Ago": 6254,
+        "Set": 5132, "Out": 4785, "Nov": 5075, "Dez": 4353
+      },
+      "2025": { "Jan": 5610, "Fev": 6257, "Mar": 6405 }
+    },
+    {
+      "sublanco": "Cabaços – Alvaiázere",
+      "2024": {
+        "Jan": 3346, "Fev": 3568, "Mar": 3814, "Abr": 4105,
+        "Mai": 4431, "Jun": 4668, "Jul": 5052, "Ago": 6248,
+        "Set": 5074, "Out": 4726, "Nov": 5011, "Dez": 4687
+      },
+      "2025": { "Jan": 5511, "Fev": 6160, "Mar": 6313 }
+    },
+    {
+      "sublanco": "Alvaiázere – Avelar Sul (A13/IC8)",
+      "2024": {
+        "Jan": 3596, "Fev": 3890, "Mar": 4118, "Abr": 4393,
+        "Mai": 4678, "Jun": 4904, "Jul": 5267, "Ago": 6442,
+        "Set": 5326, "Out": 4997, "Nov": 5267, "Dez": 4943
+      },
+      "2025": { "Jan": 5812, "Fev": 6493, "Mar": 6624 }
+    },
+    {
+      "sublanco": "Avelar Sul (A13/IC8) – Avelar Norte / Penela",
+      "2024": {
+        "Jan": 6306, "Fev": 6621, "Mar": 6863, "Abr": 7347,
+        "Mai": 7826, "Jun": 8034, "Jul": 8631, "Ago": 9950,
+        "Set": 8001, "Out": 7757, "Nov": 8167, "Dez": 8158
+      },
+      "2025": { "Jan": 9090, "Fev": 9874, "Mar": 9867 }
+    },
+    {
+      "sublanco": "Avelar Norte / Penela – A13/EN342",
+      "2024": {
+        "Jan": 6728, "Fev": 7130, "Mar": 7342, "Abr": 7857,
+        "Mai": 8355, "Jun": 8545, "Jul": 9119, "Ago": 10453,
+        "Set": 9074, "Out": 8704, "Nov": 8884, "Dez": 8720
+      },
+      "2025": { "Jan": 9786, "Fev": 10699, "Mar": 10729 }
+    },
+    {
+      "sublanco": "A13/EN342 – Almalaguês (A13/A13-1)",
+      "2024": {
+        "Jan": 7761, "Fev": 8277, "Mar": 8497, "Abr": 9101,
+        "Mai": 9744, "Jun": 9808, "Jul": 10420, "Ago": 11538,
+        "Set": 10376, "Out": 10225, "Nov": 10430, "Dez": 10267
+      },
+      "2025": { "Jan": 12070, "Fev": 13240, "Mar": 13255 }
+    },
+    {
+      "sublanco": "Almalaguês (A13/A13-1) – Coimbra Sul",
+      "2024": {
+        "Jan": 4010, "Fev": 4260, "Mar": 4331, "Abr": 4548,
+        "Mai": 4952, "Jun": 4798, "Jul": 4860, "Ago": 4894,
+        "Set": 5079, "Out": 5249, "Nov": 5282, "Dez": 5222
+      },
+      "2025": { "Jan": 6651, "Fev": 7216, "Mar": 7241 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 4762, "Fev": 5083, "Mar": 5553, "Abr": 5950,
+      "Mai": 6301, "Jun": 7221, "Jul": 8485, "Ago": 11248,
+      "Set": 7852, "Out": 6410, "Nov": 6458, "Dez": 6188
+    },
+    "2025": { "Jan": 6637, "Fev": 7239, "Mar": 7352 }
+  }
+}

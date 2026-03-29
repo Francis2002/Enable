@@ -1,0 +1,34 @@
+{
+  "autoestrada": "A13-1",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Almalaguês (A13/A13-1) – Almalaguês",
+      "2024": {
+        "Jan": 4357, "Fev": 4656, "Mar": 4786, "Abr": 5177,
+        "Mai": 5499, "Jun": 5714, "Jul": 6244, "Ago": 7339,
+        "Set": 6031, "Out": 5749, "Nov": 5913, "Dez": 5810
+      },
+      "2025": { "Jan": 6576, "Fev": 7189, "Mar": 7195 }
+    },
+    {
+      "sublanco": "Almalaguês (A13-1/EN110) – Condeixa",
+      "2024": {
+        "Jan": 4200, "Fev": 4479, "Mar": 4638, "Abr": 5018,
+        "Mai": 5312, "Jun": 5531, "Jul": 6106, "Ago": 7210,
+        "Set": 5829, "Out": 5536, "Nov": 5715, "Dez": 5650
+      },
+      "2025": { "Jan": 6264, "Fev": 6838, "Mar": 6859 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 4227, "Fev": 4509, "Mar": 4663, "Abr": 5045,
+      "Mai": 5344, "Jun": 5562, "Jul": 6170, "Ago": 7232,
+      "Set": 5863, "Out": 5572, "Nov": 5749, "Dez": 5677
+    },
+    "2025": { "Jan": 6317, "Fev": 6898, "Mar": 6916 }
+  }
+}
