@@ -1,0 +1,124 @@
+{
+  "autoestrada": "A33",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Casas Velhas – Lazarim",
+      "2024": {
+        "Jan": 43288, "Fev": 43882, "Mar": 43744, "Abr": 46938,
+        "Mai": 49391, "Jun": 47294, "Jul": 50285, "Ago": 46411,
+        "Set": 48112, "Out": 47386, "Nov": 46133, "Dez": 45560
+      },
+      "2025": { "Jan": 43228, "Fev": 45360, "Mar": 44635 }
+    },
+    {
+      "sublanco": "Lazarim – Botequim",
+      "2024": {
+        "Jan": 43245, "Fev": 43838, "Mar": 43700, "Abr": 46891,
+        "Mai": 49342, "Jun": 47247, "Jul": 50235, "Ago": 46365,
+        "Set": 48064, "Out": 47339, "Nov": 46087, "Dez": 45514
+      },
+      "2025": { "Jan": 43185, "Fev": 45315, "Mar": 44590 }
+    },
+    {
+      "sublanco": "Botequim – Palhais",
+      "2024": {
+        "Jan": 34879, "Fev": 35314, "Mar": 35284, "Abr": 38142,
+        "Mai": 40433, "Jun": 39701, "Jul": 43027, "Ago": 39827,
+        "Set": 40512, "Out": 38174, "Nov": 38003, "Dez": 37146
+      },
+      "2025": { "Jan": 35157, "Fev": 37095, "Mar": 36640 }
+    },
+    {
+      "sublanco": "Palhais – Queimada",
+      "2024": {
+        "Jan": 18556, "Fev": 18795, "Mar": 19091, "Abr": 19916,
+        "Mai": 21347, "Jun": 20156, "Jul": 22513, "Ago": 20587,
+        "Set": 21276, "Out": 21348, "Nov": 20853, "Dez": 20751
+      },
+      "2025": { "Jan": 19224, "Fev": 20683, "Mar": 20424 }
+    },
+    {
+      "sublanco": "Queimada – Belverde",
+      "2024": {
+        "Jan": 19919, "Fev": 20314, "Mar": 20411, "Abr": 21870,
+        "Mai": 23250, "Jun": 22220, "Jul": 25127, "Ago": 22814,
+        "Set": 23682, "Out": 23732, "Nov": 23548, "Dez": 23200
+      },
+      "2025": { "Jan": 21851, "Fev": 23723, "Mar": 23219 }
+    },
+    {
+      "sublanco": "Belverde – Laranjeiras (A33/EN378)",
+      "2024": {
+        "Jan": 18936, "Fev": 19419, "Mar": 19760, "Abr": 21410,
+        "Mai": 22932, "Jun": 22324, "Jul": 26643, "Ago": 25020,
+        "Set": 23793, "Out": 23396, "Nov": 23007, "Dez": 22699
+      },
+      "2025": { "Jan": 21331, "Fev": 23289, "Mar": 23041 }
+    },
+    {
+      "sublanco": "Laranjeiras (A33/EN378) – Coina (A33/EN10)",
+      "2024": {
+        "Jan": 17545, "Fev": 17884, "Mar": 18278, "Abr": 19563,
+        "Mai": 20747, "Jun": 19986, "Jul": 23538, "Ago": 21906,
+        "Set": 21069, "Out": 20990, "Nov": 20700, "Dez": 20601
+      },
+      "2025": { "Jan": 19409, "Fev": 20921, "Mar": 20596 }
+    },
+    {
+      "sublanco": "Coina (A33/EN10) – Penalva (A33/IC21)",
+      "2024": {
+        "Jan": 18930, "Fev": 19486, "Mar": 19947, "Abr": 21461,
+        "Mai": 23275, "Jun": 22816, "Jul": 26962, "Ago": 25088,
+        "Set": 23627, "Out": 23178, "Nov": 22653, "Dez": 22478
+      },
+      "2025": { "Jan": 21126, "Fev": 22915, "Mar": 22547 }
+    },
+    {
+      "sublanco": "Penalva (A33/IC21) – Moita",
+      "2024": {
+        "Jan": 41104, "Fev": 42161, "Mar": 42909, "Abr": 44784,
+        "Mai": 46666, "Jun": 45479, "Jul": 50546, "Ago": 47676,
+        "Set": 47804, "Out": 47242, "Nov": 46948, "Dez": 49166
+      },
+      "2025": { "Jan": 43558, "Fev": 46196, "Mar": 45388 }
+    },
+    {
+      "sublanco": "Moita – Sarilhos Grandes",
+      "2024": {
+        "Jan": 45067, "Fev": 43955, "Mar": 47411, "Abr": 47849,
+        "Mai": 51134, "Jun": 50143, "Jul": 55775, "Ago": 53045,
+        "Set": 52564, "Out": 52179, "Nov": 51966, "Dez": 52877
+      },
+      "2025": { "Jan": 47639, "Fev": 50814, "Mar": 49906 }
+    },
+    {
+      "sublanco": "Sarilhos Grandes – Montijo Sul",
+      "2024": {
+        "Jan": 44156, "Fev": 45382, "Mar": 46528, "Abr": 48367,
+        "Mai": 50344, "Jun": 49432, "Jul": 55024, "Ago": 52067,
+        "Set": 52295, "Out": 52098, "Nov": 51895, "Dez": 52927
+      },
+      "2025": { "Jan": 47640, "Fev": 50777, "Mar": 49988 }
+    },
+    {
+      "sublanco": "Montijo Sul – Montijo (A12/A33)",
+      "2024": {
+        "Jan": 44156, "Fev": 45382, "Mar": 46528, "Abr": 48367,
+        "Mai": 50344, "Jun": 49432, "Jul": 55024, "Ago": 52067,
+        "Set": 52295, "Out": 52098, "Nov": 51895, "Dez": 52927
+      },
+      "2025": { "Jan": 47640, "Fev": 50777, "Mar": 49988 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 31374, "Fev": 31808, "Mar": 32653, "Abr": 34234,
+      "Mai": 36145, "Jun": 35136, "Jul": 39363, "Ago": 36878,
+      "Set": 36827, "Out": 36476, "Nov": 36105, "Dez": 36553
+    },
+    "2025": { "Jan": 33433, "Fev": 35695, "Mar": 35103 }
+  }
+}

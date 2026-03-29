@@ -1,0 +1,79 @@
+{
+  "autoestrada": "A32",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "EN224 – EN227",
+      "2024": {
+        "Jan": 2802, "Fev": 2848, "Mar": 2805, "Abr": 2925,
+        "Mai": 2985, "Jun": 2970, "Jul": 3216, "Ago": 2965,
+        "Set": 3208, "Out": 3173, "Nov": 3032, "Dez": 2963
+      },
+      "2025": { "Jan": 2906, "Fev": 3076, "Mar": 3048 }
+    },
+    {
+      "sublanco": "EN227 – Lig. Feira/Mansores",
+      "2024": {
+        "Jan": 4039, "Fev": 4108, "Mar": 4113, "Abr": 4319,
+        "Mai": 4324, "Jun": 4315, "Jul": 4630, "Ago": 4471,
+        "Set": 4527, "Out": 4456, "Nov": 4366, "Dez": 4442
+      },
+      "2025": { "Jan": 4131, "Fev": 4366, "Mar": 4303 }
+    },
+    {
+      "sublanco": "Lig. Feira/Mansores – Gião/Louredo",
+      "2024": {
+        "Jan": 12749, "Fev": 12869, "Mar": 12985, "Abr": 13544,
+        "Mai": 13711, "Jun": 13477, "Jul": 14667, "Ago": 14103,
+        "Set": 14081, "Out": 14262, "Nov": 14173, "Dez": 14498
+      },
+      "2025": { "Jan": 13201, "Fev": 13978, "Mar": 13761 }
+    },
+    {
+      "sublanco": "Gião/Louredo – Canedo",
+      "2024": {
+        "Jan": 12550, "Fev": 12655, "Mar": 12785, "Abr": 13326,
+        "Mai": 13495, "Jun": 13294, "Jul": 14579, "Ago": 14127,
+        "Set": 13886, "Out": 14080, "Nov": 14005, "Dez": 14396
+      },
+      "2025": { "Jan": 12995, "Fev": 13781, "Mar": 13594 }
+    },
+    {
+      "sublanco": "Canedo – A32/A41",
+      "2024": {
+        "Jan": 16838, "Fev": 16917, "Mar": 17112, "Abr": 17849,
+        "Mai": 18137, "Jun": 17881, "Jul": 19789, "Ago": 19824,
+        "Set": 18532, "Out": 18810, "Nov": 18709, "Dez": 19210
+      },
+      "2025": { "Jan": 17363, "Fev": 18380, "Mar": 18258 }
+    },
+    {
+      "sublanco": "A32/A41 – Olival",
+      "2024": {
+        "Jan": 13485, "Fev": 13462, "Mar": 13709, "Abr": 14386,
+        "Mai": 14611, "Jun": 14362, "Jul": 15629, "Ago": 15177,
+        "Set": 15204, "Out": 15430, "Nov": 15192, "Dez": 15522
+      },
+      "2025": { "Jan": 14025, "Fev": 14786, "Mar": 14679 }
+    },
+    {
+      "sublanco": "Olival – A20/A32",
+      "2024": {
+        "Jan": 16578, "Fev": 16584, "Mar": 16802, "Abr": 17618,
+        "Mai": 17890, "Jun": 17446, "Jul": 18983, "Ago": 18073,
+        "Set": 18562, "Out": 18899, "Nov": 18598, "Dez": 18970
+      },
+      "2025": { "Jan": 17354, "Fev": 18328, "Mar": 18113 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 10956, "Fev": 11015, "Mar": 11135, "Abr": 11647,
+      "Mai": 11802, "Jun": 11604, "Jul": 12654, "Ago": 12240,
+      "Set": 12203, "Out": 12348, "Nov": 12200, "Dez": 12468
+    },
+    "2025": { "Jan": 11365, "Fev": 12018, "Mar": 11880 }
+  }
+}

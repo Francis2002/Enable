@@ -1,0 +1,34 @@
+{
+  "autoestrada": "A26-1",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "A26/A26-1 – Petroquímica",
+      "2024": {
+        "Jan": 5103, "Fev": 5460, "Mar": 5409, "Abr": 5498,
+        "Mai": 5505, "Jun": 5911, "Jul": 6317, "Ago": 6597,
+        "Set": 6556, "Out": 6324, "Nov": 6165, "Dez": 6168
+      },
+      "2025": { "Jan": 5174, "Fev": 5536, "Mar": 5485 }
+    },
+    {
+      "sublanco": "Petroquímica – Maria Moita",
+      "2024": {
+        "Jan": 5103, "Fev": 5460, "Mar": 5409, "Abr": 5498,
+        "Mai": 5505, "Jun": 5911, "Jul": 6317, "Ago": 6597,
+        "Set": 6556, "Out": 6324, "Nov": 6165, "Dez": 6168
+      },
+      "2025": { "Jan": 5174, "Fev": 5536, "Mar": 5485 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 5103, "Fev": 5460, "Mar": 5409, "Abr": 5498,
+      "Mai": 5505, "Jun": 5911, "Jul": 6317, "Ago": 6597,
+      "Set": 6556, "Out": 6324, "Nov": 6165, "Dez": 6168
+    },
+    "2025": { "Jan": 5174, "Fev": 5536, "Mar": 5485 }
+  }
+}

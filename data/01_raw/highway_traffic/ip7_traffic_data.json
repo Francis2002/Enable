@@ -1,0 +1,115 @@
+{
+  "autoestrada": "IP7",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "CRIL/Eixo NS – Camarate",
+      "2024": {
+        "Jan": 61157, "Fev": 61446, "Mar": 61222, "Abr": 63608,
+        "Mai": 66182, "Jun": 66882, "Jul": 66471, "Ago": 60052,
+        "Set": 65580, "Out": 67276, "Nov": 64020, "Dez": 62500
+      },
+      "2025": { "Jan": 60854, "Fev": 62113, "Mar": 57040 }
+    },
+    {
+      "sublanco": "Camarate – Alto Lumiar",
+      "2024": {
+        "Jan": 62803, "Fev": 63428, "Mar": 63415, "Abr": 68011,
+        "Mai": 70326, "Jun": 68870, "Jul": 67498, "Ago": 59621,
+        "Set": 68296, "Out": 69968, "Nov": 67346, "Dez": 67686
+      },
+      "2025": { "Jan": 63244, "Fev": 66481, "Mar": 65166 }
+    },
+    {
+      "sublanco": "Alto Lumiar – Ameixoeira",
+      "2024": {
+        "Jan": 57488, "Fev": 58879, "Mar": 62571, "Abr": 66756,
+        "Mai": 70545, "Jun": 70648, "Jul": 67277, "Ago": 65460,
+        "Set": 66664, "Out": 67249, "Nov": 64922, "Dez": 64635
+      },
+      "2025": { "Jan": 62488, "Fev": 64879, "Mar": 63571 }
+    },
+    {
+      "sublanco": "Ameixoeira – Av. Padre Cruz",
+      "2024": {
+        "Jan": 64361, "Fev": 66830, "Mar": 66708, "Abr": 65020,
+        "Mai": 67910, "Jun": 67843, "Jul": 69096, "Ago": 64335,
+        "Set": 68093, "Out": 68815, "Nov": 65491, "Dez": 65339
+      },
+      "2025": { "Jan": 61838, "Fev": 65046, "Mar": 63917 }
+    },
+    {
+      "sublanco": "Av. Padre Cruz – Telheiras",
+      "2024": {
+        "Jan": 87876, "Fev": 90895, "Mar": 89816, "Abr": 93761,
+        "Mai": 95147, "Jun": 97648, "Jul": 96591, "Ago": 90281,
+        "Set": 98868, "Out": 100368, "Nov": 99478, "Dez": 97956
+      },
+      "2025": { "Jan": 92723, "Fev": 97618, "Mar": 96383 }
+    },
+    {
+      "sublanco": "Telheiras – 2ª Circular/Eixo NS",
+      "2024": {
+        "Jan": 108168, "Fev": 111145, "Mar": 110262, "Abr": 113930,
+        "Mai": 117457, "Jun": 119255, "Jul": 117367, "Ago": 107520,
+        "Set": 120929, "Out": 120367, "Nov": 119818, "Dez": 119997
+      },
+      "2025": { "Jan": 115037, "Fev": 120668, "Mar": 118667 }
+    },
+    {
+      "sublanco": "2ª Circular/Eixo NS – Av. Lusíada",
+      "2024": {
+        "Jan": 117003, "Fev": 118191, "Mar": 116295, "Abr": 123332,
+        "Mai": 127405, "Jun": 127502, "Jul": 119717, "Ago": 114681,
+        "Set": 122811, "Out": 127516, "Nov": 128240, "Dez": 125613
+      },
+      "2025": { "Jan": 117115, "Fev": 121777, "Mar": 124123 }
+    },
+    {
+      "sublanco": "Av. Lusíada – Entrecampos",
+      "2024": {
+        "Jan": 104227, "Fev": 109554, "Mar": 101845, "Abr": 106025,
+        "Mai": 111455, "Jun": 113174, "Jul": 115802, "Ago": 107078,
+        "Set": 118075, "Out": 114740, "Nov": 114539, "Dez": 112950
+      },
+      "2025": { "Jan": 107675, "Fev": 111865, "Mar": 110262 }
+    },
+    {
+      "sublanco": "Entrecampos – Radial de Benfica",
+      "2024": {
+        "Jan": 109370, "Fev": 111450, "Mar": 109535, "Abr": 115604,
+        "Mai": 121085, "Jun": 123130, "Jul": 123539, "Ago": 114515,
+        "Set": 128188, "Out": 125358, "Nov": 125829, "Dez": 121552
+      },
+      "2025": { "Jan": 117451, "Fev": 122988, "Mar": 120259 }
+    },
+    {
+      "sublanco": "Radial de Benfica – Av. Ceuta",
+      "2024": {
+        "Jan": 59885, "Fev": 61709, "Mar": 61119, "Abr": 63885,
+        "Mai": 65438, "Jun": 64422, "Jul": 63840, "Ago": 64298,
+        "Set": 65874, "Out": 66329, "Nov": 65309, "Dez": 66307
+      },
+      "2025": { "Jan": 62372, "Fev": 63945, "Mar": 63814 }
+    },
+    {
+      "sublanco": "Av. Ceuta – Viaduto Duarte Pacheco",
+      "2024": {
+        "Jan": 69712, "Fev": 71326, "Mar": 70294, "Abr": 74663,
+        "Mai": 75018, "Jun": 76212, "Jul": 75220, "Ago": 75264,
+        "Set": 78240, "Out": 77426, "Nov": 75752, "Dez": 76110
+      },
+      "2025": { "Jan": 72227, "Fev": 74405, "Mar": 73878 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 79817, "Fev": 81841, "Mar": 81146, "Abr": 84822,
+      "Mai": 87715, "Jun": 88345, "Jul": 87057, "Ago": 82081,
+      "Set": 88714, "Out": 89199, "Nov": 87815, "Dez": 86963
+    },
+    "2025": { "Jan": 82671, "Fev": 86174, "Mar": 84993 }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "autoestrada": "A21",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Ericeira – Mafra Oeste",
+      "2024": {
+        "Jan": 10167, "Fev": 10000, "Mar": 10104, "Abr": 11675,
+        "Mai": 12074, "Jun": 12299, "Jul": 13628, "Ago": 13937,
+        "Set": 12804, "Out": 11164, "Nov": 10879, "Dez": 10893
+      },
+      "2025": { "Jan": 10734, "Fev": 11170, "Mar": 11545 }
+    },
+    {
+      "sublanco": "Mafra Oeste – Mafra Este",
+      "2024": {
+        "Jan": 9994, "Fev": 9808, "Mar": 9913, "Abr": 11276,
+        "Mai": 11889, "Jun": 12013, "Jul": 13174, "Ago": 13552,
+        "Set": 13288, "Out": 12123, "Nov": 11109, "Dez": 11126
+      },
+      "2025": { "Jan": 10837, "Fev": 11310, "Mar": 11491 }
+    },
+    {
+      "sublanco": "Mafra Este – Malveira",
+      "2024": {
+        "Jan": 19039, "Fev": 18497, "Mar": 18525, "Abr": 20836,
+        "Mai": 21956, "Jun": 21675, "Jul": 22758, "Ago": 21959,
+        "Set": 22317, "Out": 20103, "Nov": 19669, "Dez": 19943
+      },
+      "2025": { "Jan": 19920, "Fev": 20893, "Mar": 20818 }
+    },
+    {
+      "sublanco": "Malveira – Venda do Pinheiro (A8/A21)",
+      "2024": {
+        "Jan": 23591, "Fev": 22753, "Mar": 22862, "Abr": 25307,
+        "Mai": 26369, "Jun": 25841, "Jul": 27665, "Ago": 26554,
+        "Set": 28744, "Out": 24866, "Nov": 24291, "Dez": 23921
+      },
+      "2025": { "Jan": 23092, "Fev": 24034, "Mar": 22095 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 14587, "Fev": 14207, "Mar": 14293, "Abr": 16129,
+      "Mai": 16891, "Jun": 16830, "Jul": 18122, "Ago": 17937,
+      "Set": 18017, "Out": 16018, "Nov": 15408, "Dez": 15427
+    },
+    "2025": { "Jan": 15150, "Fev": 15818, "Mar": 15634 }
+  }
+}

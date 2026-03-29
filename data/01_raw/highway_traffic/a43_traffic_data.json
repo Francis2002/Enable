@@ -1,0 +1,79 @@
+{
+  "autoestrada": "A43",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Freixo Norte – Falcão",
+      "2024": {
+        "Jan": 43996, "Fev": 45344, "Mar": 45042, "Abr": 46729,
+        "Mai": 46488, "Jun": 44838, "Jul": 46525, "Ago": 43113,
+        "Set": 45965, "Out": 47283, "Nov": 46971, "Dez": 46996
+      },
+      "2025": { "Jan": 44951, "Fev": 46987, "Mar": 46870 }
+    },
+    {
+      "sublanco": "Falcão – Areias",
+      "2024": {
+        "Jan": 45277, "Fev": 46681, "Mar": 46319, "Abr": 48038,
+        "Mai": 47989, "Jun": 46686, "Jul": 47697, "Ago": 43607,
+        "Set": 47289, "Out": 48986, "Nov": 46988, "Dez": 47195
+      },
+      "2025": { "Jan": 47439, "Fev": 48593, "Mar": 48374 }
+    },
+    {
+      "sublanco": "Areias – Carregais",
+      "2024": {
+        "Jan": 46268, "Fev": 47479, "Mar": 47324, "Abr": 49048,
+        "Mai": 49144, "Jun": 47295, "Jul": 48760, "Ago": 44244,
+        "Set": 48176, "Out": 50405, "Nov": 49821, "Dez": 49991
+      },
+      "2025": { "Jan": 47370, "Fev": 49532, "Mar": 48710 }
+    },
+    {
+      "sublanco": "Carregais – Gondomar Oeste",
+      "2024": {
+        "Jan": 37515, "Fev": 36813, "Mar": 37247, "Abr": 37705,
+        "Mai": 37211, "Jun": 35693, "Jul": 36567, "Ago": 33350,
+        "Set": 36011, "Out": 38090, "Nov": 37323, "Dez": 37093
+      },
+      "2025": { "Jan": 35025, "Fev": 36769, "Mar": 36168 }
+    },
+    {
+      "sublanco": "Gondomar Oeste – Gondomar Este",
+      "2024": {
+        "Jan": 28507, "Fev": 28469, "Mar": 28070, "Abr": 29001,
+        "Mai": 29116, "Jun": 28081, "Jul": 28819, "Ago": 26448,
+        "Set": 27812, "Out": 30258, "Nov": 29383, "Dez": 29206
+      },
+      "2025": { "Jan": 27520, "Fev": 28855, "Mar": 28318 }
+    },
+    {
+      "sublanco": "Gondomar Este – Gens",
+      "2024": {
+        "Jan": 9589, "Fev": 9773, "Mar": 9813, "Abr": 10226,
+        "Mai": 10377, "Jun": 10128, "Jul": 10382, "Ago": 9589,
+        "Set": 9744, "Out": 11220, "Nov": 10837, "Dez": 10881
+      },
+      "2025": { "Jan": 10123, "Fev": 10646, "Mar": 10515 }
+    },
+    {
+      "sublanco": "Gens – A41/A43",
+      "2024": {
+        "Jan": 6033, "Fev": 5909, "Mar": 6227, "Abr": 6483,
+        "Mai": 6645, "Jun": 6535, "Jul": 6824, "Ago": 6247,
+        "Set": 6355, "Out": 7587, "Nov": 7176, "Dez": 7123
+      },
+      "2025": { "Jan": 6492, "Fev": 6884, "Mar": 6747 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 22532, "Fev": 22778, "Mar": 22797, "Abr": 23548,
+      "Mai": 23586, "Jun": 22806, "Jul": 23463, "Ago": 21488,
+      "Set": 22847, "Out": 24547, "Nov": 23933, "Dez": 23917
+    },
+    "2025": { "Jan": 22709, "Fev": 23748, "Mar": 23433 }
+  }
+}

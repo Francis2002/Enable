@@ -1,0 +1,34 @@
+{
+  "autoestrada": "IC22",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Olival Basto – Ramada",
+      "2024": {
+        "Jan": 50877, "Fev": 51745, "Mar": 50963, "Abr": 52742,
+        "Mai": 54069, "Jun": 49818, "Jul": 51224, "Ago": 44364,
+        "Set": 51148, "Out": 52617, "Nov": 52215, "Dez": 52264
+      },
+      "2025": { "Jan": 52474, "Fev": 55085, "Mar": 52885 }
+    },
+    {
+      "sublanco": "Ramada – Montemor",
+      "2024": {
+        "Jan": 23524, "Fev": 23952, "Mar": 23695, "Abr": 24713,
+        "Mai": 25804, "Jun": 23164, "Jul": 24118, "Ago": 20266,
+        "Set": 23591, "Out": 25178, "Nov": 24992, "Dez": 24999
+      },
+      "2025": { "Jan": 22230, "Fev": 26826, "Mar": 25637 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 39154, "Fev": 39834, "Mar": 39277, "Abr": 40730,
+      "Mai": 41955, "Jun": 38395, "Jul": 39607, "Ago": 34036,
+      "Set": 39338, "Out": 40857, "Nov": 40548, "Dez": 40579
+    },
+    "2025": { "Jan": 39512, "Fev": 42974, "Mar": 41207 }
+  }
+}

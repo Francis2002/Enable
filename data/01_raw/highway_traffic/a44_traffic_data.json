@@ -1,0 +1,97 @@
+{
+  "autoestrada": "A44",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "ER1-18 – EN109",
+      "2024": {
+        "Jan": 44993, "Fev": 48644, "Mar": 48518, "Abr": 53527,
+        "Mai": 52649, "Jun": 49769, "Jul": 50469, "Ago": 47607,
+        "Set": 47531, "Out": 48106, "Nov": 47905, "Dez": 46198
+      },
+      "2025": { "Jan": 43736, "Fev": 52347, "Mar": 48395 }
+    },
+    {
+      "sublanco": "EN109 – Valadares Norte",
+      "2024": {
+        "Jan": 59737, "Fev": 61859, "Mar": 61544, "Abr": 63284,
+        "Mai": 64211, "Jun": 62557, "Jul": 65247, "Ago": 63002,
+        "Set": 62066, "Out": 61086, "Nov": 61514, "Dez": 61731
+      },
+      "2025": { "Jan": 58485, "Fev": 61745, "Mar": 61566 }
+    },
+    {
+      "sublanco": "Valadares Norte – Madalena",
+      "2024": {
+        "Jan": 70194, "Fev": 73518, "Mar": 73163, "Abr": 74766,
+        "Mai": 76099, "Jun": 74358, "Jul": 77269, "Ago": 74068,
+        "Set": 73571, "Out": 71879, "Nov": 72816, "Dez": 72067
+      },
+      "2025": { "Jan": 67776, "Fev": 78110, "Mar": 72401 }
+    },
+    {
+      "sublanco": "Madalena – Coimbrões",
+      "2024": {
+        "Jan": 84560, "Fev": 86607, "Mar": 85842, "Abr": 87113,
+        "Mai": 88152, "Jun": 85685, "Jul": 89923, "Ago": 85471,
+        "Set": 84433, "Out": 83752, "Nov": 84376, "Dez": 83777
+      },
+      "2025": { "Jan": 80483, "Fev": 84778, "Mar": 84002 }
+    },
+    {
+      "sublanco": "Coimbrões – Continente",
+      "2024": {
+        "Jan": 73794, "Fev": 73212, "Mar": 71853, "Abr": 74022,
+        "Mai": 74975, "Jun": 71754, "Jul": 74998, "Ago": 69309,
+        "Set": 73651, "Out": 73305, "Nov": 73390, "Dez": 73686
+      },
+      "2025": { "Jan": 69235, "Fev": 70618, "Mar": 70767 }
+    },
+    {
+      "sublanco": "Continente – Barosa",
+      "2024": {
+        "Jan": 73794, "Fev": 73212, "Mar": 71853, "Abr": 74022,
+        "Mai": 74975, "Jun": 71754, "Jul": 74998, "Ago": 69309,
+        "Set": 73651, "Out": 73305, "Nov": 73390, "Dez": 73686
+      },
+      "2025": { "Jan": 69235, "Fev": 70618, "Mar": 70767 }
+    },
+    {
+      "sublanco": "Barosa – Av. da República",
+      "2024": {
+        "Jan": 73794, "Fev": 73212, "Mar": 71853, "Abr": 74022,
+        "Mai": 74975, "Jun": 71754, "Jul": 74998, "Ago": 69309,
+        "Set": 73651, "Out": 73305, "Nov": 73390, "Dez": 73686
+      },
+      "2025": { "Jan": 69235, "Fev": 70618, "Mar": 70767 }
+    },
+    {
+      "sublanco": "Av. da República – Gervide",
+      "2024": {
+        "Jan": 63909, "Fev": 65161, "Mar": 65029, "Abr": 67610,
+        "Mai": 68060, "Jun": 66023, "Jul": 68692, "Ago": 62826,
+        "Set": 67807, "Out": 67740, "Nov": 67588, "Dez": 69142
+      },
+      "2025": { "Jan": 63749, "Fev": 68135, "Mar": 64982 }
+    },
+    {
+      "sublanco": "Gervide – Freixo Sul",
+      "2024": {
+        "Jan": 61964, "Fev": 63185, "Mar": 63029, "Abr": 66286,
+        "Mai": 65932, "Jun": 64623, "Jul": 67470, "Ago": 62211,
+        "Set": 66195, "Out": 67133, "Nov": 66155, "Dez": 67185
+      },
+      "2025": { "Jan": 62105, "Fev": 66122, "Mar": 61923 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 66596, "Fev": 67985, "Mar": 67386, "Abr": 69792,
+      "Mai": 70395, "Jun": 68115, "Jul": 70961, "Ago": 66527,
+      "Set": 68630, "Out": 68276, "Nov": 68363, "Dez": 68515
+    },
+    "2025": { "Jan": 64336, "Fev": 68762, "Mar": 66657 }
+  }
+}

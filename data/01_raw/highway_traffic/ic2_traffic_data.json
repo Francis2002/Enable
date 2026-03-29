@@ -1,0 +1,52 @@
+{
+  "autoestrada": "IC2",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Praça José Queirós – Portela",
+      "2024": {
+        "Jan": 41785, "Fev": 42280, "Mar": 42295, "Abr": 43339,
+        "Mai": 44434, "Jun": 44565, "Jul": 42944, "Ago": 38679,
+        "Set": 41770, "Out": 43174, "Nov": 42883, "Dez": 43137
+      },
+      "2025": { "Jan": 41886, "Fev": 42647, "Mar": 40500 }
+    },
+    {
+      "sublanco": "Portela – Bobadela",
+      "2024": {
+        "Jan": 54846, "Fev": 53934, "Mar": 54244, "Abr": 55924,
+        "Mai": 57114, "Jun": 58519, "Jul": 54299, "Ago": 46960,
+        "Set": 54491, "Out": 58238, "Nov": 56149, "Dez": 56357
+      },
+      "2025": { "Jan": 53903, "Fev": 56572, "Mar": 54965 }
+    },
+    {
+      "sublanco": "Bobadela – Ligação EN10",
+      "2024": {
+        "Jan": 27667, "Fev": 27599, "Mar": 27853, "Abr": 28464,
+        "Mai": 29017, "Jun": 27364, "Jul": 27430, "Ago": 23181,
+        "Set": 27125, "Out": 29601, "Nov": 28930, "Dez": 28957
+      },
+      "2025": { "Jan": 27199, "Fev": 28257, "Mar": 26192 }
+    },
+    {
+      "sublanco": "Ligação EN10 – Sta Iria de Azóia (AI/IC2)",
+      "2024": {
+        "Jan": 16183, "Fev": 17281, "Mar": 17293, "Abr": 17741,
+        "Mai": 17965, "Jun": 17553, "Jul": 16958, "Ago": 14609,
+        "Set": 16151, "Out": 18147, "Nov": 17989, "Dez": 18094
+      },
+      "2025": { "Jan": 17696, "Fev": 18352, "Mar": 17041 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 31174, "Fev": 31313, "Mar": 31489, "Abr": 32291,
+      "Mai": 32938, "Jun": 32305, "Jul": 31298, "Ago": 26988,
+      "Set": 30849, "Out": 33288, "Nov": 32552, "Dez": 32655
+    },
+    "2025": { "Jan": 31167, "Fev": 32359, "Mar": 30538 }
+  }
+}

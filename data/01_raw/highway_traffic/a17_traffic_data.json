@@ -1,0 +1,169 @@
+{
+  "autoestrada": "A17",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "A8/17 – Leiria Norte",
+      "2024": {
+        "Jan": 6820, "Fev": 7141, "Mar": 7771, "Abr": 8202,
+        "Mai": 8718, "Jun": 9065, "Jul": 10627, "Ago": 12947,
+        "Set": 10029, "Out": 8974, "Nov": 8654, "Dez": 8668
+      },
+      "2025": { "Jan": 7307, "Fev": 7916, "Mar": 7944 }
+    },
+    {
+      "sublanco": "Leiria Norte – Monte Real",
+      "2024": {
+        "Jan": 8394, "Fev": 8670, "Mar": 9310, "Abr": 9793,
+        "Mai": 10405, "Jun": 10624, "Jul": 12378, "Ago": 14696,
+        "Set": 11731, "Out": 10644, "Nov": 10301, "Dez": 10340
+      },
+      "2025": { "Jan": 8938, "Fev": 9564, "Mar": 9535 }
+    },
+    {
+      "sublanco": "Monte Real – Monte Redondo",
+      "2024": {
+        "Jan": 7940, "Fev": 8206, "Mar": 8849, "Abr": 9252,
+        "Mai": 9860, "Jun": 10116, "Jul": 11736, "Ago": 14042,
+        "Set": 11205, "Out": 10065, "Nov": 9754, "Dez": 9784
+      },
+      "2025": { "Jan": 8364, "Fev": 8991, "Mar": 9010 }
+    },
+    {
+      "sublanco": "Monte Redondo – Guia",
+      "2024": {
+        "Jan": 7785, "Fev": 8062, "Mar": 8664, "Abr": 9082,
+        "Mai": 9704, "Jun": 9948, "Jul": 11588, "Ago": 13901,
+        "Set": 11061, "Out": 9870, "Nov": 9584, "Dez": 9609
+      },
+      "2025": { "Jan": 8180, "Fev": 8811, "Mar": 8850 }
+    },
+    {
+      "sublanco": "Guia – Louriçal",
+      "2024": {
+        "Jan": 7532, "Fev": 7803, "Mar": 8405, "Abr": 8822,
+        "Mai": 9442, "Jun": 9701, "Jul": 11356, "Ago": 13614,
+        "Set": 10783, "Out": 9594, "Nov": 9312, "Dez": 9324
+      },
+      "2025": { "Jan": 7933, "Fev": 8543, "Mar": 8593 }
+    },
+    {
+      "sublanco": "Louriçal – Marinha das Ondas",
+      "2024": {
+        "Jan": 7391, "Fev": 7675, "Mar": 8331, "Abr": 8844,
+        "Mai": 9536, "Jun": 9825, "Jul": 11663, "Ago": 14380,
+        "Set": 11021, "Out": 9623, "Nov": 9313, "Dez": 9327
+      },
+      "2025": { "Jan": 7927, "Fev": 8559, "Mar": 8604 }
+    },
+    {
+      "sublanco": "Marinha das Ondas – A14/A17",
+      "2024": {
+        "Jan": 7396, "Fev": 7902, "Mar": 8610, "Abr": 9817,
+        "Mai": 10292, "Jun": 10595, "Jul": 12623, "Ago": 15293,
+        "Set": 11602, "Out": 10299, "Nov": 9883, "Dez": 9667
+      },
+      "2025": { "Jan": 8493, "Fev": 9188, "Mar": 9145 }
+    },
+    {
+      "sublanco": "A14/A17 – Quiaios",
+      "2024": {
+        "Jan": 6304, "Fev": 6625, "Mar": 7168, "Abr": 7632,
+        "Mai": 8204, "Jun": 8470, "Jul": 10092, "Ago": 12496,
+        "Set": 9541, "Out": 8330, "Nov": 8031, "Dez": 8004
+      },
+      "2025": { "Jan": 6809, "Fev": 7399, "Mar": 7434 }
+    },
+    {
+      "sublanco": "Quiaios – Tocha",
+      "2024": {
+        "Jan": 7579, "Fev": 7864, "Mar": 8339, "Abr": 8799,
+        "Mai": 9378, "Jun": 9699, "Jul": 11431, "Ago": 13966,
+        "Set": 10705, "Out": 9548, "Nov": 9178, "Dez": 9184
+      },
+      "2025": { "Jan": 7899, "Fev": 8651, "Mar": 8609 }
+    },
+    {
+      "sublanco": "Tocha – Mira",
+      "2024": {
+        "Jan": 7791, "Fev": 8056, "Mar": 8526, "Abr": 9049,
+        "Mai": 9604, "Jun": 9929, "Jul": 11697, "Ago": 14299,
+        "Set": 10938, "Out": 9786, "Nov": 9433, "Dez": 9453
+      },
+      "2025": { "Jan": 8129, "Fev": 8937, "Mar": 8890 }
+    },
+    {
+      "sublanco": "Mira – Mira PV",
+      "2024": {
+        "Jan": 8366, "Fev": 8614, "Mar": 9078, "Abr": 9677,
+        "Mai": 10221, "Jun": 10501, "Jul": 12442, "Ago": 14927,
+        "Set": 11599, "Out": 10447, "Nov": 10038, "Dez": 10091
+      },
+      "2025": { "Jan": 8798, "Fev": 9622, "Mar": 9537 }
+    },
+    {
+      "sublanco": "Mira PV – Ponte de Vagos",
+      "2024": {
+        "Jan": 9616, "Fev": 9878, "Mar": 10414, "Abr": 11077,
+        "Mai": 11697, "Jun": 11978, "Jul": 14337, "Ago": 17371,
+        "Set": 13135, "Out": 11814, "Nov": 11362, "Dez": 11543
+      },
+      "2025": { "Jan": 10089, "Fev": 10942, "Mar": 10869 }
+    },
+    {
+      "sublanco": "Ponte de Vagos – Vagos",
+      "2024": {
+        "Jan": 12456, "Fev": 13807, "Mar": 14067, "Abr": 15512,
+        "Mai": 15698, "Jun": 15561, "Jul": 17805, "Ago": 20554,
+        "Set": 16711, "Out": 15755, "Nov": 15965, "Dez": 15063
+      },
+      "2025": { "Jan": 13248, "Fev": 16611, "Mar": 14905 }
+    },
+    {
+      "sublanco": "Vagos – Ílhavo",
+      "2024": {
+        "Jan": 13025, "Fev": 13369, "Mar": 13926, "Abr": 14830,
+        "Mai": 15412, "Jun": 15604, "Jul": 18092, "Ago": 21031,
+        "Set": 16671, "Out": 15695, "Nov": 15273, "Dez": 15602
+      },
+      "2025": { "Jan": 14045, "Fev": 15097, "Mar": 14989 }
+    },
+    {
+      "sublanco": "Ílhavo – Aveiro Sul",
+      "2024": {
+        "Jan": 20027, "Fev": 21022, "Mar": 20165, "Abr": 20982,
+        "Mai": 22063, "Jun": 22586, "Jul": 25416, "Ago": 26982,
+        "Set": 24278, "Out": 23577, "Nov": 24239, "Dez": 22709
+      },
+      "2025": { "Jan": 21505, "Fev": 25412, "Mar": 21512 }
+    },
+    {
+      "sublanco": "Aveiro Sul – S. Bernardo",
+      "2024": {
+        "Jan": 14475, "Fev": 14917, "Mar": 15466, "Abr": 16491,
+        "Mai": 17090, "Jun": 17189, "Jul": 19679, "Ago": 22216,
+        "Set": 18549, "Out": 17510, "Nov": 17098, "Dez": 16869
+      },
+      "2025": { "Jan": 15480, "Fev": 16638, "Mar": 16351 }
+    },
+    {
+      "sublanco": "S. Bernardo – Aveiro Nascente (A17/A25)",
+      "2024": {
+        "Jan": 16456, "Fev": 17587, "Mar": 19962, "Abr": 20349,
+        "Mai": 20226, "Jun": 18796, "Jul": 21867, "Ago": 24949,
+        "Set": 19890, "Out": 19602, "Nov": 19236, "Dez": 19102
+      },
+      "2025": { "Jan": 17614, "Fev": 21233, "Mar": 21520 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 8662, "Fev": 9061, "Mar": 9638, "Abr": 10309,
+      "Mai": 10856, "Jun": 11089, "Jul": 12999, "Ago": 15540,
+      "Set": 12171, "Out": 11022, "Nov": 10704, "Dez": 10628
+    },
+    "2025": { "Jan": 9274, "Fev": 10222, "Mar": 10067 }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "autoestrada": "A42",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "A41/A42 – Seroa",
+      "2024": {
+        "Jan": 25408, "Fev": 26154, "Mar": 26469, "Abr": 27407,
+        "Mai": 27960, "Jun": 27140, "Jul": 29201, "Ago": 28089,
+        "Set": 28007, "Out": 29208, "Nov": 28970, "Dez": 28591
+      },
+      "2025": { "Jan": 27169, "Fev": 29169, "Mar": 28900 }
+    },
+    {
+      "sublanco": "Seroa – Paços de Ferreira Oeste",
+      "2024": {
+        "Jan": 26960, "Fev": 27761, "Mar": 28028, "Abr": 28957,
+        "Mai": 29540, "Jun": 28740, "Jul": 31133, "Ago": 29497,
+        "Set": 29630, "Out": 30704, "Nov": 30489, "Dez": 29861
+      },
+      "2025": { "Jan": 28727, "Fev": 30681, "Mar": 30302 }
+    },
+    {
+      "sublanco": "Paços de Ferreira Oeste – Paços de Ferreira Este",
+      "2024": {
+        "Jan": 20804, "Fev": 21607, "Mar": 21311, "Abr": 22220,
+        "Mai": 22817, "Jun": 22191, "Jul": 24238, "Ago": 23233,
+        "Set": 22277, "Out": 23543, "Nov": 23930, "Dez": 23282
+      },
+      "2025": { "Jan": 22391, "Fev": 25592, "Mar": 23188 }
+    },
+    {
+      "sublanco": "Paços de Ferreira Este – EN106 (Sul)",
+      "2024": {
+        "Jan": 16412, "Fev": 16983, "Mar": 17215, "Abr": 17641,
+        "Mai": 18147, "Jun": 17720, "Jul": 19286, "Ago": 19139,
+        "Set": 17872, "Out": 18627, "Nov": 19018, "Dez": 18645
+      },
+      "2025": { "Jan": 17850, "Fev": 19093, "Mar": 18852 }
+    },
+    {
+      "sublanco": "EN106 (Sul) – EN106 (Norte)",
+      "2024": {
+        "Jan": 20830, "Fev": 21840, "Mar": 22016, "Abr": 22962,
+        "Mai": 23375, "Jun": 22474, "Jul": 23865, "Ago": 23513,
+        "Set": 22459, "Out": 23420, "Nov": 24145, "Dez": 23791
+      },
+      "2025": { "Jan": 22613, "Fev": 25990, "Mar": 23921 }
+    },
+    {
+      "sublanco": "EN106 (Norte) – Lousada",
+      "2024": {
+        "Jan": 11241, "Fev": 11641, "Mar": 11937, "Abr": 12211,
+        "Mai": 12620, "Jun": 12239, "Jul": 13456, "Ago": 13545,
+        "Set": 12731, "Out": 13273, "Nov": 13094, "Dez": 12877
+      },
+      "2025": { "Jan": 12183, "Fev": 13035, "Mar": 12869 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 19180, "Fev": 19838, "Mar": 20009, "Abr": 20681,
+      "Mai": 21189, "Jun": 20581, "Jul": 22333, "Ago": 21689,
+      "Set": 21049, "Out": 21977, "Nov": 22017, "Dez": 21602
+    },
+    "2025": { "Jan": 20630, "Fev": 22499, "Mar": 21739 }
+  }
+}

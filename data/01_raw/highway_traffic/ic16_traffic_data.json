@@ -1,0 +1,43 @@
+{
+  "autoestrada": "IC16",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Pontinha – Stº Elói",
+      "2024": {
+        "Jan": 67378, "Fev": 68276, "Mar": 69693, "Abr": 65314,
+        "Mai": 67116, "Jun": 66862, "Jul": 67985, "Ago": 61680,
+        "Set": 63038, "Out": 65397, "Nov": 64043, "Dez": 65770
+      },
+      "2025": { "Jan": 65370, "Fev": 67655, "Mar": 66555 }
+    },
+    {
+      "sublanco": "Stº Elói – Á-de-Beja",
+      "2024": {
+        "Jan": 36730, "Fev": 39939, "Mar": 39289, "Abr": 41361,
+        "Mai": 42770, "Jun": 40595, "Jul": 41380, "Ago": 34096,
+        "Set": 42279, "Out": 45407, "Nov": 43843, "Dez": 44666
+      },
+      "2025": { "Jan": 42427, "Fev": 43252, "Mar": 42419 }
+    },
+    {
+      "sublanco": "Á-de-Beja – Belas (IC16/CREL)",
+      "2024": {
+        "Jan": 28992, "Fev": 28317, "Mar": 29246, "Abr": 29378,
+        "Mai": 30656, "Jun": 29279, "Jul": 29535, "Ago": 24719,
+        "Set": 30634, "Out": 33858, "Nov": 32192, "Dez": 32336
+      },
+      "2025": { "Jan": 29923, "Fev": 31409, "Mar": 30659 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 46675, "Fev": 48241, "Mar": 48682, "Abr": 47947,
+      "Mai": 49477, "Jun": 48182, "Jul": 48988, "Ago": 42565,
+      "Set": 47735, "Out": 50593, "Nov": 49088, "Dez": 50114
+    },
+    "2025": { "Jan": 48530, "Fev": 50035, "Mar": 49118 }
+  }
+}

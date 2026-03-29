@@ -1,0 +1,70 @@
+{
+  "autoestrada": "IC20",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Almada (A2/IC20) – Monte de Caparica",
+      "2024": {
+        "Jan": 64640, "Fev": 65466, "Mar": 65017, "Abr": 70897,
+        "Mai": 73666, "Jun": 71990, "Jul": 76832, "Ago": 76482,
+        "Set": 69780, "Out": 60069, "Nov": 57670, "Dez": 58010
+      },
+      "2025": { "Jan": 53876, "Fev": 56701, "Mar": 63551 }
+    },
+    {
+      "sublanco": "Monte de Caparica – Casas Velhas",
+      "2024": {
+        "Jan": 65842, "Fev": 66988, "Mar": 65520, "Abr": 73624,
+        "Mai": 77046, "Jun": 75111, "Jul": 83526, "Ago": 82118,
+        "Set": 73097, "Out": 67837, "Nov": 65616, "Dez": 64717
+      },
+      "2025": { "Jan": 59612, "Fev": 60804, "Mar": 63206 }
+    },
+    {
+      "sublanco": "Casas Velhas – Funchalinho",
+      "2024": {
+        "Jan": 31691, "Fev": 33092, "Mar": 33101, "Abr": 38283,
+        "Mai": 40565, "Jun": 40606, "Jul": 48103, "Ago": 49893,
+        "Set": 38757, "Out": 33792, "Nov": 32348, "Dez": 31534
+      },
+      "2025": { "Jan": 29480, "Fev": 31652, "Mar": 31939 }
+    },
+    {
+      "sublanco": "Funchalinho – Capuchos",
+      "2024": {
+        "Jan": 28733, "Fev": 30109, "Mar": 28648, "Abr": 32953,
+        "Mai": 35005, "Jun": 35204, "Jul": 42572, "Ago": 44009,
+        "Set": 33549, "Out": 28986, "Nov": 27787, "Dez": 28543
+      },
+      "2025": { "Jan": 27335, "Fev": 29278, "Mar": 30240 }
+    },
+    {
+      "sublanco": "Capuchos – Capuchos (EM10-1)",
+      "2024": {
+        "Jan": 26800, "Fev": 28230, "Mar": 26444, "Abr": 30466,
+        "Mai": 31928, "Jun": 32168, "Jul": 34152, "Ago": 34782,
+        "Set": 26503, "Out": 23567, "Nov": 22380, "Dez": 25052
+      },
+      "2025": { "Jan": 24784, "Fev": 26639, "Mar": 26172 }
+    },
+    {
+      "sublanco": "Capuchos (EM10-1) – Costa de Caparica",
+      "2024": {
+        "Jan": 26800, "Fev": 28230, "Mar": 26444, "Abr": 30466,
+        "Mai": 31928, "Jun": 32168, "Jul": 34152, "Ago": 34782,
+        "Set": 26503, "Out": 23567, "Nov": 22380, "Dez": 25052
+      },
+      "2025": { "Jan": 24784, "Fev": 26639, "Mar": 26172 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 45411, "Fev": 46615, "Mar": 45641, "Abr": 51207,
+      "Mai": 53649, "Jun": 52928, "Jul": 58917, "Ago": 59267,
+      "Set": 50311, "Out": 44496, "Nov": 42744, "Dez": 43108
+    },
+    "2025": { "Jan": 40394, "Fev": 42448, "Mar": 44824 }
+  }
+}

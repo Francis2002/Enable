@@ -1,0 +1,61 @@
+{
+  "autoestrada": "CSB",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Braga Sul – Celeirós (A11)",
+      "2024": {
+        "Jan": 19916, "Fev": 20601, "Mar": 20992, "Abr": 22152,
+        "Mai": 22869, "Jun": 22544, "Jul": 25013, "Ago": 27454,
+        "Set": 24484, "Out": 23487, "Nov": 22805, "Dez": 23163
+      },
+      "2025": { "Jan": 20629, "Fev": 22119, "Mar": 22426 }
+    },
+    {
+      "sublanco": "Celeirós (A11) – EN14",
+      "2024": {
+        "Jan": 32574, "Fev": 33500, "Mar": 33993, "Abr": 35602,
+        "Mai": 36951, "Jun": 35528, "Jul": 38945, "Ago": 41882,
+        "Set": 38679, "Out": 38344, "Nov": 37223, "Dez": 37317
+      },
+      "2025": { "Jan": 33709, "Fev": 36183, "Mar": 36291 }
+    },
+    {
+      "sublanco": "EN14 – EN309",
+      "2024": {
+        "Jan": 36913, "Fev": 37556, "Mar": 37881, "Abr": 38982,
+        "Mai": 39901, "Jun": 37837, "Jul": 39747, "Ago": 37480,
+        "Set": 39464, "Out": 40613, "Nov": 39953, "Dez": 39375
+      },
+      "2025": { "Jan": 37383, "Fev": 39880, "Mar": 39081 }
+    },
+    {
+      "sublanco": "EN309 – EN101",
+      "2024": {
+        "Jan": 40920, "Fev": 41600, "Mar": 42024, "Abr": 42913,
+        "Mai": 44125, "Jun": 41933, "Jul": 43870, "Ago": 41340,
+        "Set": 43639, "Out": 45012, "Nov": 44281, "Dez": 43696
+      },
+      "2025": { "Jan": 41358, "Fev": 44079, "Mar": 43175 }
+    },
+    {
+      "sublanco": "EN101 – Circular Sul de Braga",
+      "2024": {
+        "Jan": 44921, "Fev": 45318, "Mar": 45642, "Abr": 46751,
+        "Mai": 47795, "Jun": 45369, "Jul": 47452, "Ago": 44761,
+        "Set": 47249, "Out": 48232, "Nov": 47631, "Dez": 47323
+      },
+      "2025": { "Jan": 44396, "Fev": 47559, "Mar": 46644 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 31815, "Fev": 32496, "Mar": 32886, "Abr": 34056,
+      "Mai": 35033, "Jun": 33617, "Jul": 35985, "Ago": 36099,
+      "Set": 35636, "Out": 35817, "Nov": 35072, "Dez": 34956
+    },
+    "2025": { "Jan": 32359, "Fev": 34611, "Mar": 34312 }
+  }
+}

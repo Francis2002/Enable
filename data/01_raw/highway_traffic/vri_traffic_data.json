@@ -1,0 +1,43 @@
+{
+  "autoestrada": "VRI",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Aeroporto – São Brás",
+      "2024": {
+        "Jan": 48999, "Fev": 50597, "Mar": 51400, "Abr": 51448,
+        "Mai": 48577, "Jun": 46870, "Jul": 59979, "Ago": 54856,
+        "Set": 57372, "Out": 60630, "Nov": 56121, "Dez": 55023
+      },
+      "2025": { "Jan": 51832, "Fev": 59653, "Mar": 55650 }
+    },
+    {
+      "sublanco": "São Brás – VILPL",
+      "2024": {
+        "Jan": 45998, "Fev": 47474, "Mar": 49348, "Abr": 54188,
+        "Mai": 55795, "Jun": 55188, "Jul": 58087, "Ago": 54416,
+        "Set": 57436, "Out": 58345, "Nov": 53218, "Dez": 52590
+      },
+      "2025": { "Jan": 48201, "Fev": 51987, "Mar": 52501 }
+    },
+    {
+      "sublanco": "VILPL – Custóias",
+      "2024": {
+        "Jan": 45348, "Fev": 46698, "Mar": 48888, "Abr": 47461,
+        "Mai": 46545, "Jun": 41071, "Jul": 53577, "Ago": 50256,
+        "Set": 53140, "Out": 56884, "Nov": 52458, "Dez": 52332
+      },
+      "2025": { "Jan": 47696, "Fev": 54438, "Mar": 52663 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 46026, "Fev": 47475, "Mar": 49363, "Abr": 52143,
+      "Mai": 52745, "Jun": 50720, "Jul": 56973, "Ago": 53299,
+      "Set": 56246, "Out": 58100, "Nov": 53209, "Dez": 52687
+    },
+    "2025": { "Jan": 48312, "Fev": 53192, "Mar": 52763 }
+  }
+}

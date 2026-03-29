@@ -1,0 +1,70 @@
+{
+  "autoestrada": "IC21",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Coina (A2/IC21) – Penalva",
+      "2024": {
+        "Jan": 30995, "Fev": 31821, "Mar": 32197, "Abr": 33962,
+        "Mai": 34740, "Jun": 33586, "Jul": 34895, "Ago": 32583,
+        "Set": 34841, "Out": 35724, "Nov": 35098, "Dez": 36666
+      },
+      "2025": { "Jan": 35077, "Fev": 36457, "Mar": 35684 }
+    },
+    {
+      "sublanco": "Penalva – Penalva (A33/IC21)",
+      "2024": {
+        "Jan": 30995, "Fev": 31821, "Mar": 32197, "Abr": 33962,
+        "Mai": 34740, "Jun": 33586, "Jul": 34895, "Ago": 32583,
+        "Set": 34841, "Out": 35724, "Nov": 35098, "Dez": 36666
+      },
+      "2025": { "Jan": 35077, "Fev": 36457, "Mar": 35684 }
+    },
+    {
+      "sublanco": "Penalva (A33/IC21) – Stº António Charneca",
+      "2024": {
+        "Jan": 33736, "Fev": 33079, "Mar": 31190, "Abr": 33180,
+        "Mai": 34342, "Jun": 32940, "Jul": 33695, "Ago": 31177,
+        "Set": 34422, "Out": 35826, "Nov": 36600, "Dez": 35115
+      },
+      "2025": { "Jan": 35174, "Fev": 36911, "Mar": 35794 }
+    },
+    {
+      "sublanco": "Stº António Charneca – Quinta da Lomba",
+      "2024": {
+        "Jan": 31853, "Fev": 32205, "Mar": 31868, "Abr": 33094,
+        "Mai": 33633, "Jun": 32333, "Jul": 32938, "Ago": 30580,
+        "Set": 33950, "Out": 35068, "Nov": 34499, "Dez": 34387
+      },
+      "2025": { "Jan": 33289, "Fev": 34660, "Mar": 33698 }
+    },
+    {
+      "sublanco": "Quinta da Lomba – Alto do Seixalinho",
+      "2024": {
+        "Jan": 21066, "Fev": 21513, "Mar": 21394, "Abr": 22158,
+        "Mai": 22503, "Jun": 21460, "Jul": 21892, "Ago": 20141,
+        "Set": 22332, "Out": 23334, "Nov": 22905, "Dez": 23311
+      },
+      "2025": { "Jan": 22652, "Fev": 23595, "Mar": 22844 }
+    },
+    {
+      "sublanco": "Alto do Seixalinho – Barreiro",
+      "2024": {
+        "Jan": 16508, "Fev": 17052, "Mar": 17033, "Abr": 17887,
+        "Mai": 18087, "Jun": 17514, "Jul": 17782, "Ago": 16462,
+        "Set": 18150, "Out": 19046, "Nov": 18566, "Dez": 19268
+      },
+      "2025": { "Jan": 18866, "Fev": 19950, "Mar": 19535 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 29394, "Fev": 29662, "Mar": 29202, "Abr": 30668,
+      "Mai": 31374, "Jun": 30175, "Jul": 30967, "Ago": 28744,
+      "Set": 31478, "Out": 32567, "Nov": 32336, "Dez": 32497
+    },
+    "2025": { "Jan": 31654, "Fev": 33029, "Mar": 32149 }
+  }
+}
