@@ -1,0 +1,187 @@
+{
+  "autoestrada": "A22",
+  "fonte": "IMT - Instituto da Mobilidade e dos Transportes",
+  "relatorio": "Relatório de Tráfego na RNA - 1º Trimestre de 2025",
+  "unidade": "TMDM (Tráfego Médio Diário Mensal)",
+  "sublancos": [
+    {
+      "sublanco": "Bensafrim – Lagos",
+      "2024": {
+        "Jan": 4380, "Fev": 4728, "Mar": 4929, "Abr": 5612,
+        "Mai": 5921, "Jun": 6229, "Jul": 7110, "Ago": 8388,
+        "Set": 6826, "Out": 6157, "Nov": 5358, "Dez": 5023
+      },
+      "2025": { "Jan": 5111, "Fev": 5527, "Mar": 5635 }
+    },
+    {
+      "sublanco": "Lagos – Odeáxere",
+      "2024": {
+        "Jan": 7097, "Fev": 8244, "Mar": 8990, "Abr": 10593,
+        "Mai": 11785, "Jun": 13400, "Jul": 15147, "Ago": 17744,
+        "Set": 13631, "Out": 11780, "Nov": 8781, "Dez": 8261
+      },
+      "2025": { "Jan": 8948, "Fev": 10329, "Mar": 11203 }
+    },
+    {
+      "sublanco": "Odeáxere – Mexilhoeira",
+      "2024": {
+        "Jan": 7316, "Fev": 8438, "Mar": 9750, "Abr": 11186,
+        "Mai": 12580, "Jun": 14112, "Jul": 17509, "Ago": 20859,
+        "Set": 15977, "Out": 13622, "Nov": 9830, "Dez": 8815
+      },
+      "2025": { "Jan": 10897, "Fev": 12660, "Mar": 13477 }
+    },
+    {
+      "sublanco": "Mexilhoeira – Alvor",
+      "2024": {
+        "Jan": 8191, "Fev": 9268, "Mar": 11724, "Abr": 12327,
+        "Mai": 13715, "Jun": 15375, "Jul": 18953, "Ago": 22637,
+        "Set": 17389, "Out": 15366, "Nov": 11084, "Dez": 9701
+      },
+      "2025": { "Jan": 12039, "Fev": 14044, "Mar": 15172 }
+    },
+    {
+      "sublanco": "Alvor – Portimão",
+      "2024": {
+        "Jan": 7864, "Fev": 8859, "Mar": 10837, "Abr": 12033,
+        "Mai": 13379, "Jun": 14970, "Jul": 17882, "Ago": 22018,
+        "Set": 17641, "Out": 16359, "Nov": 11950, "Dez": 9671
+      },
+      "2025": { "Jan": 11081, "Fev": 12823, "Mar": 13774 }
+    },
+    {
+      "sublanco": "Portimão – Lagoa (Silves)",
+      "2024": {
+        "Jan": 11006, "Fev": 12443, "Mar": 15335, "Abr": 16587,
+        "Mai": 18353, "Jun": 21765, "Jul": 26954, "Ago": 33018,
+        "Set": 26802, "Out": 26180, "Nov": 20349, "Dez": 15312
+      },
+      "2025": { "Jan": 17721, "Fev": 19993, "Mar": 21141 }
+    },
+    {
+      "sublanco": "Lagoa (Silves) – Alcantarilha",
+      "2024": {
+        "Jan": 14890, "Fev": 16688, "Mar": 19858, "Abr": 21743,
+        "Mai": 23927, "Jun": 28211, "Jul": 33923, "Ago": 41104,
+        "Set": 30197, "Out": 25700, "Nov": 20097, "Dez": 18205
+      },
+      "2025": { "Jan": 21541, "Fev": 24582, "Mar": 25924 }
+    },
+    {
+      "sublanco": "Alcantarilha – Algoz",
+      "2024": {
+        "Jan": 16611, "Fev": 18751, "Mar": 21246, "Abr": 24287,
+        "Mai": 26669, "Jun": 31288, "Jul": 36939, "Ago": 46714,
+        "Set": 33487, "Out": 27578, "Nov": 21472, "Dez": 19735
+      },
+      "2025": { "Jan": 22222, "Fev": 25550, "Mar": 27058 }
+    },
+    {
+      "sublanco": "Algoz – Guia",
+      "2024": {
+        "Jan": 16210, "Fev": 18368, "Mar": 21506, "Abr": 23850,
+        "Mai": 26272, "Jun": 30960, "Jul": 36743, "Ago": 46475,
+        "Set": 33167, "Out": 27160, "Nov": 20908, "Dez": 19341
+      },
+      "2025": { "Jan": 22068, "Fev": 25493, "Mar": 27750 }
+    },
+    {
+      "sublanco": "Guia – A2/A22",
+      "2024": {
+        "Jan": 19084, "Fev": 21467, "Mar": 24060, "Abr": 28024,
+        "Mai": 30413, "Jun": 36071, "Jul": 43447, "Ago": 53523,
+        "Set": 38449, "Out": 30784, "Nov": 24209, "Dez": 22398
+      },
+      "2025": { "Jan": 24869, "Fev": 28265, "Mar": 29376 }
+    },
+    {
+      "sublanco": "A2/A22 – Boliqueime",
+      "2024": {
+        "Jan": 20412, "Fev": 23107, "Mar": 25631, "Abr": 29407,
+        "Mai": 31231, "Jun": 36421, "Jul": 43253, "Ago": 52430,
+        "Set": 38741, "Out": 31878, "Nov": 25868, "Dez": 24669
+      },
+      "2025": { "Jan": 26534, "Fev": 30010, "Mar": 31089 }
+    },
+    {
+      "sublanco": "Boliqueime – Loulé",
+      "2024": {
+        "Jan": 23944, "Fev": 26785, "Mar": 29744, "Abr": 35000,
+        "Mai": 36000, "Jun": 40000, "Jul": 46821, "Ago": 52873,
+        "Set": 40655, "Out": 35323, "Nov": 28246, "Dez": 27163
+      },
+      "2025": { "Jan": 26493, "Fev": 32446, "Mar": 33649 }
+    },
+    {
+      "sublanco": "Loulé – Faro (Aeroporto)",
+      "2024": {
+        "Jan": 21743, "Fev": 24657, "Mar": 27176, "Abr": 31466,
+        "Mai": 33744, "Jun": 38488, "Jul": 45139, "Ago": 52340,
+        "Set": 40653, "Out": 34252, "Nov": 27247, "Dez": 26110
+      },
+      "2025": { "Jan": 28639, "Fev": 32747, "Mar": 34060 }
+    },
+    {
+      "sublanco": "Faro (Aeroporto) – Faro (Estói)",
+      "2024": {
+        "Jan": 13299, "Fev": 14561, "Mar": 15877, "Abr": 17040,
+        "Mai": 17822, "Jun": 20820, "Jul": 26300, "Ago": 32764,
+        "Set": 22729, "Out": 18217, "Nov": 16269, "Dez": 16174
+      },
+      "2025": { "Jan": 16880, "Fev": 18221, "Mar": 19069 }
+    },
+    {
+      "sublanco": "Faro (Estói) – Olhão",
+      "2024": {
+        "Jan": 10646, "Fev": 11923, "Mar": 13143, "Abr": 14439,
+        "Mai": 15217, "Jun": 18053, "Jul": 23442, "Ago": 30271,
+        "Set": 20147, "Out": 15408, "Nov": 13077, "Dez": 13266
+      },
+      "2025": { "Jan": 14669, "Fev": 16718, "Mar": 17077 }
+    },
+    {
+      "sublanco": "Olhão – Tavira",
+      "2024": {
+        "Jan": 10059, "Fev": 11273, "Mar": 12438, "Abr": 13811,
+        "Mai": 14371, "Jun": 17068, "Jul": 22154, "Ago": 28731,
+        "Set": 19019, "Out": 14518, "Nov": 12358, "Dez": 12594
+      },
+      "2025": { "Jan": 13808, "Fev": 15531, "Mar": 15768 }
+    },
+    {
+      "sublanco": "Tavira – Monte Gordo",
+      "2024": {
+        "Jan": 6477, "Fev": 7332, "Mar": 8092, "Abr": 8674,
+        "Mai": 9168, "Jun": 11211, "Jul": 15205, "Ago": 20713,
+        "Set": 12554, "Out": 9066, "Nov": 7785, "Dez": 8490
+      },
+      "2025": { "Jan": 9036, "Fev": 9924, "Mar": 9956 }
+    },
+    {
+      "sublanco": "Monte Gordo – Castro Marim",
+      "2024": {
+        "Jan": 7495, "Fev": 8487, "Mar": 9221, "Abr": 9746,
+        "Mai": 10198, "Jun": 11848, "Jul": 15506, "Ago": 20494,
+        "Set": 13047, "Out": 9780, "Nov": 8602, "Dez": 8802
+      },
+      "2025": { "Jan": 9036, "Fev": 9826, "Mar": 9916 }
+    },
+    {
+      "sublanco": "Castro Marim – Ponte Internacional do...",
+      "2024": {
+        "Jan": 9305, "Fev": 10270, "Mar": 11385, "Abr": 11689,
+        "Mai": 12418, "Jun": 14154, "Jul": 18501, "Ago": 24500,
+        "Set": 15586, "Out": 11694, "Nov": 10288, "Dez": 11538
+      },
+      "2025": { "Jan": 10699, "Fev": 12674, "Mar": 11649 }
+    }
+  ],
+  "mediaPonderada": {
+    "2024": {
+      "Jan": 12328, "Fev": 13873, "Mar": 15698, "Abr": 17552,
+      "Mai": 18792, "Jun": 21871, "Jul": 26855, "Ago": 33176,
+      "Set": 23815, "Out": 19684, "Nov": 15840, "Dez": 15018
+    },
+    "2025": { "Jan": 16438, "Fev": 18761, "Mar": 19526 }
+  }
+}

@@ -1,4 +1,24 @@
 EXTRA_FALLBACKS = {
+    # A17 Fixes
+    "Vagos": (-8.6731243, 40.503412),        # Exit 13
+    "Ílhavo": (-8.6296894, 40.539604),       # Exit 14
+    "Aveiro Sul": (-8.5603021, 40.5684211),  # Exit 15
+    "S. Bernardo": (-8.5992505, 40.6258213), # Exit 17
+
+    # A26 Fixes
+    "Barbuda": (-8.8110231, 37.9735632),
+    "Monte da Boavista": (-8.7531338, 37.9975633),
+    "Relvas Verdes": (-8.7111328, 38.0612047),
+    "A26/A26-1": (-8.8309211, 37.9696558),   # Start of A26
+
+    # A26-1 Fixes
+
+
+    "Petroquímica": (-8.8187952, 38.0159305),
+    "Maria Moita": (-8.8011021, 38.0384532), # End of A26-1
+
+
+
     "Lourel": (-9.36160, 38.80487),
     "Sacotes": (-9.3359, 38.8173),
     "Telhal": (-9.31255, 38.80642),
@@ -141,7 +161,6 @@ EXTRA_FALLBACKS = {
 EXTRA_FALLBACKS.update({
     "Alcoitão": (-9.3959, 38.7336),
     "Ponte de Vagos": (-8.67, 40.4742),
-    "S. Bernardo": (-8.623, 40.6161),
     "CIL": (-9.2351, 38.7123),
     "Ameal": (-8.5782, 41.276),
     "Regado": (-8.6188, 41.1718),
@@ -177,7 +196,6 @@ EXTRA_FALLBACKS.update({
     "Reigoso": (-7.9347, 41.715),
     "Talhadas": (-8.3273, 40.666),
     "Ventosa": (-9.0892, 39.125),
-    "Barbuda": (-7.6012, 37.9326),
     "EN15": (-8.2155, 41.2467),
     "EN205": (-8.6894, 41.4956),
     "EN211": (-8.2059, 41.2347),
@@ -202,7 +220,6 @@ EXTRA_FALLBACKS.update({
     "Rio Maior Oeste": (-8.9323, 39.3364),
     "AKI": (-9.3387, 38.7758),
     "Centro Comercial": (-9.3444, 38.7712),
-    "Aveiro Sul": (-8.6366, 40.5841),
     "Mira PV": (-8.7402, 40.4282),
     "Freixo Norte": (-8.5815, 41.1444),
     "Freixo Sul": (-8.5807, 41.1418),
@@ -235,6 +252,4 @@ EXTRA_FALLBACKS.update({
     "Zona Ind...": (-8.6019, 40.6401),
     "Zona Industrial de Aveiro": (-8.6019, 40.6401),
     "Santa Margarida do S...": (-8.0673, 38.0392),
-    "Maria Moita": (-8.8471, 37.9582),
-    "Petroquímica": (-8.8252, 37.962),
 })
