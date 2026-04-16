@@ -1,0 +1,151 @@
+2026-04-12 19:51:27 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15868 tomadas
+2026-04-12 22:11:41 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15862 tomadas
+2026-04-12 22:26:25 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15860 tomadas
+2026-04-12 22:31:44 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15860 tomadas
+2026-04-13 00:06:32 [ERROR] Bot detection triggered or API empty: Foram encontrados 7480 postos e 15836 tomadas
+2026-04-13 00:16:36 [ERROR] Bot detection triggered or API empty: Foram encontrados 7480 postos e 15835 tomadas
+2026-04-13 03:31:07 [ERROR] Failed to find or download via Export button.
+2026-04-13 03:36:07 [ERROR] Failed to find or download via Export button.
+2026-04-13 03:41:07 [ERROR] Failed to find or download via Export button.
+2026-04-13 03:45:55 [ERROR] Failed to find or download via Export button.
+2026-04-13 03:51:13 [ERROR] Failed to find or download via Export button.
+2026-04-13 08:11:22 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15869 tomadas
+2026-04-13 08:41:32 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15868 tomadas
+2026-04-13 08:51:43 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15865 tomadas
+2026-04-13 10:21:49 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15884 tomadas
+2026-04-13 10:26:38 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15887 tomadas
+2026-04-13 10:56:46 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15885 tomadas
+2026-04-13 11:06:47 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15886 tomadas
+2026-04-13 11:26:20 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15891 tomadas
+2026-04-13 11:31:49 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15888 tomadas
+2026-04-13 11:51:30 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15887 tomadas
+2026-04-13 12:16:24 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15889 tomadas
+2026-04-13 12:31:26 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15890 tomadas
+2026-04-13 13:01:32 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15889 tomadas
+2026-04-13 13:06:22 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15887 tomadas
+2026-04-13 14:56:25 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15899 tomadas
+2026-04-13 17:36:40 [ERROR] Bot detection triggered or API empty: Foram encontrados 0 postos e 0 tomadas
+2026-04-13 17:36:40 [ERROR] Failed to find or download via Export button.
+2026-04-13 17:51:19 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15917 tomadas
+2026-04-13 18:36:45 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15919 tomadas
+2026-04-13 22:11:28 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15894 tomadas
+2026-04-13 23:46:24 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15897 tomadas
+2026-04-14 00:16:49 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15896 tomadas
+2026-04-14 00:21:30 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15896 tomadas
+2026-04-14 00:31:31 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15898 tomadas
+2026-04-14 03:31:07 [ERROR] Failed to find or download via Export button.
+2026-04-14 03:35:57 [ERROR] Failed to find or download via Export button.
+2026-04-14 03:40:55 [ERROR] Failed to find or download via Export button.
+2026-04-14 03:46:09 [ERROR] Failed to find or download via Export button.
+2026-04-14 03:51:13 [ERROR] Failed to find or download via Export button.
+2026-04-14 04:21:27 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15868 tomadas
+2026-04-14 05:36:24 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15896 tomadas
+2026-04-14 05:41:39 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15894 tomadas
+2026-04-14 07:06:45 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15896 tomadas
+2026-04-14 07:11:39 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15895 tomadas
+2026-04-14 08:06:47 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15901 tomadas
+2026-04-14 08:11:42 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15900 tomadas
+2026-04-14 08:21:12 [ERROR] Extraction completely failed with exception: Message: timeout: Timed out receiving message from renderer: 60.000
+  (Session info: chrome=147.0.7727.55)
+Stacktrace:
+#0 0x581142965b6a <unknown>
+#1 0x581142367265 <unknown>
+#2 0x58114234eb1b <unknown>
+#3 0x58114234e804 <unknown>
+#4 0x58114234c54b <unknown>
+#5 0x58114234cd90 <unknown>
+#6 0x58114236a99d <unknown>
+#7 0x58114240367b <unknown>
+#8 0x581142402969 <unknown>
+#9 0x5811423ad5cf <unknown>
+#10 0x5811423ae391 <unknown>
+#11 0x58114292b04b <unknown>
+#12 0x58114292e00d <unknown>
+#13 0x581142917808 <unknown>
+#14 0x58114292eba0 <unknown>
+#15 0x5811428fe280 <unknown>
+#16 0x581142952db8 <unknown>
+#17 0x581142952f88 <unknown>
+#18 0x5811429645de <unknown>
+#19 0x7eca4ce9caa4 <unknown>
+#20 0x7eca4cf29c6c <unknown>
+
+2026-04-14 09:11:37 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15899 tomadas
+2026-04-14 09:16:25 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15898 tomadas
+2026-04-14 09:51:49 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15899 tomadas
+2026-04-14 13:46:37 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15897 tomadas
+2026-04-14 14:26:21 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15898 tomadas
+2026-04-14 15:01:43 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15891 tomadas
+2026-04-14 15:06:48 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15892 tomadas
+2026-04-14 15:11:28 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15891 tomadas
+2026-04-14 15:26:42 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15898 tomadas
+2026-04-14 16:26:36 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15899 tomadas
+2026-04-14 17:31:25 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15896 tomadas
+2026-04-14 17:41:38 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15895 tomadas
+2026-04-14 17:51:39 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15895 tomadas
+2026-04-14 18:11:29 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15893 tomadas
+2026-04-14 18:21:20 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15891 tomadas
+2026-04-14 18:26:20 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15892 tomadas
+2026-04-14 18:31:33 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15893 tomadas
+2026-04-14 20:31:43 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15892 tomadas
+2026-04-14 20:36:23 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15891 tomadas
+2026-04-14 21:46:21 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15893 tomadas
+2026-04-14 21:51:29 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15894 tomadas
+2026-04-15 00:06:34 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15890 tomadas
+2026-04-15 03:31:15 [ERROR] Failed to find or download via Export button.
+2026-04-15 03:36:01 [ERROR] Failed to find or download via Export button.
+2026-04-15 03:41:05 [ERROR] Failed to find or download via Export button.
+2026-04-15 03:46:05 [ERROR] Failed to find or download via Export button.
+2026-04-15 03:51:15 [ERROR] Failed to find or download via Export button.
+2026-04-15 05:36:45 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15892 tomadas
+2026-04-15 05:41:49 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15892 tomadas
+2026-04-15 05:56:25 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15892 tomadas
+2026-04-15 06:16:24 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15893 tomadas
+2026-04-15 06:41:19 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15892 tomadas
+2026-04-15 10:51:34 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15870 tomadas
+2026-04-15 12:16:42 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15897 tomadas
+2026-04-15 12:21:50 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15897 tomadas
+2026-04-15 13:36:44 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15896 tomadas
+2026-04-15 14:56:29 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15904 tomadas
+2026-04-15 17:11:38 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15923 tomadas
+2026-04-15 18:56:38 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15919 tomadas
+2026-04-15 19:11:32 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15919 tomadas
+2026-04-15 19:31:31 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15919 tomadas
+2026-04-15 19:36:21 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15916 tomadas
+2026-04-15 19:41:39 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15918 tomadas
+2026-04-15 19:46:37 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15919 tomadas
+2026-04-15 20:06:41 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15921 tomadas
+2026-04-15 21:46:45 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15916 tomadas
+2026-04-15 23:46:49 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15913 tomadas
+2026-04-16 00:06:39 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15913 tomadas
+2026-04-16 00:11:46 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15913 tomadas
+2026-04-16 00:31:50 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15912 tomadas
+2026-04-16 03:31:22 [ERROR] Failed to find or download via Export button.
+2026-04-16 03:36:17 [ERROR] Failed to find or download via Export button.
+2026-04-16 03:41:03 [ERROR] Failed to find or download via Export button.
+2026-04-16 03:46:06 [ERROR] Failed to find or download via Export button.
+2026-04-16 03:51:19 [ERROR] Failed to find or download via Export button.
+2026-04-16 04:21:46 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15917 tomadas
+2026-04-16 04:26:31 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15920 tomadas
+2026-04-16 04:31:29 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15920 tomadas
+2026-04-16 04:56:34 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15918 tomadas
+2026-04-16 05:26:25 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15919 tomadas
+2026-04-16 06:11:31 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15917 tomadas
+2026-04-16 06:46:38 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15916 tomadas
+2026-04-16 08:36:27 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15915 tomadas
+2026-04-16 10:56:40 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15913 tomadas
+2026-04-16 12:51:25 [ERROR] Bot detection triggered or API empty: Foram encontrados 7490 postos e 15883 tomadas
+2026-04-16 13:21:49 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15900 tomadas
+2026-04-16 13:31:39 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15903 tomadas
+2026-04-16 13:36:18 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15904 tomadas
+2026-04-16 16:51:18 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15901 tomadas
+2026-04-16 17:01:51 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15901 tomadas
+2026-04-16 17:06:26 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15900 tomadas
+2026-04-16 17:21:46 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15898 tomadas
+2026-04-16 17:26:36 [ERROR] Bot detection triggered or API empty: Foram encontrados 7500 postos e 15897 tomadas
+2026-04-16 18:51:28 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15917 tomadas
+2026-04-16 20:06:30 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15917 tomadas
+2026-04-16 20:46:42 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15918 tomadas
+2026-04-16 21:06:36 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15916 tomadas
+2026-04-16 23:01:30 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15918 tomadas
+2026-04-16 23:11:24 [ERROR] Bot detection triggered or API empty: Foram encontrados 7510 postos e 15918 tomadas

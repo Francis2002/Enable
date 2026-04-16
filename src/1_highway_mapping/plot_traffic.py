@@ -2,6 +2,7 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 import contextily as cx
 import os
+import sys
 import pyogrio
 import pandas as pd
 
@@ -13,11 +14,23 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 if not os.path.exists(GPKG_PATH):
     print(f"❌ Could not find {GPKG_PATH}")
-    exit(1)
+    sys.exit(1)
 
 # Get all layers (highways)
 layers = pyogrio.list_layers(GPKG_PATH)[:, 0].tolist()
-print(f"📦 Found {len(layers)} highways to plot: {layers}")
+
+is_single_plot = False
+if len(sys.argv) > 1:
+    target_layer = sys.argv[1]
+    if target_layer in layers:
+        layers = [target_layer]
+        is_single_plot = True
+        print(f"🎯 Plotting ONLY requested highway: {target_layer}")
+    else:
+        print(f"❌ Highway {target_layer} not found in GPKG.")
+        sys.exit(1)
+else:
+    print(f"📦 Found {len(layers)} highways to plot: {layers}")
 
 all_gdfs = []
 
@@ -58,7 +71,7 @@ for layer in layers:
     plt.close()
     
 # Now, master map
-if all_gdfs:
+if all_gdfs and not is_single_plot:
     print("\n🌍 Generating master map with all highways...")
     master_gdf = pd.concat(all_gdfs, ignore_index=True)
     master_gdf = gpd.GeoDataFrame(master_gdf, geometry='geometry', crs="EPSG:4326")

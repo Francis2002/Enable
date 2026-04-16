@@ -19,15 +19,52 @@ class HighwayWayHandler(osmium.SimpleHandler):
         self.ways = []
 
     def way(self, w):
-        # By excluding 'motorway_link' and 'trunk_link', we force snapping and routing 
-        # to strictly use the mainline highway, preventing V-shaped artifacts.
-        # Any small gaps created at interchanges will be bridged by build_isolated_highway_graph.
-        if 'highway' in w.tags and w.tags['highway'] in ['motorway', 'trunk']:
-            if 'ref' in w.tags:
-                raw_refs = w.tags['ref'].split(';')
-                norm_refs = [r.replace(' ', '').strip() for r in raw_refs]
+        if 'highway' in w.tags:
+            hw_type = w.tags['highway']
+            is_mainline = hw_type in ['motorway', 'trunk']
+            is_link = hw_type in ['motorway_link', 'trunk_link'] and self.target_ref in ['IC16', 'IC22']
+            
+            if is_mainline or is_link:
+                target_refs = [self.target_ref.replace(' ', '')]
+                if self.target_ref == 'A28':
+                    target_refs.extend(['IC1', 'IC23'])
+                elif self.target_ref == 'A29':
+                    target_refs.extend(['IC1', 'A20', 'IC23'])
+                elif self.target_ref == 'CSB':
+                    target_refs.extend(['A11'])
+                elif self.target_ref == 'IC16':
+                    target_refs.extend(['A16'])
+                elif self.target_ref == 'IC20':
+                    target_refs.extend(['A38', 'ER377-2', 'ER377'])
+
+                keep_way = False
                 
-                if self.target_ref.replace(' ', '') in norm_refs:
+                # 1. Mainlines (and IC22 links) must have a matching ref
+                if (is_mainline or self.target_ref == 'IC22') and 'ref' in w.tags:
+                    raw_refs = w.tags['ref'].split(';')
+                    norm_refs = [r.replace(' ', '').strip() for r in raw_refs]
+                    if any(tr in norm_refs for tr in target_refs):
+                        keep_way = True
+                
+                # 2. Links must point to our target ref OR specifically match our terminal conditions
+                if is_link:
+                    dest_refs = []
+                    if 'destination:ref' in w.tags:
+                        dest_refs.extend([r.replace(' ', '').strip() for r in w.tags['destination:ref'].split(';')])
+                    if 'destination:ref:to' in w.tags:
+                        dest_refs.extend([r.replace(' ', '').strip() for r in w.tags['destination:ref:to'].split(';')])
+                    
+                    if any(tr in dest_refs for tr in target_refs):
+                        keep_way = True
+                        
+                    # Specific CREL exit condition for IC16 and IC22
+                    if self.target_ref in ['IC16', 'IC22']:
+                        if 'destination' in w.tags and 'CREL' in w.tags['destination']:
+                            keep_way = True
+                        if 'destination:ref' in w.tags and 'A 9' in w.tags['destination:ref']:
+                            keep_way = True
+
+                if keep_way:
                     nodes = [n.ref for n in w.nodes]
                     if len(nodes) >= 2:
                         self.ways.append(nodes)
@@ -80,7 +117,7 @@ def get_highway_geometry_from_pbf(pbf_path, highway_ref):
     _GEOM_CACHE[highway_ref] = merged
     return merged
 
-def build_isolated_highway_graph(geom):
+def build_isolated_highway_graph(geom, highway_ref):
     """
     Builds a custom routing graph containing ONLY the coordinates 
     of the target highway, bridging any gaps caused by missing OSM tags.
@@ -127,24 +164,44 @@ def build_isolated_highway_graph(geom):
     # 3. Bridge disconnected pieces (the "gaps" in OSM mapping)
     comps = list(nx.connected_components(G))
     if len(comps) > 1:
-        # Sort components by size (number of nodes)
-        comps.sort(key=len, reverse=True)
-        main_comp = list(comps[0])
-        main_tree = cKDTree(main_comp)
-        
-        # Connect smaller orphaned pieces back to the main continuous highway
-        for c in comps[1:]:
-            c_nodes = list(c)
-            # Find the closest point in the main component to any point in the small component
-            dists, idxs = main_tree.query(c_nodes)
-            min_idx = np.argmin(dists)
-            
-            # Bridge gaps up to ~15km (0.15 degrees)
-            if dists[min_idx] < 0.15:  
-                p1 = main_comp[idxs[min_idx]]
-                p2 = c_nodes[min_idx]
-                # Double penalty so it prefers mapped roads over jumping gaps if possible
-                G.add_edge(p1, p2, weight=dists[min_idx] * 2.0)
+        if highway_ref in ['A28', 'A29', 'CSB', 'IC16', 'IC20']:
+            while len(comps) > 1:
+                min_dist = float('inf')
+                best_pair = None
+                best_nodes = None
+                for i in range(len(comps)):
+                    for j in range(i + 1, len(comps)):
+                        tree_i = cKDTree(list(comps[i]))
+                        nodes_j = list(comps[j])
+                        dists, idxs = tree_i.query(nodes_j)
+                        min_idx = np.argmin(dists)
+                        dist = dists[min_idx]
+                        if dist < min_dist:
+                            min_dist = dist
+                            best_pair = (i, j)
+                            best_nodes = (list(comps[i])[idxs[min_idx]], nodes_j[min_idx])
+                
+                if min_dist < 0.15:
+                    G.add_edge(best_nodes[0], best_nodes[1], weight=min_dist * 2.0)
+                    i, j = best_pair
+                    merged_comp = comps[i].union(comps[j])
+                    comps.pop(max(i, j))
+                    comps.pop(min(i, j))
+                    comps.append(merged_comp)
+                else:
+                    break
+        else:
+            comps.sort(key=len, reverse=True)
+            main_comp = list(comps[0])
+            main_tree = cKDTree(main_comp)
+            for c in comps[1:]:
+                c_nodes = list(c)
+                dists, idxs = main_tree.query(c_nodes)
+                min_idx = np.argmin(dists)
+                if dists[min_idx] < 0.15:
+                    p1 = main_comp[idxs[min_idx]]
+                    p2 = c_nodes[min_idx]
+                    G.add_edge(p1, p2, weight=dists[min_idx] * 2.0)
                 
     return G, nodes, tree
 
@@ -163,7 +220,7 @@ def get_routing_path_for_segment(pbf_path, ptA, ptB, highway_ref):
         # 2. Get or build the isolated routing graph for this highway
         if highway_ref not in _ISOLATED_GRAPH_CACHE:
             print(f"  🕸️ Building isolated routing graph for {highway_ref}...")
-            G, nodes, tree = build_isolated_highway_graph(geom)
+            G, nodes, tree = build_isolated_highway_graph(geom, highway_ref)
             _ISOLATED_GRAPH_CACHE[highway_ref] = (G, nodes, tree)
         else:
             G, nodes, tree = _ISOLATED_GRAPH_CACHE[highway_ref]

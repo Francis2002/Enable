@@ -3,9 +3,9 @@ import os
 import re
 from shapely.geometry import Point
 import time
-from geopy.geocoders import Nominatim
+from geopy.geocoders import Nominatim, Photon
 from geopy.extra.rate_limiter import RateLimiter
-from geopy.exc import GeocoderUnavailable, GeocoderTimedOut
+from geopy.exc import GeocoderUnavailable, GeocoderTimedOut, GeocoderRateLimited
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_PATH = os.path.join(SCRIPT_DIR, "../../data/03_interim/geocoder_cache.json")
@@ -18,7 +18,8 @@ else:
     LOCAL_PLACES = {}
 
 # Set up Nominatim fallback
-geolocator = Nominatim(user_agent="ev_mobility_mapper_v2")
+geolocator_nom = Nominatim(user_agent="ev_mobility_mapper_v3")
+geolocator_pho = Photon(user_agent="ev_mobility_mapper_v3")
 
 def clean_name(name):
     # Remove some common prefixes/suffixes that might not be in OSM
@@ -32,14 +33,21 @@ def extract_highways(name):
     return re.findall(r'A\d+(?:-\d+)?', name.upper())
 
 def geocode_fallback(query):
-    """Safe Nominatim request with backoff"""
+    """Safe Nominatim/Photon request with backoff"""
     for attempt in range(3):
         try:
             time.sleep(2) # Prevent rate limiting
-            loc = geolocator.geocode(query, timeout=10)
-            if loc:
-                return Point(loc.longitude, loc.latitude)
-        except (GeocoderUnavailable, GeocoderTimedOut):
+            try:
+                loc = geolocator_nom.geocode(query, timeout=10)
+                if loc: return Point(loc.longitude, loc.latitude)
+            except Exception as e:
+                pass
+            
+            # Try photon if Nominatim failed or rate limited
+            loc = geolocator_pho.geocode(query, timeout=10)
+            if loc: return Point(loc.longitude, loc.latitude)
+            
+        except Exception as e:
             time.sleep(5 * (attempt + 1))
     return None
 

@@ -79,6 +79,34 @@ python3 clean_empty_features.py
 python3 analyze_pre_ml.py
 ```
 
+## 🤖 Mobi.E Labels Extraction (Cron Jobs)
+
+This project requires real-time EV charging station status data (labels) from the Mobi.E map to estimate kWh consumption. To automatically extract this data, we have extraction scripts designed to run in the background via `cron`. Currently, only the production stealth extractor is active:
+
+1. **Production Stealth Extractor (`src/stealth/mobie_label_extraction_cron.py`)**: 
+   - **What it does:** Bypasses advanced bot detection (WAF) by running native Google Chrome directly on a physical Dummy HDMI display (`DISPLAY=:0`) to pass hardware acceleration and WebGL checks. It uses `ActionChains` for human-like mouse movements and zooms out to capture all ~15,900 sockets in mainland Portugal.
+   - **Frequency:** Runs every 5 minutes.
+   - **Output:** Saves CSV files to `data/production/mobie_labels/`.
+   - **Manual Run:** `DISPLAY=:0 XAUTHORITY=~/.Xauthority .venv/bin/python src/stealth/mobie_label_extraction_cron.py`
+
+2. **Legacy Extractor (`src/stealth/mobie_legacy_xvfb_extractor.py`)**: 
+   - **What it does:** The original headless fallback script running inside an `xvfb` virtual frame buffer. *(Currently disabled as it triggers bot detection)*.
+   - **Frequency:** Used to run every 9 minutes.
+   - **Output:** Saved CSV files to `data/raw/mobie_labels/`.
+   - **Manual Run:** `xvfb-run -a .venv/bin/python src/stealth/mobie_legacy_xvfb_extractor.py`
+
+**How to check if they are running:**
+Both scripts are fully automated via crontab. To view the active schedule, run:
+```bash
+crontab -l
+```
+
+You can monitor their activity by checking their respective log files:
+```bash
+tail -f data/production/mobie_labels/cron.log
+tail -f data/production/mobie_labels/extraction.log
+```
+
 ## 🔄 Database Synchronization (Supabase)
 
 To facilitate collaboration, the processed datasets (like `pre_ml.db`) can be pushed to and pulled from a centralized Supabase PostgreSQL database. This allows team members to share up-to-date data without committing large binary files to Git.

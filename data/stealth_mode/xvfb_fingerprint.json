@@ -1,0 +1,16 @@
+{
+    "colorDepth": 24,
+    "deviceMemory": 8,
+    "devicePixelRatio": 1,
+    "hardwareConcurrency": 12,
+    "languages": [
+        "en-US",
+        "en"
+    ],
+    "platform": "Linux x86_64",
+    "screen": "1920x1080",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "webdriver": false,
+    "webglRenderer": "ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 5060 Ti/PCIe/SSE2, OpenGL 4.5.0)",
+    "webglVendor": "Google Inc. (NVIDIA Corporation)"
+}

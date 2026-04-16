@@ -118,6 +118,7 @@ def process_traffic_data(input_json_path):
             nodes = item['sublanco'].split(' – ')
             start_node = nodes[0].strip()
             end_node = nodes[1].strip()
+
         else:
             # Handle special cases like "Ponte 25 de Abril"
             start_node = item['sublanco'] + " Norte"
@@ -188,10 +189,6 @@ if __name__ == "__main__":
             process_traffic_data(json_path)
         sys.exit(0)
             
-    if os.path.exists(OUTPUT_GPKG):
-        print("Removing old gpkg to regenerate...")
-        os.remove(OUTPUT_GPKG)
-        
     for jf in sorted(json_files):
         json_path = os.path.join(INPUT_DIR, jf)
         with open(json_path, 'r', encoding='utf-8') as f:
