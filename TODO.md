@@ -4,7 +4,6 @@
 - [ ] **Spatial Join**: Associate EV stations (`data/04_processed/pre_ml.db`) with highway traffic data (`data/03_interim/highway_traffic.gpkg`). 
         Theres a branch with the idea implemented, understand how it works  
 - [ ] **Push data to Supabase**
-- [ ] **Label Extraction** How to extract data from mobie
 - [ ] **Traffic data to station insights** How to convert the traffic on the highways to a table , idea: craete a table with 2 entries to the distance to each highway (if < threshold) and the traffic that goes by (if 1 segment that value if 2 average)
 
 ## To brainstorm 
