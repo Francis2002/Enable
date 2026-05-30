@@ -115,7 +115,7 @@
     "verbose": false
   },
   "mjolnir": {
-    "admin": "/data/valhalla_data/admin.sqlite",
+    "admin": "/data/03_interim/valhalla_data/admin.sqlite",
     "data_processing": {
       "allow_alt_name": false,
       "apply_country_overrides": true,
@@ -151,10 +151,10 @@
     "max_concurrent_reader_users": 1,
     "reclassify_links": true,
     "shortcuts": true,
-    "tile_dir": "/data/valhalla_data/valhalla_tiles",
+    "tile_dir": "/data/03_interim/valhalla_data/valhalla_tiles",
     "tile_extract": "/data/valhalla/tiles.tar",
     "timezone": "/data/valhalla/tz_world.sqlite",
-    "traffic_extract": "/data/valhalla_data/traffic.tar",
+    "traffic_extract": "/data/03_interim/valhalla_data/traffic.tar",
     "transit_dir": "/data/valhalla/transit",
     "transit_feeds_dir": "/data/valhalla/transit_feeds",
     "transit_pbf_limit": 20000,

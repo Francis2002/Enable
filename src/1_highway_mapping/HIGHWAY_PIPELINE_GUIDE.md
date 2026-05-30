@@ -70,3 +70,34 @@ When adding new highways, you might encounter visual bugs due to ambiguous namin
 *   `plot_traffic.py`: The mapping script.
 *   `run_all_files.sh`: Safe execution loop.
 *   `check_contiguous.py` & `analyze_sublancos.py`: Verification tools.
+
+## 🛣️ Mapping EV Stations to Highways (Distance & Traffic Matrix)
+
+Once the highway geometries and traffic volumes (TMDM) are established, the next step is mapping all EV charging stations to all nearby highways to build a complete distance and traffic matrix.
+
+**The Script:** `map_station_to_highway.py`
+This script computes the actual driving distance (not straight-line) from each station to **every** highway located within a 10km radius.
+
+### 🧠 The Routing Architecture
+
+1. **Valhalla Routing Engine:** We use a locally hosted Valhalla Docker container (`ghcr.io/valhalla/valhalla:latest` on port 8002) loaded with Portugal OSM tiles.
+2. **Highway Ramps (`mapped_ramps.gpkg`):** Instead of routing to the massive highway lines, we route to the highway entry/exit ramps to calculate realistic road access.
+3. **Euclidean Pre-Filtering (Performance Optimization):** A 10km radius can contain hundreds of ramps, which crashes the routing engine if tested at once. To optimize, the script uses a spatial buffer (EPSG:3763) to find ramps within 10km. It then groups the ramps by highway and selects only the **3 closest ramps per highway** (using straight-line distance).
+4. **Primary Matrix API (`/sources_to_targets`):** The pre-filtered ramps are sent to Valhalla's high-speed matrix API to find the true driving distance. The script saves the minimum road distance found for each highway.
+5. **The Fallback Route API (`/route`):** If the matrix API fails (e.g., due to route complexity), the script automatically falls back to querying the detailed `/route` API.
+
+### 📊 The Matrix Format
+
+The final output is saved to the DuckDB database (`pre_ml.db`) as the `station_highway_matrix` table. 
+
+- **Columns:** For every highway in Portugal (e.g., A1, A2, A5), the matrix contains two columns:
+  - `{highway}_dist_m`: The driving distance to the highway's nearest ramp in meters.
+  - `{highway}_traffic`: The average daily traffic (TMDM) of that highway.
+- **Threshold & Missing Values:** If a highway does not have a ramp within **10km** of the station, the distance and traffic columns are set to `-1.0`.
+
+### 🚀 Execution
+
+Because routing ~7,100 stations takes some time, always run this script in the background:
+```bash
+nohup python map_station_to_highway.py > run_valhalla.log 2>&1 &
+```

@@ -1,0 +1,175 @@
+Loading data...
+Projecting to lat/lon for Valhalla...
+Projecting CRS for distance calculations...
+Processing stations...
+Error calling Valhalla API for station ABF-00120: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 100/7099 stations
+  Processed 200/7099 stations
+  Processed 300/7099 stations
+  Processed 400/7099 stations
+Error calling Valhalla API for station AMT-00029: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station AMT-00030: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 500/7099 stations
+  Processed 600/7099 stations
+  Processed 700/7099 stations
+  Processed 800/7099 stations
+  Processed 900/7099 stations
+  Processed 1000/7099 stations
+Error calling Valhalla API for station CBR-00025: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00043: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00044: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00045: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00046: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00047: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00048: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00049: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00050: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 1100/7099 stations
+Error calling Valhalla API for station CBR-00119: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00120: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CBR-00122: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CDR-00002: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 1200/7099 stations
+  Processed 1300/7099 stations
+  Processed 1400/7099 stations
+Error calling Valhalla API for station CSC-00136: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CSC-00163: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CSC-00219: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station CSC-00220: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 1500/7099 stations
+  Processed 1600/7099 stations
+  Processed 1700/7099 stations
+  Processed 1800/7099 stations
+  Processed 1900/7099 stations
+Error calling Valhalla API for station EVR-00016: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 2000/7099 stations
+  Processed 2100/7099 stations
+  Processed 2200/7099 stations
+Error calling Valhalla API for station GDM-00059: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 2300/7099 stations
+  Processed 2400/7099 stations
+Error calling Valhalla API for station LGA-00015: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 2500/7099 stations
+Error calling Valhalla API for station LLE-00116: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 2600/7099 stations
+Error calling Valhalla API for station LLE-00227: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LLE-00228: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LLE-00229: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LLE-00230: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LLE-00231: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 2700/7099 stations
+Error calling Valhalla API for station LOU-00013: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LRA-00015: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 2800/7099 stations
+Error calling Valhalla API for station LRA-00166: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LRA-00167: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 2900/7099 stations
+Error calling Valhalla API for station LSB-00104: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00174: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00176: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 3000/7099 stations
+  Processed 3100/7099 stations
+Error calling Valhalla API for station LSB-00318: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00336: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00337: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00393: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00394: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00395: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00396: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00397: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-00398: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 3200/7099 stations
+Error calling Valhalla API for station LSB-00454: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 3300/7099 stations
+  Processed 3400/7099 stations
+Error calling Valhalla API for station LSB-00790: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 3500/7099 stations
+  Processed 3600/7099 stations
+Error calling Valhalla API for station LSB-01063: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 3700/7099 stations
+  Processed 3800/7099 stations
+Error calling Valhalla API for station LSB-91100: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station LSB-91101: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station MAI-00065: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station MAI-00066: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station MAI-00067: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station MAI-00068: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 3900/7099 stations
+  Processed 4000/7099 stations
+Error calling Valhalla API for station MOBI-ALM-00016: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station MOBI-ALM-00017: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station MOBI-ALM-00018: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 4100/7099 stations
+  Processed 4200/7099 stations
+Error calling Valhalla API for station MTJ-00053: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 4300/7099 stations
+Error calling Valhalla API for station MTS-00022: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station MTS-00023: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station MTS-00027: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 4400/7099 stations
+Error calling Valhalla API for station MTS-00173: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 4500/7099 stations
+Error calling Valhalla API for station OBD-00006: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station ODV-00044: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 4600/7099 stations
+Error calling Valhalla API for station OER-00075: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station OER-00193: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station OER-00194: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station OER-00196: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station OER-00197: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station OER-00198: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station OER-00199: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 4700/7099 stations
+Error calling Valhalla API for station OER-00212: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station OER-00213: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 4800/7099 stations
+Error calling Valhalla API for station ORQ-00006: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 4900/7099 stations
+  Processed 5000/7099 stations
+  Processed 5100/7099 stations
+Error calling Valhalla API for station PRT-00040: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station PRT-00041: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station PRT-00042: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station PRT-00116: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station PRT-00121: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 5200/7099 stations
+  Processed 5300/7099 stations
+Error calling Valhalla API for station PRT-00319: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station PRT-00320: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 5400/7099 stations
+Error calling Valhalla API for station PTG-00029: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station PTG-00031: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station PTM-00043: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station PVZ-00002: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 5500/7099 stations
+  Processed 5600/7099 stations
+Error calling Valhalla API for station SLV-00013: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 5700/7099 stations
+Error calling Valhalla API for station SNT-00063: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station SNT-00064: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station SNT-00080: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 5800/7099 stations
+Error calling Valhalla API for station SRE-00005: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 5900/7099 stations
+  Processed 6000/7099 stations
+  Processed 6100/7099 stations
+Error calling Valhalla API for station TNV-00006: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station TNV-00014: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station TNV-00015: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 6200/7099 stations
+  Processed 6300/7099 stations
+  Processed 6400/7099 stations
+Error calling Valhalla API for station VFR-00095: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 6500/7099 stations
+  Processed 6600/7099 stations
+  Processed 6700/7099 stations
+  Processed 6800/7099 stations
+Error calling Valhalla API for station VNF-00004: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station VNF-00047: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+Error calling Valhalla API for station VNG-00017: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 6900/7099 stations
+Error calling Valhalla API for station VNG-00112: 400 - {"error_code":442,"error":"No path could be found for input","status_code":400,"status":"Bad Request"}
+  Processed 7000/7099 stations
+Saving results to the database...
+Successfully saved results to the 'station_to_highway' table.
+Database connection closed.

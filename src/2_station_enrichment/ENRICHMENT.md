@@ -92,3 +92,18 @@ Location: `data/pre_ml.db`
 
 ---
 *Future enrichment phases will be documented here.*
+
+## Phase 5: Road Type Enrichment
+**Script**: `enrich_road_type.py`
+**Description**: Queries the local Valhalla routing engine (`/locate` API) to snap each station's coordinate to the OpenStreetMap road network and retrieve its exact road classification.
+
+### Output Table: `station_road_types`
+Location: `data/pre_ml.db`
+
+| Column | Description |
+| :--- | :--- |
+| `station_id` | Unique station identifier |
+| `road_classification` | OSM road classification (e.g., `motorway`, `trunk`, `primary`, `secondary`, `residential`) |
+| `road_use` | General use case of the road (e.g., `service_road`, `driveway`) |
+| `road_surface` | Physical surface material (e.g., `paved_smooth`, `paved_rough`) |
+
