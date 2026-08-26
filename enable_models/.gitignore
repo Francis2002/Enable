@@ -1,0 +1,30 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# System files
+.DS_Store
+__pycache__/
+*.pyc
+
+# Environment
+.venv/
+venv/
+.env
+
+# Large File Formats globally ignored
+*.pbf
+*.db
+*.db-wal
+*.db-shm
+*.gpkg
+*.csv
+*.tar
+

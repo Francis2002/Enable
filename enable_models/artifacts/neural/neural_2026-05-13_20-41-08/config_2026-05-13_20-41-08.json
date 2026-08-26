@@ -1,0 +1,18 @@
+{
+  "epochs": 1000,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "batch_days": 56,
+  "demand_hidden": [
+    128,
+    128
+  ],
+  "capture_hidden": [
+    128,
+    128
+  ],
+  "dropout": 0.01,
+  "patience": 80,
+  "neural_type": "better_mlp",
+  "device": "cpu"
+}

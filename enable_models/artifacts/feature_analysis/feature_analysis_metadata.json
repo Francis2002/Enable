@@ -1,0 +1,51 @@
+{
+  "n_cells": 300,
+  "n_stations": 40,
+  "n_train_days": 56,
+  "n_val_days": 14,
+  "K": 12,
+  "demand_feature_names": [
+    "log_pop_z",
+    "log_road_total_z",
+    "log_road_primary_z",
+    "log_road_residential_z",
+    "log_poi_food_z",
+    "log_poi_retail_z",
+    "log_poi_fuel_z",
+    "log_poi_parking_z",
+    "dow_sin",
+    "dow_cos",
+    "weekend",
+    "tourism_z",
+    "holiday"
+  ],
+  "capture_feature_names": [
+    "tt_z",
+    "log_stalls_z",
+    "log_power_max_z",
+    "log_power_sum_z",
+    "is_fast",
+    "is_ultrafast",
+    "price_ref_regular_z",
+    "price_ref_adhoc_z",
+    "adhoc_premium_z",
+    "operator_1",
+    "operator_2",
+    "operator_3",
+    "tt_x_is_ultrafast",
+    "tt_x_price_regular",
+    "weekend_x_is_ultrafast"
+  ],
+  "outputs": [
+    "feature_dependency_scores.csv",
+    "stationday_logkwh_top_features.csv",
+    "synthetic_true_demand_feature_scores.csv"
+  ],
+  "notes": [
+    "Pearson measures linear association.",
+    "Spearman measures monotonic association by ranks.",
+    "Mutual information is non-negative and captures general dependence but has no sign.",
+    "Edge-level rows repeat station-day labels and should be treated as diagnostic only.",
+    "D_true_synthetic_only is available only because the current dataset is synthetic; do not use it for real data."
+  ]
+}
